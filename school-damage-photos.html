@@ -1,0 +1,910 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>School Damage Photos</title>
+<style>
+  :root {
+    --ink:#1b2a24; --paper:#f3f1e9; --line:#d6d2c4;
+    --accent:#1f6f54; --warn:#9a5b1e; --muted:#6b6657;
+  }
+  * { box-sizing:border-box; }
+  body {
+    margin:0; background:var(--paper); color:var(--ink);
+    font-family:"Segoe UI",system-ui,-apple-system,sans-serif; line-height:1.5;
+  }
+  .wrap { max-width:1040px; margin:0 auto; padding:28px 20px 80px; }
+  header.top { border-bottom:2px solid var(--ink); padding-bottom:18px; margin-bottom:8px; }
+  header.top h1 { font-size:clamp(1.5rem,4vw,2.1rem); margin:0 0 4px; letter-spacing:-.01em; }
+  header.top p { margin:0; color:var(--muted); }
+  .stats { display:flex; gap:26px; flex-wrap:wrap; margin:16px 0 26px; }
+  .stat b { display:block; font-size:1.6rem; color:var(--accent); }
+  .stat span { font-size:.8rem; color:var(--muted); text-transform:uppercase; letter-spacing:.05em; }
+  .notice {
+    background:#fbf6ec; border:1px solid var(--line); border-left:4px solid var(--warn);
+    padding:12px 16px; border-radius:6px; margin-bottom:30px; font-size:.92rem;
+  }
+  .card {
+    background:#fff; border:1px solid var(--line); border-radius:10px;
+    padding:18px; margin-bottom:18px;
+  }
+  .card header { display:flex; align-items:flex-start; gap:14px; }
+  .idx { font-variant-numeric:tabular-nums; font-weight:700; color:var(--accent);
+          font-size:1.1rem; min-width:2ch; }
+  .head-text { flex:1; }
+  .head-text h2 { margin:0; font-size:1.12rem; }
+  .meta { font-size:.8rem; color:var(--muted); margin-top:2px; }
+  .count { font-size:.78rem; color:#fff; background:var(--accent); padding:3px 9px;
+            border-radius:20px; white-space:nowrap; }
+  .damage { margin:10px 0 14px; padding:10px 12px; background:var(--paper);
+             border-radius:6px; }
+  .nature { margin:0; }
+  .cost { margin:4px 0 0; font-size:.88rem; color:var(--muted); }
+  .gallery { display:grid; grid-template-columns:repeat(auto-fill,minmax(150px,1fr)); gap:10px; }
+  .shot { position:relative; display:block; aspect-ratio:4/3; border-radius:8px;
+           overflow:hidden; background:#e9e6db; border:1px solid var(--line); }
+  .shot img { width:100%; height:100%; object-fit:cover; display:block; }
+  .broken-msg { display:none; position:absolute; inset:0; padding:10px; font-size:.72rem;
+                 color:var(--warn); align-items:center; justify-content:center; text-align:center; }
+  .shot.broken img { display:none; }
+  .shot.broken .broken-msg { display:flex; }
+  h3.sec { margin:42px 0 12px; padding-top:18px; border-top:2px solid var(--ink); }
+  table { width:100%; border-collapse:collapse; font-size:.9rem; }
+  th, td { text-align:left; padding:8px 10px; border-bottom:1px solid var(--line); }
+  th { font-size:.74rem; text-transform:uppercase; letter-spacing:.05em; color:var(--muted); }
+  @media (max-width:520px) { .count{display:none;} }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header class="top">
+    <h1>School Damage — Photo Report</h1>
+    <p>Generated from your spreadsheet · 30 June 2026</p>
+  </header>
+
+  <div class="stats">
+    <div class="stat"><b>47</b><span>Schools</span></div>
+    <div class="stat"><b>32</b><span>With photos</span></div>
+    <div class="stat"><b>65</b><span>Total photos</span></div>
+    <div class="stat"><b>15</b><span>No photo link</span></div>
+  </div>
+
+  <div class="notice">
+    These photos load from temporary private links in your spreadsheet. The links were
+    created on 30 June 2026 and stop working roughly 5 days later. While they are valid,
+    open this page in a web browser to see them. Any tile showing
+    “expired or private” means that link can no longer be opened — the photo would need to
+    be re-exported from the original system.
+  </div>
+
+  
+    <article class="card">
+      <header>
+        <div class="idx">01</div>
+        <div class="head-text">
+          <h2>GPS RATI DANDI</h2>
+          <div class="meta">EMIS 37140151 · Phase 1 · Wajahat · 6/19/2026</div>
+        </div>
+        <div class="count">3 photos</div>
+      </header>
+      <div class="damage">
+        <p class="nature">School name board damage</p>
+        <p class="cost">Est. cost: <b>5000</b></p>
+      </div>
+      <div class="gallery">
+        <a class="shot" href="https://storage.googleapis.com/replit-objstore-18635d12-6e5d-415b-a79d-09f3ba4f6c3f/.private/uploads/6fecb6ce-a5e2-4e9c-8064-44e32af793c0.jpg?X-Goog-Algorithm=GOOG4-RSA-SHA256&amp;X-Goog-Credential=heimdall-production%40replit-user-deployments.iam.gserviceaccount.com%2F20260630%2Fauto%2Fstorage%2Fgoog4_request&amp;X-Goog-Date=20260630T071124Z&amp;X-Goog-Expires=431999&amp;X-Goog-Signature=8214315cd5de150427f789fdbd81f6df6eef43124332a4c5b2879a0326e0acfee7cf01eac2b5568eec254fbcac02e458ab593fcca3bdb3bab1684132455aecce1374167aa04a8098cb11ae56e4716305a5311638ab2771c438526a77bf41aeaec6d7c9ad667c6203f9dc414aebe1564abf1c5235c58a7bd6ce3b01c02df5f7c8749d0ddfa554cf4ce4a52d2f6d71dccdb8a1e6712ec9fe53569c0904584c3d02761be10fa178a41c5e329bdc71250f60f3fa7d76d7dabc982110710aa79a8f269b2eb53627f8acbfeb0fd961defade4e1cdfa78583d4ae440d528074dd6fa18fec14f12d4849def0dfa3d9ba91a3ac879059f780ddd6bbe32fea7adb5c88d882&amp;X-Goog-SignedHeaders=host" target="_blank" rel="noopener" title="Open full size in new tab">
+          <img loading="lazy" src="https://storage.googleapis.com/replit-objstore-18635d12-6e5d-415b-a79d-09f3ba4f6c3f/.private/uploads/6fecb6ce-a5e2-4e9c-8064-44e32af793c0.jpg?X-Goog-Algorithm=GOOG4-RSA-SHA256&amp;X-Goog-Credential=heimdall-production%40replit-user-deployments.iam.gserviceaccount.com%2F20260630%2Fauto%2Fstorage%2Fgoog4_request&amp;X-Goog-Date=20260630T071124Z&amp;X-Goog-Expires=431999&amp;X-Goog-Signature=8214315cd5de150427f789fdbd81f6df6eef43124332a4c5b2879a0326e0acfee7cf01eac2b5568eec254fbcac02e458ab593fcca3bdb3bab1684132455aecce1374167aa04a8098cb11ae56e4716305a5311638ab2771c438526a77bf41aeaec6d7c9ad667c6203f9dc414aebe1564abf1c5235c58a7bd6ce3b01c02df5f7c8749d0ddfa554cf4ce4a52d2f6d71dccdb8a1e6712ec9fe53569c0904584c3d02761be10fa178a41c5e329bdc71250f60f3fa7d76d7dabc982110710aa79a8f269b2eb53627f8acbfeb0fd961defade4e1cdfa78583d4ae440d528074dd6fa18fec14f12d4849def0dfa3d9ba91a3ac879059f780ddd6bbe32fea7adb5c88d882&amp;X-Goog-SignedHeaders=host" alt="Damage photo 1 for GPS RATI DANDI"
+               onerror="this.closest('.shot').classList.add('broken')">
+          <span class="broken-msg">Image link expired or private — tap to try opening</span>
+        </a>
+        <a class="shot" href="https://storage.googleapis.com/replit-objstore-18635d12-6e5d-415b-a79d-09f3ba4f6c3f/.private/uploads/72e90ca2-835a-4e63-bc16-8288a7a6a8cf.jpg?X-Goog-Algorithm=GOOG4-RSA-SHA256&amp;X-Goog-Credential=heimdall-production%40replit-user-deployments.iam.gserviceaccount.com%2F20260630%2Fauto%2Fstorage%2Fgoog4_request&amp;X-Goog-Date=20260630T071125Z&amp;X-Goog-Expires=431999&amp;X-Goog-Signature=3907af73801d1ccb14d98e2417540faa7707336a7368587bcc3dbce2c4193a753d4bb228ecdcc4c400ccfb7db73466d602f69c218a36ae3ade66bac5c04f88813edbfdf0ed0d526ccc6088b8acc70fdc94430095a67133031b7f9bb5aaf8f28a457fc6c80d41bf44a76a1cf6f4317c4e247e1a888b8f0cb2c9cbea6884257b3cfd1eec4df568eed82c8fdfa4feaad6926c4dd7c4c7981c204cebf7ac9121f15a9e325a8213cbca32ed4eabe30a9f45f7ddf2d50906374ab97cf04485ac763629e103ee5b8bace2b965a3fd68672ac6ff36bc7922cbf3635ef328205382ca1e0f66f34e11abc8b69b526d62549b4a34104c6de5b0c99dbde0d2612a5f7d816439&amp;X-Goog-SignedHeaders=host" target="_blank" rel="noopener" title="Open full size in new tab">
+          <img loading="lazy" src="https://storage.googleapis.com/replit-objstore-18635d12-6e5d-415b-a79d-09f3ba4f6c3f/.private/uploads/72e90ca2-835a-4e63-bc16-8288a7a6a8cf.jpg?X-Goog-Algorithm=GOOG4-RSA-SHA256&amp;X-Goog-Credential=heimdall-production%40replit-user-deployments.iam.gserviceaccount.com%2F20260630%2Fauto%2Fstorage%2Fgoog4_request&amp;X-Goog-Date=20260630T071125Z&amp;X-Goog-Expires=431999&amp;X-Goog-Signature=3907af73801d1ccb14d98e2417540faa7707336a7368587bcc3dbce2c4193a753d4bb228ecdcc4c400ccfb7db73466d602f69c218a36ae3ade66bac5c04f88813edbfdf0ed0d526ccc6088b8acc70fdc94430095a67133031b7f9bb5aaf8f28a457fc6c80d41bf44a76a1cf6f4317c4e247e1a888b8f0cb2c9cbea6884257b3cfd1eec4df568eed82c8fdfa4feaad6926c4dd7c4c7981c204cebf7ac9121f15a9e325a8213cbca32ed4eabe30a9f45f7ddf2d50906374ab97cf04485ac763629e103ee5b8bace2b965a3fd68672ac6ff36bc7922cbf3635ef328205382ca1e0f66f34e11abc8b69b526d62549b4a34104c6de5b0c99dbde0d2612a5f7d816439&amp;X-Goog-SignedHeaders=host" alt="Damage photo 2 for GPS RATI DANDI"
+               onerror="this.closest('.shot').classList.add('broken')">
+          <span class="broken-msg">Image link expired or private — tap to try opening</span>
+        </a>
+        <a class="shot" href="https://storage.googleapis.com/replit-objstore-18635d12-6e5d-415b-a79d-09f3ba4f6c3f/.private/uploads/e2ca26a6-3c36-4004-9e55-3105fc9eb43b.jpg?X-Goog-Algorithm=GOOG4-RSA-SHA256&amp;X-Goog-Credential=heimdall-production%40replit-user-deployments.iam.gserviceaccount.com%2F20260630%2Fauto%2Fstorage%2Fgoog4_request&amp;X-Goog-Date=20260630T071125Z&amp;X-Goog-Expires=431999&amp;X-Goog-Signature=12f40bb0011dc05dc6264d54c83ee288a820804ceb0081af59f986c84ed98e7dd293d087ff345de6fba57054e1a98afa38446986fc9070ee5faaea4403bc52753b8bc30a3fdbd242c4c778c94f1c3e072d9882fc84364c04bdfebf46992d998cc1b9c2e7c3f3c4964e059a73646130d7b6c43433e8af77fed7c63445dc41284f5391deeac02bb1db19fbc97072d60176c44f6fd60445b1ec130f1efefc272393548d5eedd533293ae6e452f3a4b819772bd00f42cc20b69803138037d3083a25edc5d50ed50a4ca384aa172bd3e6adfd7892e83319fdf8759bc2c4062a4b01a990220c07d80ba3ad9e1be36aafce5578d70b70be4c31fc4bf9dffaa1358cf960&amp;X-Goog-SignedHeaders=host" target="_blank" rel="noopener" title="Open full size in new tab">
+          <img loading="lazy" src="https://storage.googleapis.com/replit-objstore-18635d12-6e5d-415b-a79d-09f3ba4f6c3f/.private/uploads/e2ca26a6-3c36-4004-9e55-3105fc9eb43b.jpg?X-Goog-Algorithm=GOOG4-RSA-SHA256&amp;X-Goog-Credential=heimdall-production%40replit-user-deployments.iam.gserviceaccount.com%2F20260630%2Fauto%2Fstorage%2Fgoog4_request&amp;X-Goog-Date=20260630T071125Z&amp;X-Goog-Expires=431999&amp;X-Goog-Signature=12f40bb0011dc05dc6264d54c83ee288a820804ceb0081af59f986c84ed98e7dd293d087ff345de6fba57054e1a98afa38446986fc9070ee5faaea4403bc52753b8bc30a3fdbd242c4c778c94f1c3e072d9882fc84364c04bdfebf46992d998cc1b9c2e7c3f3c4964e059a73646130d7b6c43433e8af77fed7c63445dc41284f5391deeac02bb1db19fbc97072d60176c44f6fd60445b1ec130f1efefc272393548d5eedd533293ae6e452f3a4b819772bd00f42cc20b69803138037d3083a25edc5d50ed50a4ca384aa172bd3e6adfd7892e83319fdf8759bc2c4062a4b01a990220c07d80ba3ad9e1be36aafce5578d70b70be4c31fc4bf9dffaa1358cf960&amp;X-Goog-SignedHeaders=host" alt="Damage photo 3 for GPS RATI DANDI"
+               onerror="this.closest('.shot').classList.add('broken')">
+          <span class="broken-msg">Image link expired or private — tap to try opening</span>
+        </a></div>
+    </article>
+    <article class="card">
+      <header>
+        <div class="idx">02</div>
+        <div class="head-text">
+          <h2>GPS DHOK GHAGGI</h2>
+          <div class="meta">EMIS 37140371 · Phase 1 · Wajahat · 6/19/2026</div>
+        </div>
+        <div class="count">3 photos</div>
+      </header>
+      <div class="damage">
+        <p class="nature">School name board damage</p>
+        <p class="cost">Est. cost: <b>5000</b></p>
+      </div>
+      <div class="gallery">
+        <a class="shot" href="https://storage.googleapis.com/replit-objstore-18635d12-6e5d-415b-a79d-09f3ba4f6c3f/.private/uploads/78d78214-6323-4586-8300-933cd12f0a64.jpg?X-Goog-Algorithm=GOOG4-RSA-SHA256&amp;X-Goog-Credential=heimdall-production%40replit-user-deployments.iam.gserviceaccount.com%2F20260630%2Fauto%2Fstorage%2Fgoog4_request&amp;X-Goog-Date=20260630T071124Z&amp;X-Goog-Expires=431999&amp;X-Goog-Signature=87f7b55f34d618c2a8fc6aaa6e7b3b460d36fe82b39beafab0ba41f693fb680a012d9216f95caf4a4b00b71159e99b0fe4522b8ddcd732fd6e99dd8a057e9de0b525f5d8fc8d2ad5b8513b2df91de0be79cfcf5d781849389cd27423a7c0015e7f80dbe4140729bb2ea0a6fccb24a96c49f9f79ae70d3d7801b58ce418225164bb8f7257e21d01e887716ac54253e95095becc92f33269b64a22acffdc9d9d39d72e1cf52c68e718563ec6bdcd4e70985463e5f5707c4f12f48c3da7cdb9d0093938cc2df05be27663fc6b187b195cd9c8e20550cf432a2d3196cd3beb642536e7fe49d0f18f221c97fa1fd06e1957266fd6c6dc6ac7489c5210cabdfb660928&amp;X-Goog-SignedHeaders=host" target="_blank" rel="noopener" title="Open full size in new tab">
+          <img loading="lazy" src="https://storage.googleapis.com/replit-objstore-18635d12-6e5d-415b-a79d-09f3ba4f6c3f/.private/uploads/78d78214-6323-4586-8300-933cd12f0a64.jpg?X-Goog-Algorithm=GOOG4-RSA-SHA256&amp;X-Goog-Credential=heimdall-production%40replit-user-deployments.iam.gserviceaccount.com%2F20260630%2Fauto%2Fstorage%2Fgoog4_request&amp;X-Goog-Date=20260630T071124Z&amp;X-Goog-Expires=431999&amp;X-Goog-Signature=87f7b55f34d618c2a8fc6aaa6e7b3b460d36fe82b39beafab0ba41f693fb680a012d9216f95caf4a4b00b71159e99b0fe4522b8ddcd732fd6e99dd8a057e9de0b525f5d8fc8d2ad5b8513b2df91de0be79cfcf5d781849389cd27423a7c0015e7f80dbe4140729bb2ea0a6fccb24a96c49f9f79ae70d3d7801b58ce418225164bb8f7257e21d01e887716ac54253e95095becc92f33269b64a22acffdc9d9d39d72e1cf52c68e718563ec6bdcd4e70985463e5f5707c4f12f48c3da7cdb9d0093938cc2df05be27663fc6b187b195cd9c8e20550cf432a2d3196cd3beb642536e7fe49d0f18f221c97fa1fd06e1957266fd6c6dc6ac7489c5210cabdfb660928&amp;X-Goog-SignedHeaders=host" alt="Damage photo 1 for GPS DHOK GHAGGI"
+               onerror="this.closest('.shot').classList.add('broken')">
+          <span class="broken-msg">Image link expired or private — tap to try opening</span>
+        </a>
+        <a class="shot" href="https://storage.googleapis.com/replit-objstore-18635d12-6e5d-415b-a79d-09f3ba4f6c3f/.private/uploads/601aa835-cc76-44aa-a015-a6bd2cba795e.jpg?X-Goog-Algorithm=GOOG4-RSA-SHA256&amp;X-Goog-Credential=heimdall-production%40replit-user-deployments.iam.gserviceaccount.com%2F20260630%2Fauto%2Fstorage%2Fgoog4_request&amp;X-Goog-Date=20260630T071125Z&amp;X-Goog-Expires=431999&amp;X-Goog-Signature=665b1438558ece75d0e66fe369f0bfacd98429e2fff57e15d81056bc6216078ad4819b1a70632f6d6c4773fb347a37bb11b086e2bae89f2465c294a7603bb63a71e06d9abd902eccce659f2dd62fbc0eff2ef722937b8cae6a0b7ab66ea073ba426d60f3872a3e40d3d2324c63cf3e1d664f94e5e386a2fee27d046666e0e1b4fd3088682f675a0750d89d261063f49834b78c353739c5a1b9d0a0c7147c67be725407d9da777b43d962a506393ecff4be36f980da5cd5c266b4c05ead045519f4f0c0d35bcc333929e8f0cc65906bcfffea4196593a52278ca1c214cca168f57a19817e8bc9ef6d74bd87ed02ff3ae92429d58c3bc1d791b93503e8483c9541&amp;X-Goog-SignedHeaders=host" target="_blank" rel="noopener" title="Open full size in new tab">
+          <img loading="lazy" src="https://storage.googleapis.com/replit-objstore-18635d12-6e5d-415b-a79d-09f3ba4f6c3f/.private/uploads/601aa835-cc76-44aa-a015-a6bd2cba795e.jpg?X-Goog-Algorithm=GOOG4-RSA-SHA256&amp;X-Goog-Credential=heimdall-production%40replit-user-deployments.iam.gserviceaccount.com%2F20260630%2Fauto%2Fstorage%2Fgoog4_request&amp;X-Goog-Date=20260630T071125Z&amp;X-Goog-Expires=431999&amp;X-Goog-Signature=665b1438558ece75d0e66fe369f0bfacd98429e2fff57e15d81056bc6216078ad4819b1a70632f6d6c4773fb347a37bb11b086e2bae89f2465c294a7603bb63a71e06d9abd902eccce659f2dd62fbc0eff2ef722937b8cae6a0b7ab66ea073ba426d60f3872a3e40d3d2324c63cf3e1d664f94e5e386a2fee27d046666e0e1b4fd3088682f675a0750d89d261063f49834b78c353739c5a1b9d0a0c7147c67be725407d9da777b43d962a506393ecff4be36f980da5cd5c266b4c05ead045519f4f0c0d35bcc333929e8f0cc65906bcfffea4196593a52278ca1c214cca168f57a19817e8bc9ef6d74bd87ed02ff3ae92429d58c3bc1d791b93503e8483c9541&amp;X-Goog-SignedHeaders=host" alt="Damage photo 2 for GPS DHOK GHAGGI"
+               onerror="this.closest('.shot').classList.add('broken')">
+          <span class="broken-msg">Image link expired or private — tap to try opening</span>
+        </a>
+        <a class="shot" href="https://storage.googleapis.com/replit-objstore-18635d12-6e5d-415b-a79d-09f3ba4f6c3f/.private/uploads/dc8fa39d-233c-4ca1-9e16-2f1f393fe6f6.jpg?X-Goog-Algorithm=GOOG4-RSA-SHA256&amp;X-Goog-Credential=heimdall-production%40replit-user-deployments.iam.gserviceaccount.com%2F20260630%2Fauto%2Fstorage%2Fgoog4_request&amp;X-Goog-Date=20260630T071125Z&amp;X-Goog-Expires=431999&amp;X-Goog-Signature=0aa71814daed5a3343816884a6697935ed7785baf66ddd62f612d7eeccb35ed493f753823738b8707c7f16a16cf3164b77f563034602926b103973186ab5e7fa103b333b2e5c3104ec78902bc5fad6ddd4af3da0e14156a574b456b4ab3c8fd7f6ff457198072add1febaaaa34e982caefec72e052d3335fe7d115fbc2d960d651f5edc76a102006c4854d1e3e9a3325c6ca5dcc853ce91ec5677f6e8dd9a5562500cd66eb89a47b8a024dad72f90e37b39b25752ab09357678de8b7f5422a022cef751fa70391b3edf6b9ec417dfd56b2f9f1a4febbfe7181a9e5ef54729587d54595db11828a2f7c754ca17b47a4b9f1b83fa926d2fe9d0840fff2e489b024&amp;X-Goog-SignedHeaders=host" target="_blank" rel="noopener" title="Open full size in new tab">
+          <img loading="lazy" src="https://storage.googleapis.com/replit-objstore-18635d12-6e5d-415b-a79d-09f3ba4f6c3f/.private/uploads/dc8fa39d-233c-4ca1-9e16-2f1f393fe6f6.jpg?X-Goog-Algorithm=GOOG4-RSA-SHA256&amp;X-Goog-Credential=heimdall-production%40replit-user-deployments.iam.gserviceaccount.com%2F20260630%2Fauto%2Fstorage%2Fgoog4_request&amp;X-Goog-Date=20260630T071125Z&amp;X-Goog-Expires=431999&amp;X-Goog-Signature=0aa71814daed5a3343816884a6697935ed7785baf66ddd62f612d7eeccb35ed493f753823738b8707c7f16a16cf3164b77f563034602926b103973186ab5e7fa103b333b2e5c3104ec78902bc5fad6ddd4af3da0e14156a574b456b4ab3c8fd7f6ff457198072add1febaaaa34e982caefec72e052d3335fe7d115fbc2d960d651f5edc76a102006c4854d1e3e9a3325c6ca5dcc853ce91ec5677f6e8dd9a5562500cd66eb89a47b8a024dad72f90e37b39b25752ab09357678de8b7f5422a022cef751fa70391b3edf6b9ec417dfd56b2f9f1a4febbfe7181a9e5ef54729587d54595db11828a2f7c754ca17b47a4b9f1b83fa926d2fe9d0840fff2e489b024&amp;X-Goog-SignedHeaders=host" alt="Damage photo 3 for GPS DHOK GHAGGI"
+               onerror="this.closest('.shot').classList.add('broken')">
+          <span class="broken-msg">Image link expired or private — tap to try opening</span>
+        </a></div>
+    </article>
+    <article class="card">
+      <header>
+        <div class="idx">03</div>
+        <div class="head-text">
+          <h2>GGPS PAIE KHAIL</h2>
+          <div class="meta">EMIS 37140304 · Phase 1 · Babar · 6/19/2026</div>
+        </div>
+        <div class="count">3 photos</div>
+      </header>
+      <div class="damage">
+        <p class="nature">Main gate Board fell down</p>
+        <p class="cost">Est. cost: <b>5000</b></p>
+      </div>
+      <div class="gallery">
+        <a class="shot" href="https://storage.googleapis.com/replit-objstore-18635d12-6e5d-415b-a79d-09f3ba4f6c3f/.private/uploads/84dd37b8-6a21-4fd2-ab26-fe99f8432f55.jpg?X-Goog-Algorithm=GOOG4-RSA-SHA256&amp;X-Goog-Credential=heimdall-production%40replit-user-deployments.iam.gserviceaccount.com%2F20260630%2Fauto%2Fstorage%2Fgoog4_request&amp;X-Goog-Date=20260630T071124Z&amp;X-Goog-Expires=431999&amp;X-Goog-Signature=8a10db4d53b4d6d5bd2709024891c3b44a95340fa9b6b7fb9e8b7345287eb259839eeff907cc933efcc64538ee4c7476ab9b6f5562b6a5188e6b6b9ffd39b2e68ecd526a9b8f97c627a7e99fa5bbd1a822ce53022678cf750ef60cc0a63d6df8f2d170e5e4d4a2ea79b3bff922df4df361af3b25bbfb0491f740013c4db5eb0ce26bc5996ef0a42b97837c8117b37653efe2c37f2ad954ffb3e9e22f4d3714a63a03636311cef21e736835102c65843c8873cae4f06e5e2a48ea762e396cc3c066b1e30a055a394d92f5c54102ad0837d0d9605f1c5f897f716ccfa93e21db1c24762ae5d8b3123fff4700f6f82e5d4f7ab588d9d1e8721c3138ea77e9563277&amp;X-Goog-SignedHeaders=host" target="_blank" rel="noopener" title="Open full size in new tab">
+          <img loading="lazy" src="https://storage.googleapis.com/replit-objstore-18635d12-6e5d-415b-a79d-09f3ba4f6c3f/.private/uploads/84dd37b8-6a21-4fd2-ab26-fe99f8432f55.jpg?X-Goog-Algorithm=GOOG4-RSA-SHA256&amp;X-Goog-Credential=heimdall-production%40replit-user-deployments.iam.gserviceaccount.com%2F20260630%2Fauto%2Fstorage%2Fgoog4_request&amp;X-Goog-Date=20260630T071124Z&amp;X-Goog-Expires=431999&amp;X-Goog-Signature=8a10db4d53b4d6d5bd2709024891c3b44a95340fa9b6b7fb9e8b7345287eb259839eeff907cc933efcc64538ee4c7476ab9b6f5562b6a5188e6b6b9ffd39b2e68ecd526a9b8f97c627a7e99fa5bbd1a822ce53022678cf750ef60cc0a63d6df8f2d170e5e4d4a2ea79b3bff922df4df361af3b25bbfb0491f740013c4db5eb0ce26bc5996ef0a42b97837c8117b37653efe2c37f2ad954ffb3e9e22f4d3714a63a03636311cef21e736835102c65843c8873cae4f06e5e2a48ea762e396cc3c066b1e30a055a394d92f5c54102ad0837d0d9605f1c5f897f716ccfa93e21db1c24762ae5d8b3123fff4700f6f82e5d4f7ab588d9d1e8721c3138ea77e9563277&amp;X-Goog-SignedHeaders=host" alt="Damage photo 1 for GGPS PAIE KHAIL"
+               onerror="this.closest('.shot').classList.add('broken')">
+          <span class="broken-msg">Image link expired or private — tap to try opening</span>
+        </a>
+        <a class="shot" href="https://storage.googleapis.com/replit-objstore-18635d12-6e5d-415b-a79d-09f3ba4f6c3f/.private/uploads/6cc382ac-6b9d-4fbb-b835-b4d7ad6003e9.jpg?X-Goog-Algorithm=GOOG4-RSA-SHA256&amp;X-Goog-Credential=heimdall-production%40replit-user-deployments.iam.gserviceaccount.com%2F20260630%2Fauto%2Fstorage%2Fgoog4_request&amp;X-Goog-Date=20260630T071125Z&amp;X-Goog-Expires=431999&amp;X-Goog-Signature=6ee8a46fb1e9d4dfa551a5cc07ca17d626cfebec0a4e7f9f4d0fc3a6a5457073660e9185f0279a0e2e28c43005a04d2f44656c8e92f1fcb66854067aa70f83da1cef780c275f54ce3f71493d3e34962795184e0211515342964bc0cf3e1ee3cff718d027d8fc7a426c7d5191097edebfc1b6e41c1f0c3f06574ac1182c26e1ec99e4ced6299b0fa5e320b2598f7c7521d6873257bf70b9f9490c171dcf2c9cc33bc86c48d0451b70aa3e7e7ac9f1ced1406d0fd22674a229676dc09674e37c5417d97433986c247a4f667a2fb4537cb5bdb5bd3bb1fafe9e6f325bc7244feb7ee491eb5169c44a3fa1a1c4923ee3a26c2d23f87908eaba9612278a016029d1f1&amp;X-Goog-SignedHeaders=host" target="_blank" rel="noopener" title="Open full size in new tab">
+          <img loading="lazy" src="https://storage.googleapis.com/replit-objstore-18635d12-6e5d-415b-a79d-09f3ba4f6c3f/.private/uploads/6cc382ac-6b9d-4fbb-b835-b4d7ad6003e9.jpg?X-Goog-Algorithm=GOOG4-RSA-SHA256&amp;X-Goog-Credential=heimdall-production%40replit-user-deployments.iam.gserviceaccount.com%2F20260630%2Fauto%2Fstorage%2Fgoog4_request&amp;X-Goog-Date=20260630T071125Z&amp;X-Goog-Expires=431999&amp;X-Goog-Signature=6ee8a46fb1e9d4dfa551a5cc07ca17d626cfebec0a4e7f9f4d0fc3a6a5457073660e9185f0279a0e2e28c43005a04d2f44656c8e92f1fcb66854067aa70f83da1cef780c275f54ce3f71493d3e34962795184e0211515342964bc0cf3e1ee3cff718d027d8fc7a426c7d5191097edebfc1b6e41c1f0c3f06574ac1182c26e1ec99e4ced6299b0fa5e320b2598f7c7521d6873257bf70b9f9490c171dcf2c9cc33bc86c48d0451b70aa3e7e7ac9f1ced1406d0fd22674a229676dc09674e37c5417d97433986c247a4f667a2fb4537cb5bdb5bd3bb1fafe9e6f325bc7244feb7ee491eb5169c44a3fa1a1c4923ee3a26c2d23f87908eaba9612278a016029d1f1&amp;X-Goog-SignedHeaders=host" alt="Damage photo 2 for GGPS PAIE KHAIL"
+               onerror="this.closest('.shot').classList.add('broken')">
+          <span class="broken-msg">Image link expired or private — tap to try opening</span>
+        </a>
+        <a class="shot" href="https://storage.googleapis.com/replit-objstore-18635d12-6e5d-415b-a79d-09f3ba4f6c3f/.private/uploads/c5b5f2f3-70ef-4560-85a1-920b30102eea.jpg?X-Goog-Algorithm=GOOG4-RSA-SHA256&amp;X-Goog-Credential=heimdall-production%40replit-user-deployments.iam.gserviceaccount.com%2F20260630%2Fauto%2Fstorage%2Fgoog4_request&amp;X-Goog-Date=20260630T071126Z&amp;X-Goog-Expires=431999&amp;X-Goog-Signature=17022e40a52482dc520ac4665b2fda91a39848925ca2fd5d95e9c6f33a09aeb00578128eb176e848a13d336248c94155af58f72e4e450419b1e5cbac4eacaed165ff197cd0cf49f81aa11113dc3cf815fc428dab2972d40abaf6708f92815ad056499f12518340d12b2e5d9876d1ca38be7965482bd89e4dfd8411850a6e038b598092e1f72ea9b26cc0335234984c016a53025847f4c5c2a9c30efefc664970b221712627aa60570c3ce2795579ecd77df25901d3d8172f082d48d7919936de9fb1da5f18be54c109f60d8564aa3fe55d624c5cc607f138c331b53204f613bae5a0f0287f642b4a4cbb709a3941f991f2dfa0484cdf293dafa8e2b4da68b370&amp;X-Goog-SignedHeaders=host" target="_blank" rel="noopener" title="Open full size in new tab">
+          <img loading="lazy" src="https://storage.googleapis.com/replit-objstore-18635d12-6e5d-415b-a79d-09f3ba4f6c3f/.private/uploads/c5b5f2f3-70ef-4560-85a1-920b30102eea.jpg?X-Goog-Algorithm=GOOG4-RSA-SHA256&amp;X-Goog-Credential=heimdall-production%40replit-user-deployments.iam.gserviceaccount.com%2F20260630%2Fauto%2Fstorage%2Fgoog4_request&amp;X-Goog-Date=20260630T071126Z&amp;X-Goog-Expires=431999&amp;X-Goog-Signature=17022e40a52482dc520ac4665b2fda91a39848925ca2fd5d95e9c6f33a09aeb00578128eb176e848a13d336248c94155af58f72e4e450419b1e5cbac4eacaed165ff197cd0cf49f81aa11113dc3cf815fc428dab2972d40abaf6708f92815ad056499f12518340d12b2e5d9876d1ca38be7965482bd89e4dfd8411850a6e038b598092e1f72ea9b26cc0335234984c016a53025847f4c5c2a9c30efefc664970b221712627aa60570c3ce2795579ecd77df25901d3d8172f082d48d7919936de9fb1da5f18be54c109f60d8564aa3fe55d624c5cc607f138c331b53204f613bae5a0f0287f642b4a4cbb709a3941f991f2dfa0484cdf293dafa8e2b4da68b370&amp;X-Goog-SignedHeaders=host" alt="Damage photo 3 for GGPS PAIE KHAIL"
+               onerror="this.closest('.shot').classList.add('broken')">
+          <span class="broken-msg">Image link expired or private — tap to try opening</span>
+        </a></div>
+    </article>
+    <article class="card">
+      <header>
+        <div class="idx">04</div>
+        <div class="head-text">
+          <h2>GPS CHHOI (MAKHAD)</h2>
+          <div class="meta">EMIS 37140176 · Phase 1 · Babar · 6/19/2026</div>
+        </div>
+        <div class="count">3 photos</div>
+      </header>
+      <div class="damage">
+        <p class="nature">Main gate board fell down</p>
+        <p class="cost">Est. cost: <b>4500</b></p>
+      </div>
+      <div class="gallery">
+        <a class="shot" href="https://storage.googleapis.com/replit-objstore-18635d12-6e5d-415b-a79d-09f3ba4f6c3f/.private/uploads/eca23a1a-90a4-418c-a50e-c16c5f4a8672.jpg?X-Goog-Algorithm=GOOG4-RSA-SHA256&amp;X-Goog-Credential=heimdall-production%40replit-user-deployments.iam.gserviceaccount.com%2F20260630%2Fauto%2Fstorage%2Fgoog4_request&amp;X-Goog-Date=20260630T071124Z&amp;X-Goog-Expires=431999&amp;X-Goog-Signature=3315ef3aa04330707f7235895c13a59a30193c046126d9d21874c118b495de4f5a05924500ca462a8445a74cb663ba2b3e9197bf05a99c36648026e937059bbe5b3ad499ed859092860ea6c0853e6939181ace09930671aac574786bc2b97feaec41be189a56ac392f01ad1bafc759d3c8c153a0430790034f9bcf06ee59ccf41dd3184a782375c42346b88a293b5e1997c25cc4e28216c387608beb4446c52f75a1c59d89ad3cc29a8feb89c344d3783aa492e4555fbf05a23df0b9dfcbde79e7ee78c84a4efb81b2a744ef25b2b7ad0e3d993efaf97e3cb56cc6bce57a4ca9565e07ad417cc12d7e2f31f50542959572871d9c5165abf4369b404f8dbe81a8&amp;X-Goog-SignedHeaders=host" target="_blank" rel="noopener" title="Open full size in new tab">
+          <img loading="lazy" src="https://storage.googleapis.com/replit-objstore-18635d12-6e5d-415b-a79d-09f3ba4f6c3f/.private/uploads/eca23a1a-90a4-418c-a50e-c16c5f4a8672.jpg?X-Goog-Algorithm=GOOG4-RSA-SHA256&amp;X-Goog-Credential=heimdall-production%40replit-user-deployments.iam.gserviceaccount.com%2F20260630%2Fauto%2Fstorage%2Fgoog4_request&amp;X-Goog-Date=20260630T071124Z&amp;X-Goog-Expires=431999&amp;X-Goog-Signature=3315ef3aa04330707f7235895c13a59a30193c046126d9d21874c118b495de4f5a05924500ca462a8445a74cb663ba2b3e9197bf05a99c36648026e937059bbe5b3ad499ed859092860ea6c0853e6939181ace09930671aac574786bc2b97feaec41be189a56ac392f01ad1bafc759d3c8c153a0430790034f9bcf06ee59ccf41dd3184a782375c42346b88a293b5e1997c25cc4e28216c387608beb4446c52f75a1c59d89ad3cc29a8feb89c344d3783aa492e4555fbf05a23df0b9dfcbde79e7ee78c84a4efb81b2a744ef25b2b7ad0e3d993efaf97e3cb56cc6bce57a4ca9565e07ad417cc12d7e2f31f50542959572871d9c5165abf4369b404f8dbe81a8&amp;X-Goog-SignedHeaders=host" alt="Damage photo 1 for GPS CHHOI (MAKHAD)"
+               onerror="this.closest('.shot').classList.add('broken')">
+          <span class="broken-msg">Image link expired or private — tap to try opening</span>
+        </a>
+        <a class="shot" href="https://storage.googleapis.com/replit-objstore-18635d12-6e5d-415b-a79d-09f3ba4f6c3f/.private/uploads/e740d5f4-1885-480f-8fd2-4b0eb5f21508.jpg?X-Goog-Algorithm=GOOG4-RSA-SHA256&amp;X-Goog-Credential=heimdall-production%40replit-user-deployments.iam.gserviceaccount.com%2F20260630%2Fauto%2Fstorage%2Fgoog4_request&amp;X-Goog-Date=20260630T071125Z&amp;X-Goog-Expires=431999&amp;X-Goog-Signature=320a20a20c3c809053ed47beefff81312f624e079b2e53bbdf6453f2d5befd9aee0cbdb5f2b72da3e86055da1257a60850ad6f9129cce74271a0e3bf9291f09ba33159ae2b3d5322a3225d561f9016a6c99615b9a83e057a259005430187868e1f42b30f8af73c444c7b558b6959b4869bd5e79608269a7d021ae4763ceec5cbce3c71e1d35a46b835826b1bf91ef4ff9d6e3b7924b270f95a784e93d5a3728f13c36c00c22d51fd7dc762c617ac7cd080231483d00c7531495f166672374f8b27634136562d08d6cce0b0b6b722824eecf51213107b2320395795ac7e613e877a0869aca4e5cccd3d6a8d010fc769c67b4e3faa55fdfcecb0447670065fac84&amp;X-Goog-SignedHeaders=host" target="_blank" rel="noopener" title="Open full size in new tab">
+          <img loading="lazy" src="https://storage.googleapis.com/replit-objstore-18635d12-6e5d-415b-a79d-09f3ba4f6c3f/.private/uploads/e740d5f4-1885-480f-8fd2-4b0eb5f21508.jpg?X-Goog-Algorithm=GOOG4-RSA-SHA256&amp;X-Goog-Credential=heimdall-production%40replit-user-deployments.iam.gserviceaccount.com%2F20260630%2Fauto%2Fstorage%2Fgoog4_request&amp;X-Goog-Date=20260630T071125Z&amp;X-Goog-Expires=431999&amp;X-Goog-Signature=320a20a20c3c809053ed47beefff81312f624e079b2e53bbdf6453f2d5befd9aee0cbdb5f2b72da3e86055da1257a60850ad6f9129cce74271a0e3bf9291f09ba33159ae2b3d5322a3225d561f9016a6c99615b9a83e057a259005430187868e1f42b30f8af73c444c7b558b6959b4869bd5e79608269a7d021ae4763ceec5cbce3c71e1d35a46b835826b1bf91ef4ff9d6e3b7924b270f95a784e93d5a3728f13c36c00c22d51fd7dc762c617ac7cd080231483d00c7531495f166672374f8b27634136562d08d6cce0b0b6b722824eecf51213107b2320395795ac7e613e877a0869aca4e5cccd3d6a8d010fc769c67b4e3faa55fdfcecb0447670065fac84&amp;X-Goog-SignedHeaders=host" alt="Damage photo 2 for GPS CHHOI (MAKHAD)"
+               onerror="this.closest('.shot').classList.add('broken')">
+          <span class="broken-msg">Image link expired or private — tap to try opening</span>
+        </a>
+        <a class="shot" href="https://storage.googleapis.com/replit-objstore-18635d12-6e5d-415b-a79d-09f3ba4f6c3f/.private/uploads/bb610647-41b7-4e61-bfb1-dabfda6b5866.jpg?X-Goog-Algorithm=GOOG4-RSA-SHA256&amp;X-Goog-Credential=heimdall-production%40replit-user-deployments.iam.gserviceaccount.com%2F20260630%2Fauto%2Fstorage%2Fgoog4_request&amp;X-Goog-Date=20260630T071125Z&amp;X-Goog-Expires=431999&amp;X-Goog-Signature=404ed3fa79659380d67d3d2cbfa972644e1602da31f4d80e7e2d85873ec33a72d20fe4f948f6a5dc1c37be47c62e5e98a75d262a1b1eb56e748285a40dd8e81a97850f751a6627de61ef7582cc081b2d697ed722ca2cacec8ab6f909e9b6258c22694028162b0d6843e9fb430380ba4715a4a78df4eafdc38c3823981c8564c7f11fdc5248265b602afc5453423c83546c9edfd3102e38d22dcc8930c6b95c6bc65b1ff83df450a1b81cb0542355cba5aec4542a66f9928ffe83a9ee3e9c9019a9e00a81f6c04a700975bed8847d1891e4a48e0c037547c672d420a1b965ca78c735833174653a053afe237161dd04cb0db96da6482b776b2539d21d4e3f3ab0&amp;X-Goog-SignedHeaders=host" target="_blank" rel="noopener" title="Open full size in new tab">
+          <img loading="lazy" src="https://storage.googleapis.com/replit-objstore-18635d12-6e5d-415b-a79d-09f3ba4f6c3f/.private/uploads/bb610647-41b7-4e61-bfb1-dabfda6b5866.jpg?X-Goog-Algorithm=GOOG4-RSA-SHA256&amp;X-Goog-Credential=heimdall-production%40replit-user-deployments.iam.gserviceaccount.com%2F20260630%2Fauto%2Fstorage%2Fgoog4_request&amp;X-Goog-Date=20260630T071125Z&amp;X-Goog-Expires=431999&amp;X-Goog-Signature=404ed3fa79659380d67d3d2cbfa972644e1602da31f4d80e7e2d85873ec33a72d20fe4f948f6a5dc1c37be47c62e5e98a75d262a1b1eb56e748285a40dd8e81a97850f751a6627de61ef7582cc081b2d697ed722ca2cacec8ab6f909e9b6258c22694028162b0d6843e9fb430380ba4715a4a78df4eafdc38c3823981c8564c7f11fdc5248265b602afc5453423c83546c9edfd3102e38d22dcc8930c6b95c6bc65b1ff83df450a1b81cb0542355cba5aec4542a66f9928ffe83a9ee3e9c9019a9e00a81f6c04a700975bed8847d1891e4a48e0c037547c672d420a1b965ca78c735833174653a053afe237161dd04cb0db96da6482b776b2539d21d4e3f3ab0&amp;X-Goog-SignedHeaders=host" alt="Damage photo 3 for GPS CHHOI (MAKHAD)"
+               onerror="this.closest('.shot').classList.add('broken')">
+          <span class="broken-msg">Image link expired or private — tap to try opening</span>
+        </a></div>
+    </article>
+    <article class="card">
+      <header>
+        <div class="idx">05</div>
+        <div class="head-text">
+          <h2>GPS BHATTA</h2>
+          <div class="meta">EMIS 37140153 · Phase 1 · Wajahat · 6/19/2026</div>
+        </div>
+        <div class="count">3 photos</div>
+      </header>
+      <div class="damage">
+        <p class="nature">School name board damage</p>
+        <p class="cost">Est. cost: <b>5000</b></p>
+      </div>
+      <div class="gallery">
+        <a class="shot" href="https://storage.googleapis.com/replit-objstore-18635d12-6e5d-415b-a79d-09f3ba4f6c3f/.private/uploads/2e584a44-c2d1-4dd9-99ad-8768b7f26714.jpg?X-Goog-Algorithm=GOOG4-RSA-SHA256&amp;X-Goog-Credential=heimdall-production%40replit-user-deployments.iam.gserviceaccount.com%2F20260630%2Fauto%2Fstorage%2Fgoog4_request&amp;X-Goog-Date=20260630T071124Z&amp;X-Goog-Expires=431999&amp;X-Goog-Signature=56fa31f3704b3fe7da7880f81b05a1974773bea6dc836820ed13de6fb9cf7d56b3fa2a61d5e6ca3749994bd5e89473707677fc6e7aec5964f76666b4ddcc9b42d33718dd80018927ef89d3075bbe7c9fa9d4b0fd123e0ec5c33b161e8dec954b0b1d51c984cf45481892e4af4131c82e6805b7c28c4f9a8b54cfe7b3b48590f81450f83c362c8095fa0edda2d871e60133eb6b6e2742cffa3df39387d87407ccf8dc5e9703dfd86a5a8fedadc61c0a024b3de5107edb29dbd55679438a3b714ae5679b44fa950f50c68dc3d06390ee4e2f6e600d2895d44ba2ac08e5c03fce9b2c0b24ef70a30a6bad47c59f5ccdfda736b2cc5d4e69817fe9b19740f58e2570&amp;X-Goog-SignedHeaders=host" target="_blank" rel="noopener" title="Open full size in new tab">
+          <img loading="lazy" src="https://storage.googleapis.com/replit-objstore-18635d12-6e5d-415b-a79d-09f3ba4f6c3f/.private/uploads/2e584a44-c2d1-4dd9-99ad-8768b7f26714.jpg?X-Goog-Algorithm=GOOG4-RSA-SHA256&amp;X-Goog-Credential=heimdall-production%40replit-user-deployments.iam.gserviceaccount.com%2F20260630%2Fauto%2Fstorage%2Fgoog4_request&amp;X-Goog-Date=20260630T071124Z&amp;X-Goog-Expires=431999&amp;X-Goog-Signature=56fa31f3704b3fe7da7880f81b05a1974773bea6dc836820ed13de6fb9cf7d56b3fa2a61d5e6ca3749994bd5e89473707677fc6e7aec5964f76666b4ddcc9b42d33718dd80018927ef89d3075bbe7c9fa9d4b0fd123e0ec5c33b161e8dec954b0b1d51c984cf45481892e4af4131c82e6805b7c28c4f9a8b54cfe7b3b48590f81450f83c362c8095fa0edda2d871e60133eb6b6e2742cffa3df39387d87407ccf8dc5e9703dfd86a5a8fedadc61c0a024b3de5107edb29dbd55679438a3b714ae5679b44fa950f50c68dc3d06390ee4e2f6e600d2895d44ba2ac08e5c03fce9b2c0b24ef70a30a6bad47c59f5ccdfda736b2cc5d4e69817fe9b19740f58e2570&amp;X-Goog-SignedHeaders=host" alt="Damage photo 1 for GPS BHATTA"
+               onerror="this.closest('.shot').classList.add('broken')">
+          <span class="broken-msg">Image link expired or private — tap to try opening</span>
+        </a>
+        <a class="shot" href="https://storage.googleapis.com/replit-objstore-18635d12-6e5d-415b-a79d-09f3ba4f6c3f/.private/uploads/870f4162-28c3-46ad-a46a-5019f08ee589.jpg?X-Goog-Algorithm=GOOG4-RSA-SHA256&amp;X-Goog-Credential=heimdall-production%40replit-user-deployments.iam.gserviceaccount.com%2F20260630%2Fauto%2Fstorage%2Fgoog4_request&amp;X-Goog-Date=20260630T071125Z&amp;X-Goog-Expires=431999&amp;X-Goog-Signature=26c5c5ddaa03314248b862dc15d99f3652e91636f5f2900d23c694a16c5ee0d5edb1c112076583e1838754fbe8ac88da690a42b5b71d9e95ea338032bd9022b4bacebfc1ba08285dd92610b675fef423468d8c8c010be79a839b55d51e3d9205b413926fe35c160b162162a51043a41b4f514b4c016a465425b9d3f625400f501efbd899cdae4b57e4d026e65bcff92a39cfcd95c4669d087cb308420dab2a92bc4260528cf0321e07525fada6229c832db6395f08ffbc93013bd74bc0ca8979f53d2487cc30543c0b661a4c68c83f93b73f09181c8432d4ab06082d404b95e94f698046050eb961c4e168aa5dbc0c05a0134186f6370db9956629fe4ea1f5df&amp;X-Goog-SignedHeaders=host" target="_blank" rel="noopener" title="Open full size in new tab">
+          <img loading="lazy" src="https://storage.googleapis.com/replit-objstore-18635d12-6e5d-415b-a79d-09f3ba4f6c3f/.private/uploads/870f4162-28c3-46ad-a46a-5019f08ee589.jpg?X-Goog-Algorithm=GOOG4-RSA-SHA256&amp;X-Goog-Credential=heimdall-production%40replit-user-deployments.iam.gserviceaccount.com%2F20260630%2Fauto%2Fstorage%2Fgoog4_request&amp;X-Goog-Date=20260630T071125Z&amp;X-Goog-Expires=431999&amp;X-Goog-Signature=26c5c5ddaa03314248b862dc15d99f3652e91636f5f2900d23c694a16c5ee0d5edb1c112076583e1838754fbe8ac88da690a42b5b71d9e95ea338032bd9022b4bacebfc1ba08285dd92610b675fef423468d8c8c010be79a839b55d51e3d9205b413926fe35c160b162162a51043a41b4f514b4c016a465425b9d3f625400f501efbd899cdae4b57e4d026e65bcff92a39cfcd95c4669d087cb308420dab2a92bc4260528cf0321e07525fada6229c832db6395f08ffbc93013bd74bc0ca8979f53d2487cc30543c0b661a4c68c83f93b73f09181c8432d4ab06082d404b95e94f698046050eb961c4e168aa5dbc0c05a0134186f6370db9956629fe4ea1f5df&amp;X-Goog-SignedHeaders=host" alt="Damage photo 2 for GPS BHATTA"
+               onerror="this.closest('.shot').classList.add('broken')">
+          <span class="broken-msg">Image link expired or private — tap to try opening</span>
+        </a>
+        <a class="shot" href="https://storage.googleapis.com/replit-objstore-18635d12-6e5d-415b-a79d-09f3ba4f6c3f/.private/uploads/aa06713e-6534-4ba5-91a0-e104d126c5f8.jpg?X-Goog-Algorithm=GOOG4-RSA-SHA256&amp;X-Goog-Credential=heimdall-production%40replit-user-deployments.iam.gserviceaccount.com%2F20260630%2Fauto%2Fstorage%2Fgoog4_request&amp;X-Goog-Date=20260630T071125Z&amp;X-Goog-Expires=431999&amp;X-Goog-Signature=b96aa48dce911aaa6410394d048b5242d2c84508001f3d4c41671649e4c0249451575f97a696e303be8b37354cdfcb92df497b78ffc802fa55c531380159bf27e8a19b6e8513c6b8e1b2274d93daf42e74e885324fd7956eb48f42034d1111f6139439ab3cc0bcfb1d2fdeb5aa689c5ea817cd5a358028b70012009a6b6c64250cc85d0a1dd3ad417bb63dc3a655480e2ccbcb3e3edcecce6bdc9ccad453fbe6ce7bb764db83f9c5e21f3cf0e36876c44a682c787b49e4121370fbf929f323c408524715f59d3a0f477bd17f646393396c2bc7e1ee9bc5258f524892d491ba04dd8554fbd133290fdbaa39fbdd4921c9f189d285a26c4f36ec5fa04d9656338b&amp;X-Goog-SignedHeaders=host" target="_blank" rel="noopener" title="Open full size in new tab">
+          <img loading="lazy" src="https://storage.googleapis.com/replit-objstore-18635d12-6e5d-415b-a79d-09f3ba4f6c3f/.private/uploads/aa06713e-6534-4ba5-91a0-e104d126c5f8.jpg?X-Goog-Algorithm=GOOG4-RSA-SHA256&amp;X-Goog-Credential=heimdall-production%40replit-user-deployments.iam.gserviceaccount.com%2F20260630%2Fauto%2Fstorage%2Fgoog4_request&amp;X-Goog-Date=20260630T071125Z&amp;X-Goog-Expires=431999&amp;X-Goog-Signature=b96aa48dce911aaa6410394d048b5242d2c84508001f3d4c41671649e4c0249451575f97a696e303be8b37354cdfcb92df497b78ffc802fa55c531380159bf27e8a19b6e8513c6b8e1b2274d93daf42e74e885324fd7956eb48f42034d1111f6139439ab3cc0bcfb1d2fdeb5aa689c5ea817cd5a358028b70012009a6b6c64250cc85d0a1dd3ad417bb63dc3a655480e2ccbcb3e3edcecce6bdc9ccad453fbe6ce7bb764db83f9c5e21f3cf0e36876c44a682c787b49e4121370fbf929f323c408524715f59d3a0f477bd17f646393396c2bc7e1ee9bc5258f524892d491ba04dd8554fbd133290fdbaa39fbdd4921c9f189d285a26c4f36ec5fa04d9656338b&amp;X-Goog-SignedHeaders=host" alt="Damage photo 3 for GPS BHATTA"
+               onerror="this.closest('.shot').classList.add('broken')">
+          <span class="broken-msg">Image link expired or private — tap to try opening</span>
+        </a></div>
+    </article>
+    <article class="card">
+      <header>
+        <div class="idx">06</div>
+        <div class="head-text">
+          <h2>GPS KOTE WALI</h2>
+          <div class="meta">EMIS 37140149 · Phase 1 · Babar · 6/19/2026</div>
+        </div>
+        <div class="count">2 photos</div>
+      </header>
+      <div class="damage">
+        <p class="nature">Main gate board fell down + water tank fell down</p>
+        <p class="cost">Est. cost: <b>4000
+13000 installation + 750 gallons  water tabk capacity 
+Total = 17000</b></p>
+      </div>
+      <div class="gallery">
+        <a class="shot" href="https://storage.googleapis.com/replit-objstore-18635d12-6e5d-415b-a79d-09f3ba4f6c3f/.private/uploads/2a5bf81b-f774-4bec-9e44-48eecead5e81.jpg?X-Goog-Algorithm=GOOG4-RSA-SHA256&amp;X-Goog-Credential=heimdall-production%40replit-user-deployments.iam.gserviceaccount.com%2F20260630%2Fauto%2Fstorage%2Fgoog4_request&amp;X-Goog-Date=20260630T071124Z&amp;X-Goog-Expires=431999&amp;X-Goog-Signature=01b3586d4a75d09cc5bda846441e2be6ce3bca4ae840e8b647ebbb79cde60c945617314515db72b20d17c9ca851b66b5f07c9554db147b5ebc759c2c36cad05154a045ad4d64377e7e3c9d6da944514fffe9db4aaf0dbc45aaec77cab1abc3e5789e11c92e558a5eaf1a8cfc131284dbedf26e362fd67251ede29e143b270c9b769a19d9213f1bc82c5dc5e2427c509ffa22879a99d740802d2bf5c128dc0ca233cfe86c086f2758462f60b60ec363700d106090ad34132f3f35995a675e03406e153cb711ef5d1268c42729cf30679d579e67a938050b5813abc73a51e6d7e221e26d43ea2f6d4bcbdd9b4d59fb2fb1d7d465ecfcd8e771bab8c6e30087309c&amp;X-Goog-SignedHeaders=host" target="_blank" rel="noopener" title="Open full size in new tab">
+          <img loading="lazy" src="https://storage.googleapis.com/replit-objstore-18635d12-6e5d-415b-a79d-09f3ba4f6c3f/.private/uploads/2a5bf81b-f774-4bec-9e44-48eecead5e81.jpg?X-Goog-Algorithm=GOOG4-RSA-SHA256&amp;X-Goog-Credential=heimdall-production%40replit-user-deployments.iam.gserviceaccount.com%2F20260630%2Fauto%2Fstorage%2Fgoog4_request&amp;X-Goog-Date=20260630T071124Z&amp;X-Goog-Expires=431999&amp;X-Goog-Signature=01b3586d4a75d09cc5bda846441e2be6ce3bca4ae840e8b647ebbb79cde60c945617314515db72b20d17c9ca851b66b5f07c9554db147b5ebc759c2c36cad05154a045ad4d64377e7e3c9d6da944514fffe9db4aaf0dbc45aaec77cab1abc3e5789e11c92e558a5eaf1a8cfc131284dbedf26e362fd67251ede29e143b270c9b769a19d9213f1bc82c5dc5e2427c509ffa22879a99d740802d2bf5c128dc0ca233cfe86c086f2758462f60b60ec363700d106090ad34132f3f35995a675e03406e153cb711ef5d1268c42729cf30679d579e67a938050b5813abc73a51e6d7e221e26d43ea2f6d4bcbdd9b4d59fb2fb1d7d465ecfcd8e771bab8c6e30087309c&amp;X-Goog-SignedHeaders=host" alt="Damage photo 1 for GPS KOTE WALI"
+               onerror="this.closest('.shot').classList.add('broken')">
+          <span class="broken-msg">Image link expired or private — tap to try opening</span>
+        </a>
+        <a class="shot" href="https://storage.googleapis.com/replit-objstore-18635d12-6e5d-415b-a79d-09f3ba4f6c3f/.private/uploads/4813405c-198c-462e-a84e-293c787bb782.jpg?X-Goog-Algorithm=GOOG4-RSA-SHA256&amp;X-Goog-Credential=heimdall-production%40replit-user-deployments.iam.gserviceaccount.com%2F20260630%2Fauto%2Fstorage%2Fgoog4_request&amp;X-Goog-Date=20260630T071125Z&amp;X-Goog-Expires=431999&amp;X-Goog-Signature=8369368e5197804fd2f553de603e3ed8ab60dc0d1a51e63ab00de89437d710342fee6602f75d57a923a3cb4951708ee3c44a15c9a6956271501bc33a2371788e79b3a640a477cd733c5a8040f3dd207033ccab22dd56674acb658de9e936fa3db68c7475494cd95eb10d41d9839e3456e9b52f4ec7c4b8d22c2171a3b7402ffa372cb665a8973fbf28072bea00c66c6f986cc8695764953e649d8c357d845d1fc40b9320be256158b21f894cc33026cbfda96751647f749c6e90d39b0ee5419def1054d9ebf39e92b551ed449fcd3c3a9e73fad644c12aefed7bb8a2e093c5fa224fab9ba437d12c19b618c7a292ffde95f81f09ab479e27b98cf3514d83e886&amp;X-Goog-SignedHeaders=host" target="_blank" rel="noopener" title="Open full size in new tab">
+          <img loading="lazy" src="https://storage.googleapis.com/replit-objstore-18635d12-6e5d-415b-a79d-09f3ba4f6c3f/.private/uploads/4813405c-198c-462e-a84e-293c787bb782.jpg?X-Goog-Algorithm=GOOG4-RSA-SHA256&amp;X-Goog-Credential=heimdall-production%40replit-user-deployments.iam.gserviceaccount.com%2F20260630%2Fauto%2Fstorage%2Fgoog4_request&amp;X-Goog-Date=20260630T071125Z&amp;X-Goog-Expires=431999&amp;X-Goog-Signature=8369368e5197804fd2f553de603e3ed8ab60dc0d1a51e63ab00de89437d710342fee6602f75d57a923a3cb4951708ee3c44a15c9a6956271501bc33a2371788e79b3a640a477cd733c5a8040f3dd207033ccab22dd56674acb658de9e936fa3db68c7475494cd95eb10d41d9839e3456e9b52f4ec7c4b8d22c2171a3b7402ffa372cb665a8973fbf28072bea00c66c6f986cc8695764953e649d8c357d845d1fc40b9320be256158b21f894cc33026cbfda96751647f749c6e90d39b0ee5419def1054d9ebf39e92b551ed449fcd3c3a9e73fad644c12aefed7bb8a2e093c5fa224fab9ba437d12c19b618c7a292ffde95f81f09ab479e27b98cf3514d83e886&amp;X-Goog-SignedHeaders=host" alt="Damage photo 2 for GPS KOTE WALI"
+               onerror="this.closest('.shot').classList.add('broken')">
+          <span class="broken-msg">Image link expired or private — tap to try opening</span>
+        </a></div>
+    </article>
+    <article class="card">
+      <header>
+        <div class="idx">07</div>
+        <div class="head-text">
+          <h2>GPS DAMAL</h2>
+          <div class="meta">EMIS 37140123 · Phase 1 · Ammar · 6/19/2026</div>
+        </div>
+        <div class="count">1 photo</div>
+      </header>
+      <div class="damage">
+        <p class="nature">School name sign Board and 1 tree 🎄</p>
+        <p class="cost">Est. cost: <b>1000</b></p>
+      </div>
+      <div class="gallery">
+        <a class="shot" href="https://storage.googleapis.com/replit-objstore-18635d12-6e5d-415b-a79d-09f3ba4f6c3f/.private/uploads/cb352532-6a90-4325-a4c9-c72effbf7527.jpg?X-Goog-Algorithm=GOOG4-RSA-SHA256&amp;X-Goog-Credential=heimdall-production%40replit-user-deployments.iam.gserviceaccount.com%2F20260630%2Fauto%2Fstorage%2Fgoog4_request&amp;X-Goog-Date=20260630T071124Z&amp;X-Goog-Expires=431999&amp;X-Goog-Signature=5c950e561612b5b54928d38b581b5bbd4273a7aa992ed04598a43472322f9bef7795e7a10af003dd4d708525be6e2e2c37870bba41ce8f244646bb56a35c46fc5c900c1879371dfa52293bb62648739662d6779f4bed0f76074f1f8dad7036dc68541f479a9509bcbb09ae6cdac519ef4541f9cf1a57146e32200b402d4ada0cfa13f05f5a70c8217cbc12f7c968c1314bb81cda5721c6d91e1c7934ff1cdff6910b4abbdde85c3e9ff77d996d124ef55c5fce42eb9d048f5e735b80b4b262fe565ad40ca976b261ee6606ac9f3bc33ed571070e14a592f6bf9792f4a15afc3e004d1e6602417fec5c05dca07a8892d9c750fab4313ec42203f66dc882d919cf&amp;X-Goog-SignedHeaders=host" target="_blank" rel="noopener" title="Open full size in new tab">
+          <img loading="lazy" src="https://storage.googleapis.com/replit-objstore-18635d12-6e5d-415b-a79d-09f3ba4f6c3f/.private/uploads/cb352532-6a90-4325-a4c9-c72effbf7527.jpg?X-Goog-Algorithm=GOOG4-RSA-SHA256&amp;X-Goog-Credential=heimdall-production%40replit-user-deployments.iam.gserviceaccount.com%2F20260630%2Fauto%2Fstorage%2Fgoog4_request&amp;X-Goog-Date=20260630T071124Z&amp;X-Goog-Expires=431999&amp;X-Goog-Signature=5c950e561612b5b54928d38b581b5bbd4273a7aa992ed04598a43472322f9bef7795e7a10af003dd4d708525be6e2e2c37870bba41ce8f244646bb56a35c46fc5c900c1879371dfa52293bb62648739662d6779f4bed0f76074f1f8dad7036dc68541f479a9509bcbb09ae6cdac519ef4541f9cf1a57146e32200b402d4ada0cfa13f05f5a70c8217cbc12f7c968c1314bb81cda5721c6d91e1c7934ff1cdff6910b4abbdde85c3e9ff77d996d124ef55c5fce42eb9d048f5e735b80b4b262fe565ad40ca976b261ee6606ac9f3bc33ed571070e14a592f6bf9792f4a15afc3e004d1e6602417fec5c05dca07a8892d9c750fab4313ec42203f66dc882d919cf&amp;X-Goog-SignedHeaders=host" alt="Damage photo 1 for GPS DAMAL"
+               onerror="this.closest('.shot').classList.add('broken')">
+          <span class="broken-msg">Image link expired or private — tap to try opening</span>
+        </a></div>
+    </article>
+    <article class="card">
+      <header>
+        <div class="idx">08</div>
+        <div class="head-text">
+          <h2>GGPS SAROBA BHATIOT</h2>
+          <div class="meta">EMIS 37140368 · Phase 1 · Shabbir Ahmad · 6/19/2026</div>
+        </div>
+        <div class="count">3 photos</div>
+      </header>
+      <div class="damage">
+        <p class="nature">School sign board and main gate Piller damage</p>
+        <p class="cost">Est. cost: <b>10000</b></p>
+      </div>
+      <div class="gallery">
+        <a class="shot" href="https://storage.googleapis.com/replit-objstore-18635d12-6e5d-415b-a79d-09f3ba4f6c3f/.private/uploads/0d0a5a0e-6ef8-4cad-9b89-c906fb3fca70.jpg?X-Goog-Algorithm=GOOG4-RSA-SHA256&amp;X-Goog-Credential=heimdall-production%40replit-user-deployments.iam.gserviceaccount.com%2F20260630%2Fauto%2Fstorage%2Fgoog4_request&amp;X-Goog-Date=20260630T071124Z&amp;X-Goog-Expires=431999&amp;X-Goog-Signature=586a0f007a164171d270376c9b9416df0274fcd0d56148b70544e89676d17445ac28c3c5e15fae7ebb43676cd892f130a7b02f77b2b2496844a7dbd7d1fee8b22e3ce077981754abfa2fa080ab6374fc5078968ccfe94f896916dd5331b533f47c29a9100c2e89fec6f52bdcf18631739d169d224d02b399ad8c2ff8a38ec99a48b9dfb81e7c5b0e3af763b09379b190c7b4aae3361f0fd2497ddb2dba86399388b21957997e706d58ff56a60915c9a816870a7371b2a11bf0514e385c723ef1e970b8c7012190ef6ecde4d976568f10ee8e731588b65680a243b0cb3c013730c85f74ca08494240e2618028387b805f897254f6d8eb3ed8601acd11bf5161ab&amp;X-Goog-SignedHeaders=host" target="_blank" rel="noopener" title="Open full size in new tab">
+          <img loading="lazy" src="https://storage.googleapis.com/replit-objstore-18635d12-6e5d-415b-a79d-09f3ba4f6c3f/.private/uploads/0d0a5a0e-6ef8-4cad-9b89-c906fb3fca70.jpg?X-Goog-Algorithm=GOOG4-RSA-SHA256&amp;X-Goog-Credential=heimdall-production%40replit-user-deployments.iam.gserviceaccount.com%2F20260630%2Fauto%2Fstorage%2Fgoog4_request&amp;X-Goog-Date=20260630T071124Z&amp;X-Goog-Expires=431999&amp;X-Goog-Signature=586a0f007a164171d270376c9b9416df0274fcd0d56148b70544e89676d17445ac28c3c5e15fae7ebb43676cd892f130a7b02f77b2b2496844a7dbd7d1fee8b22e3ce077981754abfa2fa080ab6374fc5078968ccfe94f896916dd5331b533f47c29a9100c2e89fec6f52bdcf18631739d169d224d02b399ad8c2ff8a38ec99a48b9dfb81e7c5b0e3af763b09379b190c7b4aae3361f0fd2497ddb2dba86399388b21957997e706d58ff56a60915c9a816870a7371b2a11bf0514e385c723ef1e970b8c7012190ef6ecde4d976568f10ee8e731588b65680a243b0cb3c013730c85f74ca08494240e2618028387b805f897254f6d8eb3ed8601acd11bf5161ab&amp;X-Goog-SignedHeaders=host" alt="Damage photo 1 for GGPS SAROBA BHATIOT"
+               onerror="this.closest('.shot').classList.add('broken')">
+          <span class="broken-msg">Image link expired or private — tap to try opening</span>
+        </a>
+        <a class="shot" href="https://storage.googleapis.com/replit-objstore-18635d12-6e5d-415b-a79d-09f3ba4f6c3f/.private/uploads/801639ce-0fb6-4ba5-9940-1db34f50da00.jpg?X-Goog-Algorithm=GOOG4-RSA-SHA256&amp;X-Goog-Credential=heimdall-production%40replit-user-deployments.iam.gserviceaccount.com%2F20260630%2Fauto%2Fstorage%2Fgoog4_request&amp;X-Goog-Date=20260630T071125Z&amp;X-Goog-Expires=431999&amp;X-Goog-Signature=c74f4fddf99240eb257869568c0130b050fe0c09aeef55ba011a3ab92432cea03960f42c1b3d9f5a5ee830b0dcb38ee673853212446d1bd417e58fdf9b0c912ff028556fd156a5dea84530b7184bbebdc9aab06b8a1883c34bbc358042dfc0d009fdc6b1a72aea00f9b97e2749156eb32da717f26a3ce6577417d9ec359fcb0551df4d830466794e6080db3da5b5f2a8f77582cd763d46c4a8ab1ae81790fc6cda4f16ddce730b870ac2d43036f0b3d74f4c10e785e5c7fb200ab281f01bce9c25a0d3f2af32a82afa93a6fc877fc33ad159ae90e908ed98a4967581d0673da2ddabb4eb8a4a1b543443cc5f1c65068e973b17cf32cf698582856080a4766d89&amp;X-Goog-SignedHeaders=host" target="_blank" rel="noopener" title="Open full size in new tab">
+          <img loading="lazy" src="https://storage.googleapis.com/replit-objstore-18635d12-6e5d-415b-a79d-09f3ba4f6c3f/.private/uploads/801639ce-0fb6-4ba5-9940-1db34f50da00.jpg?X-Goog-Algorithm=GOOG4-RSA-SHA256&amp;X-Goog-Credential=heimdall-production%40replit-user-deployments.iam.gserviceaccount.com%2F20260630%2Fauto%2Fstorage%2Fgoog4_request&amp;X-Goog-Date=20260630T071125Z&amp;X-Goog-Expires=431999&amp;X-Goog-Signature=c74f4fddf99240eb257869568c0130b050fe0c09aeef55ba011a3ab92432cea03960f42c1b3d9f5a5ee830b0dcb38ee673853212446d1bd417e58fdf9b0c912ff028556fd156a5dea84530b7184bbebdc9aab06b8a1883c34bbc358042dfc0d009fdc6b1a72aea00f9b97e2749156eb32da717f26a3ce6577417d9ec359fcb0551df4d830466794e6080db3da5b5f2a8f77582cd763d46c4a8ab1ae81790fc6cda4f16ddce730b870ac2d43036f0b3d74f4c10e785e5c7fb200ab281f01bce9c25a0d3f2af32a82afa93a6fc877fc33ad159ae90e908ed98a4967581d0673da2ddabb4eb8a4a1b543443cc5f1c65068e973b17cf32cf698582856080a4766d89&amp;X-Goog-SignedHeaders=host" alt="Damage photo 2 for GGPS SAROBA BHATIOT"
+               onerror="this.closest('.shot').classList.add('broken')">
+          <span class="broken-msg">Image link expired or private — tap to try opening</span>
+        </a>
+        <a class="shot" href="https://storage.googleapis.com/replit-objstore-18635d12-6e5d-415b-a79d-09f3ba4f6c3f/.private/uploads/3bc748f6-3302-4af7-b048-bdeedb3bdcd0.jpg?X-Goog-Algorithm=GOOG4-RSA-SHA256&amp;X-Goog-Credential=heimdall-production%40replit-user-deployments.iam.gserviceaccount.com%2F20260630%2Fauto%2Fstorage%2Fgoog4_request&amp;X-Goog-Date=20260630T071125Z&amp;X-Goog-Expires=431999&amp;X-Goog-Signature=98e846ede5ce51aca08ed00c9a5890b5776fb8bb3d4cf82d15c30773d378c9a25c6e77322eb2a31bfb01d8556a4521e73b03a77e806846d17429326bae8ad21d44a910a1e00a1031736baeb0adc7191989ab1129f0393b330d686d313997bdf2a008764d9684e0c6ae9a607f7ee5239caa73d175d00bb23fab8f90653c53a583eb0ff847d87c3e70d44ab4b43d5a94d6032a0aeefec4225d6b47b44135bb8d393f57bd8c6c8c768d35a04ad286b90b5604ccbe7899d13d017acf1633b41c5d198bdd686551bf1bf52a0d31fceb5bce417c203c8aec632160d9e915ee77e31d85c18cc1811d75e80a2aa4f846ea707b076d42f5c59ab8417e39de4215ce4ea577&amp;X-Goog-SignedHeaders=host" target="_blank" rel="noopener" title="Open full size in new tab">
+          <img loading="lazy" src="https://storage.googleapis.com/replit-objstore-18635d12-6e5d-415b-a79d-09f3ba4f6c3f/.private/uploads/3bc748f6-3302-4af7-b048-bdeedb3bdcd0.jpg?X-Goog-Algorithm=GOOG4-RSA-SHA256&amp;X-Goog-Credential=heimdall-production%40replit-user-deployments.iam.gserviceaccount.com%2F20260630%2Fauto%2Fstorage%2Fgoog4_request&amp;X-Goog-Date=20260630T071125Z&amp;X-Goog-Expires=431999&amp;X-Goog-Signature=98e846ede5ce51aca08ed00c9a5890b5776fb8bb3d4cf82d15c30773d378c9a25c6e77322eb2a31bfb01d8556a4521e73b03a77e806846d17429326bae8ad21d44a910a1e00a1031736baeb0adc7191989ab1129f0393b330d686d313997bdf2a008764d9684e0c6ae9a607f7ee5239caa73d175d00bb23fab8f90653c53a583eb0ff847d87c3e70d44ab4b43d5a94d6032a0aeefec4225d6b47b44135bb8d393f57bd8c6c8c768d35a04ad286b90b5604ccbe7899d13d017acf1633b41c5d198bdd686551bf1bf52a0d31fceb5bce417c203c8aec632160d9e915ee77e31d85c18cc1811d75e80a2aa4f846ea707b076d42f5c59ab8417e39de4215ce4ea577&amp;X-Goog-SignedHeaders=host" alt="Damage photo 3 for GGPS SAROBA BHATIOT"
+               onerror="this.closest('.shot').classList.add('broken')">
+          <span class="broken-msg">Image link expired or private — tap to try opening</span>
+        </a></div>
+    </article>
+    <article class="card">
+      <header>
+        <div class="idx">09</div>
+        <div class="head-text">
+          <h2>GGPS MARMAKI</h2>
+          <div class="meta">EMIS 37140257 · Phase 1 · Ammar · 6/19/2026</div>
+        </div>
+        <div class="count">1 photo</div>
+      </header>
+      <div class="damage">
+        <p class="nature">School name sign board fallen.</p>
+        <p class="cost">Est. cost: <b>1000</b></p>
+      </div>
+      <div class="gallery">
+        <a class="shot" href="https://storage.googleapis.com/replit-objstore-18635d12-6e5d-415b-a79d-09f3ba4f6c3f/.private/uploads/b3816da0-1ace-401c-a950-b4ecd1620294.jpg?X-Goog-Algorithm=GOOG4-RSA-SHA256&amp;X-Goog-Credential=heimdall-production%40replit-user-deployments.iam.gserviceaccount.com%2F20260630%2Fauto%2Fstorage%2Fgoog4_request&amp;X-Goog-Date=20260630T071124Z&amp;X-Goog-Expires=431999&amp;X-Goog-Signature=5e016ee640dceb95e68da280193d8df3305c831b92440af544e11b6d255a02748fd5f734a4cc62c247e48596af8e0492b3f49cf34fd53749ff9a524d75bee6df32d3d8d9db805d3591dbfec990bd4a6574e7225df73493ace51b7b9847b843c12c744ee5b5f63aa2dbe2803c648c264200159cc0ad8cd4ddeafb1500386e6ed9ada0d9ad483c16f3c0e9a9bb9193becdbd0d5d8bad06585f6ac8e6c097f1e69c1fb8837a5ac0c9d1872b78af632e456c835f2ea9118e6cc4bba976bf9822bccd3b5e4a93c53981feca6557e3da1a2c30ed02e4117c92eb7b3a1662ae625564a54de5ab97fb33c3b0cc92d34f8fc8bd624bc41623d79c74ff289c298f12b40246&amp;X-Goog-SignedHeaders=host" target="_blank" rel="noopener" title="Open full size in new tab">
+          <img loading="lazy" src="https://storage.googleapis.com/replit-objstore-18635d12-6e5d-415b-a79d-09f3ba4f6c3f/.private/uploads/b3816da0-1ace-401c-a950-b4ecd1620294.jpg?X-Goog-Algorithm=GOOG4-RSA-SHA256&amp;X-Goog-Credential=heimdall-production%40replit-user-deployments.iam.gserviceaccount.com%2F20260630%2Fauto%2Fstorage%2Fgoog4_request&amp;X-Goog-Date=20260630T071124Z&amp;X-Goog-Expires=431999&amp;X-Goog-Signature=5e016ee640dceb95e68da280193d8df3305c831b92440af544e11b6d255a02748fd5f734a4cc62c247e48596af8e0492b3f49cf34fd53749ff9a524d75bee6df32d3d8d9db805d3591dbfec990bd4a6574e7225df73493ace51b7b9847b843c12c744ee5b5f63aa2dbe2803c648c264200159cc0ad8cd4ddeafb1500386e6ed9ada0d9ad483c16f3c0e9a9bb9193becdbd0d5d8bad06585f6ac8e6c097f1e69c1fb8837a5ac0c9d1872b78af632e456c835f2ea9118e6cc4bba976bf9822bccd3b5e4a93c53981feca6557e3da1a2c30ed02e4117c92eb7b3a1662ae625564a54de5ab97fb33c3b0cc92d34f8fc8bd624bc41623d79c74ff289c298f12b40246&amp;X-Goog-SignedHeaders=host" alt="Damage photo 1 for GGPS MARMAKI"
+               onerror="this.closest('.shot').classList.add('broken')">
+          <span class="broken-msg">Image link expired or private — tap to try opening</span>
+        </a></div>
+    </article>
+    <article class="card">
+      <header>
+        <div class="idx">10</div>
+        <div class="head-text">
+          <h2>GGPS KALARIAN</h2>
+          <div class="meta">EMIS 37140208 · Phase 1 · Ammar · 6/19/2026</div>
+        </div>
+        <div class="count">1 photo</div>
+      </header>
+      <div class="damage">
+        <p class="nature">There is an old neem tree. It has become hollow from the inside. One Root is broken.</p>
+        <p class="cost">Est. cost: <b>No Need</b></p>
+      </div>
+      <div class="gallery">
+        <a class="shot" href="https://storage.googleapis.com/replit-objstore-18635d12-6e5d-415b-a79d-09f3ba4f6c3f/.private/uploads/480e9462-6a54-4ebc-8436-92e9034819b0.jpg?X-Goog-Algorithm=GOOG4-RSA-SHA256&amp;X-Goog-Credential=heimdall-production%40replit-user-deployments.iam.gserviceaccount.com%2F20260630%2Fauto%2Fstorage%2Fgoog4_request&amp;X-Goog-Date=20260630T071124Z&amp;X-Goog-Expires=431999&amp;X-Goog-Signature=547b357b0f72c6c8e14e7511b26a43957c82ff0ebe84c98a6bc4df062b2955a997fc9290dd68646836f103c746d5cc9dfbb1ac355ea7d6328bd08b5514e25d1df4cc8a141f6072de60de74cd7d0d7504751558ca322da9bc21b75efea76ddc37b8784f57b81281724d237e0d822620bc4faa03dc12f9bdd80f36947d727162fd3ee52db90e2681c763e722d07c9f31eb065b656149fd6e4a49b01305b12e3bafb69f5fae4ffe50c8149a4374f616c16aa3ba2a051604d98f77fd677027bf3eaec9b2f3db9975e73257753f739558d88300f90c688868c635e60f355341fe5f9da3b9179467ca2bf40dd88df7ea5b27b0a6924cfb9751e2da2d4ac61638d02b1a&amp;X-Goog-SignedHeaders=host" target="_blank" rel="noopener" title="Open full size in new tab">
+          <img loading="lazy" src="https://storage.googleapis.com/replit-objstore-18635d12-6e5d-415b-a79d-09f3ba4f6c3f/.private/uploads/480e9462-6a54-4ebc-8436-92e9034819b0.jpg?X-Goog-Algorithm=GOOG4-RSA-SHA256&amp;X-Goog-Credential=heimdall-production%40replit-user-deployments.iam.gserviceaccount.com%2F20260630%2Fauto%2Fstorage%2Fgoog4_request&amp;X-Goog-Date=20260630T071124Z&amp;X-Goog-Expires=431999&amp;X-Goog-Signature=547b357b0f72c6c8e14e7511b26a43957c82ff0ebe84c98a6bc4df062b2955a997fc9290dd68646836f103c746d5cc9dfbb1ac355ea7d6328bd08b5514e25d1df4cc8a141f6072de60de74cd7d0d7504751558ca322da9bc21b75efea76ddc37b8784f57b81281724d237e0d822620bc4faa03dc12f9bdd80f36947d727162fd3ee52db90e2681c763e722d07c9f31eb065b656149fd6e4a49b01305b12e3bafb69f5fae4ffe50c8149a4374f616c16aa3ba2a051604d98f77fd677027bf3eaec9b2f3db9975e73257753f739558d88300f90c688868c635e60f355341fe5f9da3b9179467ca2bf40dd88df7ea5b27b0a6924cfb9751e2da2d4ac61638d02b1a&amp;X-Goog-SignedHeaders=host" alt="Damage photo 1 for GGPS KALARIAN"
+               onerror="this.closest('.shot').classList.add('broken')">
+          <span class="broken-msg">Image link expired or private — tap to try opening</span>
+        </a></div>
+    </article>
+    <article class="card">
+      <header>
+        <div class="idx">11</div>
+        <div class="head-text">
+          <h2>GPS CHHAB</h2>
+          <div class="meta">EMIS 37140156 · Phase 1 · Suhail Abbas · 6/23/2026</div>
+        </div>
+        <div class="count">4 photos</div>
+      </header>
+      <div class="damage">
+        <p class="nature">Nature Damage:
+Two classroom roofs are damaged and leaking due to weather conditions. The school water cooler is also damaged and requires</p>
+        <p class="cost">Est. cost: <b>Estimated Repairing Cost:
+Roof repair of two classrooms: Rs. 200,000 (approximately)
+Water cooler repair: Rs. 15,000–20,000 (approximately)
+Total Estimated Cost: Rs. 220,000 (approximately)</b></p>
+      </div>
+      <div class="gallery">
+        <a class="shot" href="https://storage.googleapis.com/replit-objstore-18635d12-6e5d-415b-a79d-09f3ba4f6c3f/.private/uploads/bf04cb55-16cc-4b4f-8963-80ac99288b35.jpg?X-Goog-Algorithm=GOOG4-RSA-SHA256&amp;X-Goog-Credential=heimdall-production%40replit-user-deployments.iam.gserviceaccount.com%2F20260630%2Fauto%2Fstorage%2Fgoog4_request&amp;X-Goog-Date=20260630T071124Z&amp;X-Goog-Expires=431999&amp;X-Goog-Signature=7efb5c8a2edac4f59aea5d9efaf4b9f4dfcbac1f14e86dad36ee03fce9350924261b00a8fa250814aa7ad349e2c1e5062936a1a20e288bbcc981247d0d68ea9a67243063445357ee62c90b11997e81a68fe3ce045d684f2b1f22071e6f7a011616cfb965b1ec17e32a9c05bc30721920ce063d153af4be511368a72c0c50d0f98e454d2bc440b842d366a2f8c91f68e3724027c639c78d61c19e882e5681b8163f6e8543d320882edced2d8f0867b2dad7bcb9d97351a10b36f63cfc0aff4eee264882694e075ea4eecb530fa671d0f92fb6922886d9cfce5ef340514c27a0fb01d1e82ae38ae63eb46be02379b2a802b1402963a6fd27cd02f692801758f04a&amp;X-Goog-SignedHeaders=host" target="_blank" rel="noopener" title="Open full size in new tab">
+          <img loading="lazy" src="https://storage.googleapis.com/replit-objstore-18635d12-6e5d-415b-a79d-09f3ba4f6c3f/.private/uploads/bf04cb55-16cc-4b4f-8963-80ac99288b35.jpg?X-Goog-Algorithm=GOOG4-RSA-SHA256&amp;X-Goog-Credential=heimdall-production%40replit-user-deployments.iam.gserviceaccount.com%2F20260630%2Fauto%2Fstorage%2Fgoog4_request&amp;X-Goog-Date=20260630T071124Z&amp;X-Goog-Expires=431999&amp;X-Goog-Signature=7efb5c8a2edac4f59aea5d9efaf4b9f4dfcbac1f14e86dad36ee03fce9350924261b00a8fa250814aa7ad349e2c1e5062936a1a20e288bbcc981247d0d68ea9a67243063445357ee62c90b11997e81a68fe3ce045d684f2b1f22071e6f7a011616cfb965b1ec17e32a9c05bc30721920ce063d153af4be511368a72c0c50d0f98e454d2bc440b842d366a2f8c91f68e3724027c639c78d61c19e882e5681b8163f6e8543d320882edced2d8f0867b2dad7bcb9d97351a10b36f63cfc0aff4eee264882694e075ea4eecb530fa671d0f92fb6922886d9cfce5ef340514c27a0fb01d1e82ae38ae63eb46be02379b2a802b1402963a6fd27cd02f692801758f04a&amp;X-Goog-SignedHeaders=host" alt="Damage photo 1 for GPS CHHAB"
+               onerror="this.closest('.shot').classList.add('broken')">
+          <span class="broken-msg">Image link expired or private — tap to try opening</span>
+        </a>
+        <a class="shot" href="https://storage.googleapis.com/replit-objstore-18635d12-6e5d-415b-a79d-09f3ba4f6c3f/.private/uploads/82065a65-314d-4303-9b0b-a6ad9b9a1d97.jpg?X-Goog-Algorithm=GOOG4-RSA-SHA256&amp;X-Goog-Credential=heimdall-production%40replit-user-deployments.iam.gserviceaccount.com%2F20260630%2Fauto%2Fstorage%2Fgoog4_request&amp;X-Goog-Date=20260630T071125Z&amp;X-Goog-Expires=431999&amp;X-Goog-Signature=c0c2138bb8040317ebd929e83af1c65eaf884ba77f0234f30bcf3a935d7b3ef7765f9f7076498ec4917dd8e58187ce2526121169bd8b50dd4fa3043e5cc7b5c1683ed335c70a3fcdb9847fa4fa65da1c181876745e66dab4b890e8a298ed34095b1ee2f786c004abc3575e1e11bbee8fec436c0cb2768cae35589cab86f25aebc4cc9706079157b3e2a7703954863b7c32963637918f8829e9cad1e7b6be8982da013a612c5ecd599c294950815ae7e0226fcdee2bf799be1e4c392b2466bf3d045922ad247a5d74d4c6d75db30181f1622dae89befbdc20107a646a1014da7df4af35d6bd2961320a1fc6cdeff230f577b56b5de3464da15ad2dd9a1e171245&amp;X-Goog-SignedHeaders=host" target="_blank" rel="noopener" title="Open full size in new tab">
+          <img loading="lazy" src="https://storage.googleapis.com/replit-objstore-18635d12-6e5d-415b-a79d-09f3ba4f6c3f/.private/uploads/82065a65-314d-4303-9b0b-a6ad9b9a1d97.jpg?X-Goog-Algorithm=GOOG4-RSA-SHA256&amp;X-Goog-Credential=heimdall-production%40replit-user-deployments.iam.gserviceaccount.com%2F20260630%2Fauto%2Fstorage%2Fgoog4_request&amp;X-Goog-Date=20260630T071125Z&amp;X-Goog-Expires=431999&amp;X-Goog-Signature=c0c2138bb8040317ebd929e83af1c65eaf884ba77f0234f30bcf3a935d7b3ef7765f9f7076498ec4917dd8e58187ce2526121169bd8b50dd4fa3043e5cc7b5c1683ed335c70a3fcdb9847fa4fa65da1c181876745e66dab4b890e8a298ed34095b1ee2f786c004abc3575e1e11bbee8fec436c0cb2768cae35589cab86f25aebc4cc9706079157b3e2a7703954863b7c32963637918f8829e9cad1e7b6be8982da013a612c5ecd599c294950815ae7e0226fcdee2bf799be1e4c392b2466bf3d045922ad247a5d74d4c6d75db30181f1622dae89befbdc20107a646a1014da7df4af35d6bd2961320a1fc6cdeff230f577b56b5de3464da15ad2dd9a1e171245&amp;X-Goog-SignedHeaders=host" alt="Damage photo 2 for GPS CHHAB"
+               onerror="this.closest('.shot').classList.add('broken')">
+          <span class="broken-msg">Image link expired or private — tap to try opening</span>
+        </a>
+        <a class="shot" href="https://storage.googleapis.com/replit-objstore-18635d12-6e5d-415b-a79d-09f3ba4f6c3f/.private/uploads/3cf2ee5d-be19-470c-b023-7b5ce82ac338.jpg?X-Goog-Algorithm=GOOG4-RSA-SHA256&amp;X-Goog-Credential=heimdall-production%40replit-user-deployments.iam.gserviceaccount.com%2F20260630%2Fauto%2Fstorage%2Fgoog4_request&amp;X-Goog-Date=20260630T071126Z&amp;X-Goog-Expires=431999&amp;X-Goog-Signature=28f453168e011b461aa116bb3d80e5f8a7c1d7ab926a377a9bbd6a7c5fa11bd8252868cdab329e1a038ca938fc70f5dd65a969c96b67bda212ef3e16ffde52015560e76db7be36a1fdc606548e0c5ff990ee2b48842dd577e80dc1f031005f2ad065e55291efc92de9f592f2a479f58b5f0402604f1375cd693b6adc7423703ae9550d1380d33293be0380c44287f93b726fcd4279da9283fb6a79058c0b53ab0fda7c3ccd2db0011785d164913a37ab9fe719157e95fcee20302391aad4241eb176fb8960c879aa5361217da4ef184b033b419a40d8756c4752e0da788d9097927e6ce8009c436544298e0a631ed48869f47db0e6bb3b37ff05f7d99cbc753f&amp;X-Goog-SignedHeaders=host" target="_blank" rel="noopener" title="Open full size in new tab">
+          <img loading="lazy" src="https://storage.googleapis.com/replit-objstore-18635d12-6e5d-415b-a79d-09f3ba4f6c3f/.private/uploads/3cf2ee5d-be19-470c-b023-7b5ce82ac338.jpg?X-Goog-Algorithm=GOOG4-RSA-SHA256&amp;X-Goog-Credential=heimdall-production%40replit-user-deployments.iam.gserviceaccount.com%2F20260630%2Fauto%2Fstorage%2Fgoog4_request&amp;X-Goog-Date=20260630T071126Z&amp;X-Goog-Expires=431999&amp;X-Goog-Signature=28f453168e011b461aa116bb3d80e5f8a7c1d7ab926a377a9bbd6a7c5fa11bd8252868cdab329e1a038ca938fc70f5dd65a969c96b67bda212ef3e16ffde52015560e76db7be36a1fdc606548e0c5ff990ee2b48842dd577e80dc1f031005f2ad065e55291efc92de9f592f2a479f58b5f0402604f1375cd693b6adc7423703ae9550d1380d33293be0380c44287f93b726fcd4279da9283fb6a79058c0b53ab0fda7c3ccd2db0011785d164913a37ab9fe719157e95fcee20302391aad4241eb176fb8960c879aa5361217da4ef184b033b419a40d8756c4752e0da788d9097927e6ce8009c436544298e0a631ed48869f47db0e6bb3b37ff05f7d99cbc753f&amp;X-Goog-SignedHeaders=host" alt="Damage photo 3 for GPS CHHAB"
+               onerror="this.closest('.shot').classList.add('broken')">
+          <span class="broken-msg">Image link expired or private — tap to try opening</span>
+        </a>
+        <a class="shot" href="https://storage.googleapis.com/replit-objstore-18635d12-6e5d-415b-a79d-09f3ba4f6c3f/.private/uploads/d696a726-a445-450f-b861-df2ba339646e.jpg?X-Goog-Algorithm=GOOG4-RSA-SHA256&amp;X-Goog-Credential=heimdall-production%40replit-user-deployments.iam.gserviceaccount.com%2F20260630%2Fauto%2Fstorage%2Fgoog4_request&amp;X-Goog-Date=20260630T071126Z&amp;X-Goog-Expires=431999&amp;X-Goog-Signature=0b1c9bb6836bbc30f429132b22914bc8c43e4aa744f370f706372d89c02d9401043ca2d118a22c636d694d54fcccac1492875774d65a4499b184d8a5607a29a6edb3362f44fcaa1a9d073c30af53f6e6be348d3c7fded66ce02d3bbb9b5bb831a9fe056502e3d6b4ff8786f3fc4bdda0ac7ecff662a5331a75695ec2ab1bf7740a188234ccb2a785ac07a7386051deb82e07c7f283642bdd465ba37a06ad388674d3661f81939e1f10995b8a4be534db941632a6cb571e829cf205c9d1a6155c2a626196bc319ff2d6ea5b36559324637f2ec9e41ee3cfbc357c46521a80be89ceab72f794855db321b203e2cc40e0b15f9e7dc13de2bc449631f739039a03ff&amp;X-Goog-SignedHeaders=host" target="_blank" rel="noopener" title="Open full size in new tab">
+          <img loading="lazy" src="https://storage.googleapis.com/replit-objstore-18635d12-6e5d-415b-a79d-09f3ba4f6c3f/.private/uploads/d696a726-a445-450f-b861-df2ba339646e.jpg?X-Goog-Algorithm=GOOG4-RSA-SHA256&amp;X-Goog-Credential=heimdall-production%40replit-user-deployments.iam.gserviceaccount.com%2F20260630%2Fauto%2Fstorage%2Fgoog4_request&amp;X-Goog-Date=20260630T071126Z&amp;X-Goog-Expires=431999&amp;X-Goog-Signature=0b1c9bb6836bbc30f429132b22914bc8c43e4aa744f370f706372d89c02d9401043ca2d118a22c636d694d54fcccac1492875774d65a4499b184d8a5607a29a6edb3362f44fcaa1a9d073c30af53f6e6be348d3c7fded66ce02d3bbb9b5bb831a9fe056502e3d6b4ff8786f3fc4bdda0ac7ecff662a5331a75695ec2ab1bf7740a188234ccb2a785ac07a7386051deb82e07c7f283642bdd465ba37a06ad388674d3661f81939e1f10995b8a4be534db941632a6cb571e829cf205c9d1a6155c2a626196bc319ff2d6ea5b36559324637f2ec9e41ee3cfbc357c46521a80be89ceab72f794855db321b203e2cc40e0b15f9e7dc13de2bc449631f739039a03ff&amp;X-Goog-SignedHeaders=host" alt="Damage photo 4 for GPS CHHAB"
+               onerror="this.closest('.shot').classList.add('broken')">
+          <span class="broken-msg">Image link expired or private — tap to try opening</span>
+        </a></div>
+    </article>
+    <article class="card">
+      <header>
+        <div class="idx">12</div>
+        <div class="head-text">
+          <h2>GPS DANDI JASWAL</h2>
+          <div class="meta">EMIS 37140088 · Phase 1 · Zeeshan · 6/23/2026</div>
+        </div>
+        <div class="count">2 photos</div>
+      </header>
+      <div class="damage">
+        <p class="nature">Window glasses damage during weather conditions</p>
+        <p class="cost">Est. cost: <b>45000/</b></p>
+      </div>
+      <div class="gallery">
+        <a class="shot" href="https://storage.googleapis.com/replit-objstore-18635d12-6e5d-415b-a79d-09f3ba4f6c3f/.private/uploads/e83b6f59-fa0a-409a-bc54-5bfa55d1bd71.jpg?X-Goog-Algorithm=GOOG4-RSA-SHA256&amp;X-Goog-Credential=heimdall-production%40replit-user-deployments.iam.gserviceaccount.com%2F20260630%2Fauto%2Fstorage%2Fgoog4_request&amp;X-Goog-Date=20260630T071124Z&amp;X-Goog-Expires=431999&amp;X-Goog-Signature=a6a45eca71f823c121e43448fd3f91f693186fdc6e6f102a2895a9a55116677cfa88c87e35a471c715d415c0a8e3422caed5d8e43e68f50aefddd0d3fc33a75dcc0c97a913181972732b3c04bd6ca01652392f5b7f1386ac607254367df37a5d83f379e8056492b638b08197521f4f7310ddf3585c7435089de17452c860afb47b5bffb303685dd1d44b7c225455bdf6527455d7f3fbf81d872db4093645d5be8fa29ee305813c4324fdc6375a6f4694e1c0489fafe3f3cccb7c75f5d5f19b6eb758bc91688a49ecb45bff83be68cfdecb8404f2d4d78c8e6aa9f6294af787c8ab02454bdf96161eaaa3f35bab8776853d20c358224228797a24a479d28f3c24&amp;X-Goog-SignedHeaders=host" target="_blank" rel="noopener" title="Open full size in new tab">
+          <img loading="lazy" src="https://storage.googleapis.com/replit-objstore-18635d12-6e5d-415b-a79d-09f3ba4f6c3f/.private/uploads/e83b6f59-fa0a-409a-bc54-5bfa55d1bd71.jpg?X-Goog-Algorithm=GOOG4-RSA-SHA256&amp;X-Goog-Credential=heimdall-production%40replit-user-deployments.iam.gserviceaccount.com%2F20260630%2Fauto%2Fstorage%2Fgoog4_request&amp;X-Goog-Date=20260630T071124Z&amp;X-Goog-Expires=431999&amp;X-Goog-Signature=a6a45eca71f823c121e43448fd3f91f693186fdc6e6f102a2895a9a55116677cfa88c87e35a471c715d415c0a8e3422caed5d8e43e68f50aefddd0d3fc33a75dcc0c97a913181972732b3c04bd6ca01652392f5b7f1386ac607254367df37a5d83f379e8056492b638b08197521f4f7310ddf3585c7435089de17452c860afb47b5bffb303685dd1d44b7c225455bdf6527455d7f3fbf81d872db4093645d5be8fa29ee305813c4324fdc6375a6f4694e1c0489fafe3f3cccb7c75f5d5f19b6eb758bc91688a49ecb45bff83be68cfdecb8404f2d4d78c8e6aa9f6294af787c8ab02454bdf96161eaaa3f35bab8776853d20c358224228797a24a479d28f3c24&amp;X-Goog-SignedHeaders=host" alt="Damage photo 1 for GPS DANDI JASWAL"
+               onerror="this.closest('.shot').classList.add('broken')">
+          <span class="broken-msg">Image link expired or private — tap to try opening</span>
+        </a>
+        <a class="shot" href="https://storage.googleapis.com/replit-objstore-18635d12-6e5d-415b-a79d-09f3ba4f6c3f/.private/uploads/ac98aad2-7022-4dd7-84b8-84cb37edb719.jpg?X-Goog-Algorithm=GOOG4-RSA-SHA256&amp;X-Goog-Credential=heimdall-production%40replit-user-deployments.iam.gserviceaccount.com%2F20260630%2Fauto%2Fstorage%2Fgoog4_request&amp;X-Goog-Date=20260630T071125Z&amp;X-Goog-Expires=431999&amp;X-Goog-Signature=7f30e1ca5e099d0edb84898759f9006212ca9a78e4fd2119cd72fc7fa1cbb6d42f78ef1ef60e787fb02d794abc68b6621e763583ca701138de5b6e6856dfc74cff7194e86d235e5f445d55dd7cae540e40f3069d5626dd93ffcd41cd02af8a07d5f38156a6bbb6005a4584cfb50594ba26b130a9c0d642cd8d52fc4b92ea8bd0217da05621810e29fa702c49a2a31cdef235897376a40c9fca7f76128c200aff4d0fd4e1643008c80a92693a079d2e8f332c6f20a92765d52f6079082e683fb0d45a0d85316810fea964d63115f1bb7311ed183be772ae08f280af893506047165c41ba9cce065fbe9db03788442211e39de2ae76b8a75d6d64d92b71dda2db6&amp;X-Goog-SignedHeaders=host" target="_blank" rel="noopener" title="Open full size in new tab">
+          <img loading="lazy" src="https://storage.googleapis.com/replit-objstore-18635d12-6e5d-415b-a79d-09f3ba4f6c3f/.private/uploads/ac98aad2-7022-4dd7-84b8-84cb37edb719.jpg?X-Goog-Algorithm=GOOG4-RSA-SHA256&amp;X-Goog-Credential=heimdall-production%40replit-user-deployments.iam.gserviceaccount.com%2F20260630%2Fauto%2Fstorage%2Fgoog4_request&amp;X-Goog-Date=20260630T071125Z&amp;X-Goog-Expires=431999&amp;X-Goog-Signature=7f30e1ca5e099d0edb84898759f9006212ca9a78e4fd2119cd72fc7fa1cbb6d42f78ef1ef60e787fb02d794abc68b6621e763583ca701138de5b6e6856dfc74cff7194e86d235e5f445d55dd7cae540e40f3069d5626dd93ffcd41cd02af8a07d5f38156a6bbb6005a4584cfb50594ba26b130a9c0d642cd8d52fc4b92ea8bd0217da05621810e29fa702c49a2a31cdef235897376a40c9fca7f76128c200aff4d0fd4e1643008c80a92693a079d2e8f332c6f20a92765d52f6079082e683fb0d45a0d85316810fea964d63115f1bb7311ed183be772ae08f280af893506047165c41ba9cce065fbe9db03788442211e39de2ae76b8a75d6d64d92b71dda2db6&amp;X-Goog-SignedHeaders=host" alt="Damage photo 2 for GPS DANDI JASWAL"
+               onerror="this.closest('.shot').classList.add('broken')">
+          <span class="broken-msg">Image link expired or private — tap to try opening</span>
+        </a></div>
+    </article>
+    <article class="card">
+      <header>
+        <div class="idx">13</div>
+        <div class="head-text">
+          <h2>GGPS DINGI NARI</h2>
+          <div class="meta">EMIS 37140249 · Phase 2 · Tauqeer · 6/19/2026</div>
+        </div>
+        <div class="count">3 photos</div>
+      </header>
+      <div class="damage">
+        <p class="nature">Window glass cracks.</p>
+        <p class="cost">Est. cost: <b>12000</b></p>
+      </div>
+      <div class="gallery">
+        <a class="shot" href="https://storage.googleapis.com/replit-objstore-18635d12-6e5d-415b-a79d-09f3ba4f6c3f/.private/uploads/5ede5f1b-ee1b-4391-a0b6-5edd6f3a3593.jpg?X-Goog-Algorithm=GOOG4-RSA-SHA256&amp;X-Goog-Credential=heimdall-production%40replit-user-deployments.iam.gserviceaccount.com%2F20260630%2Fauto%2Fstorage%2Fgoog4_request&amp;X-Goog-Date=20260630T071124Z&amp;X-Goog-Expires=431999&amp;X-Goog-Signature=100bf1391da9821ce576ad0ef4df13d85c05efb9abe0788331fb986a88f769396e6c8d51b44c8aaa4424921d4035118688532d12d9ac279a722c7c9511921cc9f36e0af06171238ca053354404d365524f9d09b7a35079bccccf789fe07b4935fa23694f0abc4f76d8498e309e51e9542f7002b0dbb521002294ba9d5e4385152c678a5a18d037bdf13d97ac3801b5dfd0c787291d252d1e0b97304791e926412f12f65b35b76bb6907d052cc5935a6bf308f5b91aa13fedfaee9460f9525be54a30b5b28dda195efdc7e59e790047054974e78880c3d55b06f384af7094fadd614bcc5a41868008fdbfe56433511937f7b3ca6684ded5c74422eb48fb657721&amp;X-Goog-SignedHeaders=host" target="_blank" rel="noopener" title="Open full size in new tab">
+          <img loading="lazy" src="https://storage.googleapis.com/replit-objstore-18635d12-6e5d-415b-a79d-09f3ba4f6c3f/.private/uploads/5ede5f1b-ee1b-4391-a0b6-5edd6f3a3593.jpg?X-Goog-Algorithm=GOOG4-RSA-SHA256&amp;X-Goog-Credential=heimdall-production%40replit-user-deployments.iam.gserviceaccount.com%2F20260630%2Fauto%2Fstorage%2Fgoog4_request&amp;X-Goog-Date=20260630T071124Z&amp;X-Goog-Expires=431999&amp;X-Goog-Signature=100bf1391da9821ce576ad0ef4df13d85c05efb9abe0788331fb986a88f769396e6c8d51b44c8aaa4424921d4035118688532d12d9ac279a722c7c9511921cc9f36e0af06171238ca053354404d365524f9d09b7a35079bccccf789fe07b4935fa23694f0abc4f76d8498e309e51e9542f7002b0dbb521002294ba9d5e4385152c678a5a18d037bdf13d97ac3801b5dfd0c787291d252d1e0b97304791e926412f12f65b35b76bb6907d052cc5935a6bf308f5b91aa13fedfaee9460f9525be54a30b5b28dda195efdc7e59e790047054974e78880c3d55b06f384af7094fadd614bcc5a41868008fdbfe56433511937f7b3ca6684ded5c74422eb48fb657721&amp;X-Goog-SignedHeaders=host" alt="Damage photo 1 for GGPS DINGI NARI"
+               onerror="this.closest('.shot').classList.add('broken')">
+          <span class="broken-msg">Image link expired or private — tap to try opening</span>
+        </a>
+        <a class="shot" href="https://storage.googleapis.com/replit-objstore-18635d12-6e5d-415b-a79d-09f3ba4f6c3f/.private/uploads/c1c8abda-ba11-4304-8d17-f5e6fd5cfa1e.jpg?X-Goog-Algorithm=GOOG4-RSA-SHA256&amp;X-Goog-Credential=heimdall-production%40replit-user-deployments.iam.gserviceaccount.com%2F20260630%2Fauto%2Fstorage%2Fgoog4_request&amp;X-Goog-Date=20260630T071125Z&amp;X-Goog-Expires=431999&amp;X-Goog-Signature=8d124f3a0379b138c734b3109808fce5f903211b60ef9c94b8c71ed18dd5365a4fbea5873734b35921aac92552c48d9a300d038fa0d2f080184e024cbb8861f95c31f6d5892c15aa3236b5c974b8d1e6f7dbad11c1fa3abfb61f5868a59bc663461f856031b00c2448a1261fd7b3076fd91159074bf878fb068e72afc4d618c7e85934d6f2072401f9aaf3a1b254384181b3327a5a0e21b352e2f77837e200953473e65d513b6d2952cecb7870055385611e57c5571f39db36a33ab1b86ee0170b087e67e609185371dcd20e306fcb3ff686ad7e5f19cb74512b59738c70f677be6aeb266ca79d98fe7f9cf08d8ca57cb9aae095b7d2ca85053c0cfd53b335ac&amp;X-Goog-SignedHeaders=host" target="_blank" rel="noopener" title="Open full size in new tab">
+          <img loading="lazy" src="https://storage.googleapis.com/replit-objstore-18635d12-6e5d-415b-a79d-09f3ba4f6c3f/.private/uploads/c1c8abda-ba11-4304-8d17-f5e6fd5cfa1e.jpg?X-Goog-Algorithm=GOOG4-RSA-SHA256&amp;X-Goog-Credential=heimdall-production%40replit-user-deployments.iam.gserviceaccount.com%2F20260630%2Fauto%2Fstorage%2Fgoog4_request&amp;X-Goog-Date=20260630T071125Z&amp;X-Goog-Expires=431999&amp;X-Goog-Signature=8d124f3a0379b138c734b3109808fce5f903211b60ef9c94b8c71ed18dd5365a4fbea5873734b35921aac92552c48d9a300d038fa0d2f080184e024cbb8861f95c31f6d5892c15aa3236b5c974b8d1e6f7dbad11c1fa3abfb61f5868a59bc663461f856031b00c2448a1261fd7b3076fd91159074bf878fb068e72afc4d618c7e85934d6f2072401f9aaf3a1b254384181b3327a5a0e21b352e2f77837e200953473e65d513b6d2952cecb7870055385611e57c5571f39db36a33ab1b86ee0170b087e67e609185371dcd20e306fcb3ff686ad7e5f19cb74512b59738c70f677be6aeb266ca79d98fe7f9cf08d8ca57cb9aae095b7d2ca85053c0cfd53b335ac&amp;X-Goog-SignedHeaders=host" alt="Damage photo 2 for GGPS DINGI NARI"
+               onerror="this.closest('.shot').classList.add('broken')">
+          <span class="broken-msg">Image link expired or private — tap to try opening</span>
+        </a>
+        <a class="shot" href="https://storage.googleapis.com/replit-objstore-18635d12-6e5d-415b-a79d-09f3ba4f6c3f/.private/uploads/9e8ed855-214f-4247-8d2f-cdb37e97c3b7.jpg?X-Goog-Algorithm=GOOG4-RSA-SHA256&amp;X-Goog-Credential=heimdall-production%40replit-user-deployments.iam.gserviceaccount.com%2F20260630%2Fauto%2Fstorage%2Fgoog4_request&amp;X-Goog-Date=20260630T071125Z&amp;X-Goog-Expires=431999&amp;X-Goog-Signature=3f336086ae5ffa5279439d9645a2fd4670a61199e64ce5a6aecc949f3184624cef0b09eb063f345fc3089be3a961b9cc8bfe6f3cfb0aab419232d84953d883ccd47a941bcabe91d471831eb03f95f63a1c57d192f7ef61bb60cb49c91e306c55488d352ad3354335633673cde847cbd6d1c0514d3e219a9b11cd514e5feadff207c09d750be70886267a3635945df92408c46032c850e891656bd956c77103b2be0d2b6db44185157a42d79ed0057bcd2eb947cf2fff6a7c1e6bd8f48125d74f96275627664ca45a292d0fded254c27f300f450bdf7f9c0a64c80895d70f52880de790b4ccca01655c87cbde40afd458965e11870a0cbc9bc2810934e91f9475&amp;X-Goog-SignedHeaders=host" target="_blank" rel="noopener" title="Open full size in new tab">
+          <img loading="lazy" src="https://storage.googleapis.com/replit-objstore-18635d12-6e5d-415b-a79d-09f3ba4f6c3f/.private/uploads/9e8ed855-214f-4247-8d2f-cdb37e97c3b7.jpg?X-Goog-Algorithm=GOOG4-RSA-SHA256&amp;X-Goog-Credential=heimdall-production%40replit-user-deployments.iam.gserviceaccount.com%2F20260630%2Fauto%2Fstorage%2Fgoog4_request&amp;X-Goog-Date=20260630T071125Z&amp;X-Goog-Expires=431999&amp;X-Goog-Signature=3f336086ae5ffa5279439d9645a2fd4670a61199e64ce5a6aecc949f3184624cef0b09eb063f345fc3089be3a961b9cc8bfe6f3cfb0aab419232d84953d883ccd47a941bcabe91d471831eb03f95f63a1c57d192f7ef61bb60cb49c91e306c55488d352ad3354335633673cde847cbd6d1c0514d3e219a9b11cd514e5feadff207c09d750be70886267a3635945df92408c46032c850e891656bd956c77103b2be0d2b6db44185157a42d79ed0057bcd2eb947cf2fff6a7c1e6bd8f48125d74f96275627664ca45a292d0fded254c27f300f450bdf7f9c0a64c80895d70f52880de790b4ccca01655c87cbde40afd458965e11870a0cbc9bc2810934e91f9475&amp;X-Goog-SignedHeaders=host" alt="Damage photo 3 for GGPS DINGI NARI"
+               onerror="this.closest('.shot').classList.add('broken')">
+          <span class="broken-msg">Image link expired or private — tap to try opening</span>
+        </a></div>
+    </article>
+    <article class="card">
+      <header>
+        <div class="idx">14</div>
+        <div class="head-text">
+          <h2>GPS GHANDIAN</h2>
+          <div class="meta">EMIS 37140380 · Phase 1 · Tauqeer · 6/23/2026</div>
+        </div>
+        <div class="count">1 photo</div>
+      </header>
+      <div class="damage">
+        <p class="nature">Window glass reparing.</p>
+        <p class="cost">Est. cost: <b>6500</b></p>
+      </div>
+      <div class="gallery">
+        <a class="shot" href="https://storage.googleapis.com/replit-objstore-18635d12-6e5d-415b-a79d-09f3ba4f6c3f/.private/uploads/346a8ccc-584b-47ce-b4f2-a098f7ed3725.jpg?X-Goog-Algorithm=GOOG4-RSA-SHA256&amp;X-Goog-Credential=heimdall-production%40replit-user-deployments.iam.gserviceaccount.com%2F20260630%2Fauto%2Fstorage%2Fgoog4_request&amp;X-Goog-Date=20260630T071124Z&amp;X-Goog-Expires=431999&amp;X-Goog-Signature=491a025e2cef8734870c1772b2e6cdf66c110618f7c2818ee56e3eb88b0ba949b13c4ac9cead250e6a348875af3775cfa37debc88fa437b4a3983c0a2c3b239037ed56e66228bc8a365a57ebcd114625f5573467be63aa215748a54e67dbd351aba016e8a968b1be0b81f79985b07f8715fe43e3a863ca034e3b68d02e769b2b8627d3564187f09cf562f6d69a8f71a110a0523430a2cd7d6647ce25012faa0f2421e5a27e36d51dea9e98521796cb7a98246cc9f7bb5e56b2553df97bb4e41d6152d7acdc08e0460f35dc4017f06963b93b8b85035435686f90ce913db629a513bb1cfd47940779304d168d567c8a7d71cd4915ee09b1dacce01b25dc6b1d2d&amp;X-Goog-SignedHeaders=host" target="_blank" rel="noopener" title="Open full size in new tab">
+          <img loading="lazy" src="https://storage.googleapis.com/replit-objstore-18635d12-6e5d-415b-a79d-09f3ba4f6c3f/.private/uploads/346a8ccc-584b-47ce-b4f2-a098f7ed3725.jpg?X-Goog-Algorithm=GOOG4-RSA-SHA256&amp;X-Goog-Credential=heimdall-production%40replit-user-deployments.iam.gserviceaccount.com%2F20260630%2Fauto%2Fstorage%2Fgoog4_request&amp;X-Goog-Date=20260630T071124Z&amp;X-Goog-Expires=431999&amp;X-Goog-Signature=491a025e2cef8734870c1772b2e6cdf66c110618f7c2818ee56e3eb88b0ba949b13c4ac9cead250e6a348875af3775cfa37debc88fa437b4a3983c0a2c3b239037ed56e66228bc8a365a57ebcd114625f5573467be63aa215748a54e67dbd351aba016e8a968b1be0b81f79985b07f8715fe43e3a863ca034e3b68d02e769b2b8627d3564187f09cf562f6d69a8f71a110a0523430a2cd7d6647ce25012faa0f2421e5a27e36d51dea9e98521796cb7a98246cc9f7bb5e56b2553df97bb4e41d6152d7acdc08e0460f35dc4017f06963b93b8b85035435686f90ce913db629a513bb1cfd47940779304d168d567c8a7d71cd4915ee09b1dacce01b25dc6b1d2d&amp;X-Goog-SignedHeaders=host" alt="Damage photo 1 for GPS GHANDIAN"
+               onerror="this.closest('.shot').classList.add('broken')">
+          <span class="broken-msg">Image link expired or private — tap to try opening</span>
+        </a></div>
+    </article>
+    <article class="card">
+      <header>
+        <div class="idx">15</div>
+        <div class="head-text">
+          <h2>GPS TARAP GULIYAL</h2>
+          <div class="meta">EMIS 37140400 · Phase 1 · Ali Hamza · 6/23/2026</div>
+        </div>
+        <div class="count">1 photo</div>
+      </header>
+      <div class="damage">
+        <p class="nature">Window</p>
+        <p class="cost">Est. cost: <b>1500</b></p>
+      </div>
+      <div class="gallery">
+        <a class="shot" href="https://storage.googleapis.com/replit-objstore-18635d12-6e5d-415b-a79d-09f3ba4f6c3f/.private/uploads/63aa0147-85ac-4af9-abf6-6a1dbdb79430.jpg?X-Goog-Algorithm=GOOG4-RSA-SHA256&amp;X-Goog-Credential=heimdall-production%40replit-user-deployments.iam.gserviceaccount.com%2F20260630%2Fauto%2Fstorage%2Fgoog4_request&amp;X-Goog-Date=20260630T071124Z&amp;X-Goog-Expires=431999&amp;X-Goog-Signature=b68f4c5766b0c494fba42bd6a22c6c4e381226de5a9cd271695fb66f8e0e4c8f5528b8111fe04c009fc7991de5aae3646b34c2dcc8603e87d3051cc2d1f318fa0d5cbddb9bb4761daac7882c0b4942a3d35dd5e6a9a8e7ef77b0c9aa5dd61b5051d94db897f162527e2fad5209fe98afebce5be6f1f96effaf24d03b4438da8b753a7371fa39e1f54c46c08b0fb9d7726dbfe8fc5cee5ada2d5240a892d18d2a3c7d834eed1304d96429a4adcf41431c726ba4a93ca9b4caa7145865c29ad017261cbb84093030dcc6dba51cab07f460f1100148e6fca0ccd751143a149bed63d5d603c922cc1fa4ffc1698335e563688b99d784c841f7e8d624651697574255&amp;X-Goog-SignedHeaders=host" target="_blank" rel="noopener" title="Open full size in new tab">
+          <img loading="lazy" src="https://storage.googleapis.com/replit-objstore-18635d12-6e5d-415b-a79d-09f3ba4f6c3f/.private/uploads/63aa0147-85ac-4af9-abf6-6a1dbdb79430.jpg?X-Goog-Algorithm=GOOG4-RSA-SHA256&amp;X-Goog-Credential=heimdall-production%40replit-user-deployments.iam.gserviceaccount.com%2F20260630%2Fauto%2Fstorage%2Fgoog4_request&amp;X-Goog-Date=20260630T071124Z&amp;X-Goog-Expires=431999&amp;X-Goog-Signature=b68f4c5766b0c494fba42bd6a22c6c4e381226de5a9cd271695fb66f8e0e4c8f5528b8111fe04c009fc7991de5aae3646b34c2dcc8603e87d3051cc2d1f318fa0d5cbddb9bb4761daac7882c0b4942a3d35dd5e6a9a8e7ef77b0c9aa5dd61b5051d94db897f162527e2fad5209fe98afebce5be6f1f96effaf24d03b4438da8b753a7371fa39e1f54c46c08b0fb9d7726dbfe8fc5cee5ada2d5240a892d18d2a3c7d834eed1304d96429a4adcf41431c726ba4a93ca9b4caa7145865c29ad017261cbb84093030dcc6dba51cab07f460f1100148e6fca0ccd751143a149bed63d5d603c922cc1fa4ffc1698335e563688b99d784c841f7e8d624651697574255&amp;X-Goog-SignedHeaders=host" alt="Damage photo 1 for GPS TARAP GULIYAL"
+               onerror="this.closest('.shot').classList.add('broken')">
+          <span class="broken-msg">Image link expired or private — tap to try opening</span>
+        </a></div>
+    </article>
+    <article class="card">
+      <header>
+        <div class="idx">16</div>
+        <div class="head-text">
+          <h2>GPS DHOK BAZGUL</h2>
+          <div class="meta">EMIS 37140168 · Phase 1 · Mehtab · 6/23/2026</div>
+        </div>
+        <div class="count">3 photos</div>
+      </header>
+      <div class="damage">
+        <p class="nature">Yes</p>
+        <p class="cost">Est. cost: <b>4000</b></p>
+      </div>
+      <div class="gallery">
+        <a class="shot" href="https://storage.googleapis.com/replit-objstore-18635d12-6e5d-415b-a79d-09f3ba4f6c3f/.private/uploads/e9531be3-2a63-4e62-9acd-90177d52b431.jpg?X-Goog-Algorithm=GOOG4-RSA-SHA256&amp;X-Goog-Credential=heimdall-production%40replit-user-deployments.iam.gserviceaccount.com%2F20260630%2Fauto%2Fstorage%2Fgoog4_request&amp;X-Goog-Date=20260630T071124Z&amp;X-Goog-Expires=431999&amp;X-Goog-Signature=9594b922134b41776fac0b5cf19038bfa28699376df76185658806b66e6a1cd3bc67609e81a7a7b9dec6152274349446b6b819125c35ff7df85b95ca9da6f049afd03dafeb6076668c676c76808303bd2fd2f7742c796173c7f7ae040e4eb2035fc4064b1d6aec012efc2cb027d0935d6ce6a0cbd77fb78398ede0e0d7a39f6ae90ae10ba7ea947e463ac77cbecf2065c9cbc064e11c9784522476fa0321d3334245e9069c1241de0ae588bbaea510fbb3b4b695dfa804c0ed3592e86acf2faa7e12cf8bd292df85d567dace485d1bf4b7b8ab0a96c1dc20e2302a1d0a32fc1439635f10f3e9e1ebccbcda08aaf3e52f3970372054464d75546a113843117e65&amp;X-Goog-SignedHeaders=host" target="_blank" rel="noopener" title="Open full size in new tab">
+          <img loading="lazy" src="https://storage.googleapis.com/replit-objstore-18635d12-6e5d-415b-a79d-09f3ba4f6c3f/.private/uploads/e9531be3-2a63-4e62-9acd-90177d52b431.jpg?X-Goog-Algorithm=GOOG4-RSA-SHA256&amp;X-Goog-Credential=heimdall-production%40replit-user-deployments.iam.gserviceaccount.com%2F20260630%2Fauto%2Fstorage%2Fgoog4_request&amp;X-Goog-Date=20260630T071124Z&amp;X-Goog-Expires=431999&amp;X-Goog-Signature=9594b922134b41776fac0b5cf19038bfa28699376df76185658806b66e6a1cd3bc67609e81a7a7b9dec6152274349446b6b819125c35ff7df85b95ca9da6f049afd03dafeb6076668c676c76808303bd2fd2f7742c796173c7f7ae040e4eb2035fc4064b1d6aec012efc2cb027d0935d6ce6a0cbd77fb78398ede0e0d7a39f6ae90ae10ba7ea947e463ac77cbecf2065c9cbc064e11c9784522476fa0321d3334245e9069c1241de0ae588bbaea510fbb3b4b695dfa804c0ed3592e86acf2faa7e12cf8bd292df85d567dace485d1bf4b7b8ab0a96c1dc20e2302a1d0a32fc1439635f10f3e9e1ebccbcda08aaf3e52f3970372054464d75546a113843117e65&amp;X-Goog-SignedHeaders=host" alt="Damage photo 1 for GPS DHOK BAZGUL"
+               onerror="this.closest('.shot').classList.add('broken')">
+          <span class="broken-msg">Image link expired or private — tap to try opening</span>
+        </a>
+        <a class="shot" href="https://storage.googleapis.com/replit-objstore-18635d12-6e5d-415b-a79d-09f3ba4f6c3f/.private/uploads/e9881e0f-9a80-4d28-ae49-2335392f7e3e.jpg?X-Goog-Algorithm=GOOG4-RSA-SHA256&amp;X-Goog-Credential=heimdall-production%40replit-user-deployments.iam.gserviceaccount.com%2F20260630%2Fauto%2Fstorage%2Fgoog4_request&amp;X-Goog-Date=20260630T071125Z&amp;X-Goog-Expires=431999&amp;X-Goog-Signature=839460cb955e9ce684bfaa92c5f3e59e9c60eba656c6de4339d90aae163f042061d565da061c6f615c12bf015f35219a8af2784067b64884e72545bf821c0fc3b3271ad7f06bfb4e922faaea64267fa335dc05247dd06f48a9da7e879bbb34fb6efa08ad02a2ddf8383d2f92264dba957ec1dbff661a7106345bfb5bddc4b88fcd1249dbbb4b93122e84366596f7cf8a41dae9dfab7c16df131d63a89550ab42becfd76058ad5b3a25085a659953a84216c6939df9dc81e068e0838d322a95c46ac88930dfcfaedf79571a728e487eb3548ab3376171f803cb7021bf7beaa90311e6518a8e61d59c36b217034760b15b76629dadacb5a62567559a8e41c6ef70&amp;X-Goog-SignedHeaders=host" target="_blank" rel="noopener" title="Open full size in new tab">
+          <img loading="lazy" src="https://storage.googleapis.com/replit-objstore-18635d12-6e5d-415b-a79d-09f3ba4f6c3f/.private/uploads/e9881e0f-9a80-4d28-ae49-2335392f7e3e.jpg?X-Goog-Algorithm=GOOG4-RSA-SHA256&amp;X-Goog-Credential=heimdall-production%40replit-user-deployments.iam.gserviceaccount.com%2F20260630%2Fauto%2Fstorage%2Fgoog4_request&amp;X-Goog-Date=20260630T071125Z&amp;X-Goog-Expires=431999&amp;X-Goog-Signature=839460cb955e9ce684bfaa92c5f3e59e9c60eba656c6de4339d90aae163f042061d565da061c6f615c12bf015f35219a8af2784067b64884e72545bf821c0fc3b3271ad7f06bfb4e922faaea64267fa335dc05247dd06f48a9da7e879bbb34fb6efa08ad02a2ddf8383d2f92264dba957ec1dbff661a7106345bfb5bddc4b88fcd1249dbbb4b93122e84366596f7cf8a41dae9dfab7c16df131d63a89550ab42becfd76058ad5b3a25085a659953a84216c6939df9dc81e068e0838d322a95c46ac88930dfcfaedf79571a728e487eb3548ab3376171f803cb7021bf7beaa90311e6518a8e61d59c36b217034760b15b76629dadacb5a62567559a8e41c6ef70&amp;X-Goog-SignedHeaders=host" alt="Damage photo 2 for GPS DHOK BAZGUL"
+               onerror="this.closest('.shot').classList.add('broken')">
+          <span class="broken-msg">Image link expired or private — tap to try opening</span>
+        </a>
+        <a class="shot" href="https://storage.googleapis.com/replit-objstore-18635d12-6e5d-415b-a79d-09f3ba4f6c3f/.private/uploads/7584e85e-affe-4e30-9cfd-ecaaea182e06.jpg?X-Goog-Algorithm=GOOG4-RSA-SHA256&amp;X-Goog-Credential=heimdall-production%40replit-user-deployments.iam.gserviceaccount.com%2F20260630%2Fauto%2Fstorage%2Fgoog4_request&amp;X-Goog-Date=20260630T071126Z&amp;X-Goog-Expires=431999&amp;X-Goog-Signature=5ab5ad6170548a46e74c32a8cb51881a88067993bdcde2759f1513843109a10a939e2953cecb1cc7ec6c0c5113841ddd05072df7832c29743745d8d47c080e8989cfbc799a2a9dc320f4a70b34c7328f3d9453e564aec08bc73a6f89b148acd7a5a62010ad6cbdd96698b7b64932eb0c1a00a2898a6ef56c58c148dd133187911f42baa5749cc172db3841676e9fb649be88c65ccebb2b9190f0ce373b492eb9986e294e0032d352eff597357a5ed9634d4e23dd01636c34733d2aac9bce88f900fb361dbb0c4e4594f879785db41b296683d5512bbf6ee2af36615f15a0a4d34f79423ca1d65a2e343633e4ba48ab72aa98d3d69f4a3191ccf76b6b5494182d&amp;X-Goog-SignedHeaders=host" target="_blank" rel="noopener" title="Open full size in new tab">
+          <img loading="lazy" src="https://storage.googleapis.com/replit-objstore-18635d12-6e5d-415b-a79d-09f3ba4f6c3f/.private/uploads/7584e85e-affe-4e30-9cfd-ecaaea182e06.jpg?X-Goog-Algorithm=GOOG4-RSA-SHA256&amp;X-Goog-Credential=heimdall-production%40replit-user-deployments.iam.gserviceaccount.com%2F20260630%2Fauto%2Fstorage%2Fgoog4_request&amp;X-Goog-Date=20260630T071126Z&amp;X-Goog-Expires=431999&amp;X-Goog-Signature=5ab5ad6170548a46e74c32a8cb51881a88067993bdcde2759f1513843109a10a939e2953cecb1cc7ec6c0c5113841ddd05072df7832c29743745d8d47c080e8989cfbc799a2a9dc320f4a70b34c7328f3d9453e564aec08bc73a6f89b148acd7a5a62010ad6cbdd96698b7b64932eb0c1a00a2898a6ef56c58c148dd133187911f42baa5749cc172db3841676e9fb649be88c65ccebb2b9190f0ce373b492eb9986e294e0032d352eff597357a5ed9634d4e23dd01636c34733d2aac9bce88f900fb361dbb0c4e4594f879785db41b296683d5512bbf6ee2af36615f15a0a4d34f79423ca1d65a2e343633e4ba48ab72aa98d3d69f4a3191ccf76b6b5494182d&amp;X-Goog-SignedHeaders=host" alt="Damage photo 3 for GPS DHOK BAZGUL"
+               onerror="this.closest('.shot').classList.add('broken')">
+          <span class="broken-msg">Image link expired or private — tap to try opening</span>
+        </a></div>
+    </article>
+    <article class="card">
+      <header>
+        <div class="idx">17</div>
+        <div class="head-text">
+          <h2>GGPS CHOI BATALIAN</h2>
+          <div class="meta">EMIS 37140385 · Phase 1 · Shabbir Ahmad · 6/23/2026</div>
+        </div>
+        <div class="count">3 photos</div>
+      </header>
+      <div class="damage">
+        <p class="nature">School sign board damage</p>
+        <p class="cost">Est. cost: <b>3000</b></p>
+      </div>
+      <div class="gallery">
+        <a class="shot" href="https://storage.googleapis.com/replit-objstore-18635d12-6e5d-415b-a79d-09f3ba4f6c3f/.private/uploads/34f382ec-00cf-41d1-b11c-381b999c450f.jpg?X-Goog-Algorithm=GOOG4-RSA-SHA256&amp;X-Goog-Credential=heimdall-production%40replit-user-deployments.iam.gserviceaccount.com%2F20260630%2Fauto%2Fstorage%2Fgoog4_request&amp;X-Goog-Date=20260630T071124Z&amp;X-Goog-Expires=431999&amp;X-Goog-Signature=554a24cb2d12a15e600d4bae4596e1dd22a7de79f0f90ba8c688a91a0ded34a2491e9f982d7228caeca946bea475ddc120fa5a71d3e5b2da5a93003fba1cdf667befb393b493d597c8204e52a18873ad8356b6968fe53b8436bbef8e022ee42d0fb039081dfe748e3fd01ca09e6f36e5e6bca30a17ae75224830426e39fdf04aaf2faa9c0a2d5315dfd00d5063116b27d9d05820fc3dffa44faf89e131674dcd1f78209c5263def315a6bc32bc495d802103df34b822285492f8e306ae91c08b5a302301111f9211c3c64e5db362c49d739ed988e6303664492509f5d872f59a2a131e3a3feb34bde63dd1e67ed57a2ef32620011ab5dbd512c07ac2c259b79e&amp;X-Goog-SignedHeaders=host" target="_blank" rel="noopener" title="Open full size in new tab">
+          <img loading="lazy" src="https://storage.googleapis.com/replit-objstore-18635d12-6e5d-415b-a79d-09f3ba4f6c3f/.private/uploads/34f382ec-00cf-41d1-b11c-381b999c450f.jpg?X-Goog-Algorithm=GOOG4-RSA-SHA256&amp;X-Goog-Credential=heimdall-production%40replit-user-deployments.iam.gserviceaccount.com%2F20260630%2Fauto%2Fstorage%2Fgoog4_request&amp;X-Goog-Date=20260630T071124Z&amp;X-Goog-Expires=431999&amp;X-Goog-Signature=554a24cb2d12a15e600d4bae4596e1dd22a7de79f0f90ba8c688a91a0ded34a2491e9f982d7228caeca946bea475ddc120fa5a71d3e5b2da5a93003fba1cdf667befb393b493d597c8204e52a18873ad8356b6968fe53b8436bbef8e022ee42d0fb039081dfe748e3fd01ca09e6f36e5e6bca30a17ae75224830426e39fdf04aaf2faa9c0a2d5315dfd00d5063116b27d9d05820fc3dffa44faf89e131674dcd1f78209c5263def315a6bc32bc495d802103df34b822285492f8e306ae91c08b5a302301111f9211c3c64e5db362c49d739ed988e6303664492509f5d872f59a2a131e3a3feb34bde63dd1e67ed57a2ef32620011ab5dbd512c07ac2c259b79e&amp;X-Goog-SignedHeaders=host" alt="Damage photo 1 for GGPS CHOI BATALIAN"
+               onerror="this.closest('.shot').classList.add('broken')">
+          <span class="broken-msg">Image link expired or private — tap to try opening</span>
+        </a>
+        <a class="shot" href="https://storage.googleapis.com/replit-objstore-18635d12-6e5d-415b-a79d-09f3ba4f6c3f/.private/uploads/f537aed2-6a3e-44e8-a59c-1d1a5fc63e71.jpg?X-Goog-Algorithm=GOOG4-RSA-SHA256&amp;X-Goog-Credential=heimdall-production%40replit-user-deployments.iam.gserviceaccount.com%2F20260630%2Fauto%2Fstorage%2Fgoog4_request&amp;X-Goog-Date=20260630T071125Z&amp;X-Goog-Expires=431999&amp;X-Goog-Signature=cc530af7d1e92f887931a07a27a2f583ac9ee214e6c2fafddca11bbb9e69ff24460a567446ec54edb75b7fbba5e780942b750df051df49c104e8231286bdfc577c3e69c48f498a501de799a3e49c6148c2ae363164d78159197217f38dc7b37bfbaa0bd03dedd9e7881fa0153645d46dd425463c43148a421098a6c89d635c33654e541e0cb4bcd6e7b71093272829ea77e6848da791d468fa240a4957adc09d8880fa6a4c8589f5e9bbef0de18b6b6553bae890a50b044a4e5735b6512f907493f62ce693ba03ad7c343f3d9381309d0593149785f464ecc69c122991ff828d775c94e2697d4a59b9c6704ba5435e6d6b0377750fe852071f6357fc8589bd04&amp;X-Goog-SignedHeaders=host" target="_blank" rel="noopener" title="Open full size in new tab">
+          <img loading="lazy" src="https://storage.googleapis.com/replit-objstore-18635d12-6e5d-415b-a79d-09f3ba4f6c3f/.private/uploads/f537aed2-6a3e-44e8-a59c-1d1a5fc63e71.jpg?X-Goog-Algorithm=GOOG4-RSA-SHA256&amp;X-Goog-Credential=heimdall-production%40replit-user-deployments.iam.gserviceaccount.com%2F20260630%2Fauto%2Fstorage%2Fgoog4_request&amp;X-Goog-Date=20260630T071125Z&amp;X-Goog-Expires=431999&amp;X-Goog-Signature=cc530af7d1e92f887931a07a27a2f583ac9ee214e6c2fafddca11bbb9e69ff24460a567446ec54edb75b7fbba5e780942b750df051df49c104e8231286bdfc577c3e69c48f498a501de799a3e49c6148c2ae363164d78159197217f38dc7b37bfbaa0bd03dedd9e7881fa0153645d46dd425463c43148a421098a6c89d635c33654e541e0cb4bcd6e7b71093272829ea77e6848da791d468fa240a4957adc09d8880fa6a4c8589f5e9bbef0de18b6b6553bae890a50b044a4e5735b6512f907493f62ce693ba03ad7c343f3d9381309d0593149785f464ecc69c122991ff828d775c94e2697d4a59b9c6704ba5435e6d6b0377750fe852071f6357fc8589bd04&amp;X-Goog-SignedHeaders=host" alt="Damage photo 2 for GGPS CHOI BATALIAN"
+               onerror="this.closest('.shot').classList.add('broken')">
+          <span class="broken-msg">Image link expired or private — tap to try opening</span>
+        </a>
+        <a class="shot" href="https://storage.googleapis.com/replit-objstore-18635d12-6e5d-415b-a79d-09f3ba4f6c3f/.private/uploads/e3619330-bcaa-4697-b4bc-ff4f7a11dc2e.jpg?X-Goog-Algorithm=GOOG4-RSA-SHA256&amp;X-Goog-Credential=heimdall-production%40replit-user-deployments.iam.gserviceaccount.com%2F20260630%2Fauto%2Fstorage%2Fgoog4_request&amp;X-Goog-Date=20260630T071125Z&amp;X-Goog-Expires=431999&amp;X-Goog-Signature=5b4654da6aa52073fd3ad42abc91a21d24dce459770c67de78875989f3754e5cbb3a969ae70110368e97cae08f2996fec489907b8e6aca2aadde101e9e908e2724678baffc870eabbfc3acd08b8cacb5d13cb2bcd13b671d4f7a09e1aa30ed74a0a817dfbffef8da4a3515cdbd728a8612975dc6e8e447cddcbfa2e33e81accfaa0959f4d4c53312a03c2c1653e78f6da4f529f352ac6c77641920c65284c667cbeadbcb063ff1d7009a87f1d6a4d245a1d9aa91956397057a849001c67942639f0a1c3d9737f6e9fc59d403b5df104788004197a527bfdd5a37a2d45ca8511a1e6247c85b2fadd0c6ea2e521895547b56f00058da129bf200dc0524a38e77a6&amp;X-Goog-SignedHeaders=host" target="_blank" rel="noopener" title="Open full size in new tab">
+          <img loading="lazy" src="https://storage.googleapis.com/replit-objstore-18635d12-6e5d-415b-a79d-09f3ba4f6c3f/.private/uploads/e3619330-bcaa-4697-b4bc-ff4f7a11dc2e.jpg?X-Goog-Algorithm=GOOG4-RSA-SHA256&amp;X-Goog-Credential=heimdall-production%40replit-user-deployments.iam.gserviceaccount.com%2F20260630%2Fauto%2Fstorage%2Fgoog4_request&amp;X-Goog-Date=20260630T071125Z&amp;X-Goog-Expires=431999&amp;X-Goog-Signature=5b4654da6aa52073fd3ad42abc91a21d24dce459770c67de78875989f3754e5cbb3a969ae70110368e97cae08f2996fec489907b8e6aca2aadde101e9e908e2724678baffc870eabbfc3acd08b8cacb5d13cb2bcd13b671d4f7a09e1aa30ed74a0a817dfbffef8da4a3515cdbd728a8612975dc6e8e447cddcbfa2e33e81accfaa0959f4d4c53312a03c2c1653e78f6da4f529f352ac6c77641920c65284c667cbeadbcb063ff1d7009a87f1d6a4d245a1d9aa91956397057a849001c67942639f0a1c3d9737f6e9fc59d403b5df104788004197a527bfdd5a37a2d45ca8511a1e6247c85b2fadd0c6ea2e521895547b56f00058da129bf200dc0524a38e77a6&amp;X-Goog-SignedHeaders=host" alt="Damage photo 3 for GGPS CHOI BATALIAN"
+               onerror="this.closest('.shot').classList.add('broken')">
+          <span class="broken-msg">Image link expired or private — tap to try opening</span>
+        </a></div>
+    </article>
+    <article class="card">
+      <header>
+        <div class="idx">18</div>
+        <div class="head-text">
+          <h2>GGPS DHOK BAND</h2>
+          <div class="meta">EMIS 37140200 · Phase 1 · Shabbir Ahmad · 6/23/2026</div>
+        </div>
+        <div class="count">3 photos</div>
+      </header>
+      <div class="damage">
+        <p class="nature">School sign board damage</p>
+        <p class="cost">Est. cost: <b>3000</b></p>
+      </div>
+      <div class="gallery">
+        <a class="shot" href="https://storage.googleapis.com/replit-objstore-18635d12-6e5d-415b-a79d-09f3ba4f6c3f/.private/uploads/1c2e0161-7c03-4109-bcc2-f16f689d5b07.jpg?X-Goog-Algorithm=GOOG4-RSA-SHA256&amp;X-Goog-Credential=heimdall-production%40replit-user-deployments.iam.gserviceaccount.com%2F20260630%2Fauto%2Fstorage%2Fgoog4_request&amp;X-Goog-Date=20260630T071124Z&amp;X-Goog-Expires=431999&amp;X-Goog-Signature=1fb6e367adc2d981c8f480e38e83841f99a7275c1d057a72b936337bd12033e53ca466fe6d21f4e6a65530a0e4de75c5183843c788aea8fcc26b00f2e45a1bfdc91bea1bb4a129bc96f699d45731d0d2a18edeb94b5918c9e01dc8e308105ae7307a774faeec63bac0658da1a249ebea6ef1d3e49f24e65af39174c2c24d7bd55dfe6161ca6b4411b44fdc55836cb34d231759719d4529bf3ff4c019fc1e7715142e4fdf3004be452d2bf5e1b8a773edf26d819f9035a0d09bead1aa556ab4db51970adb538c12d2ae6a192f054f49995b9b3d26e32387c6a1b4d8a77f45201047d29f75484deea839e6d5e8a701ef4129d505b4e06b1ebf722f53436382717f&amp;X-Goog-SignedHeaders=host" target="_blank" rel="noopener" title="Open full size in new tab">
+          <img loading="lazy" src="https://storage.googleapis.com/replit-objstore-18635d12-6e5d-415b-a79d-09f3ba4f6c3f/.private/uploads/1c2e0161-7c03-4109-bcc2-f16f689d5b07.jpg?X-Goog-Algorithm=GOOG4-RSA-SHA256&amp;X-Goog-Credential=heimdall-production%40replit-user-deployments.iam.gserviceaccount.com%2F20260630%2Fauto%2Fstorage%2Fgoog4_request&amp;X-Goog-Date=20260630T071124Z&amp;X-Goog-Expires=431999&amp;X-Goog-Signature=1fb6e367adc2d981c8f480e38e83841f99a7275c1d057a72b936337bd12033e53ca466fe6d21f4e6a65530a0e4de75c5183843c788aea8fcc26b00f2e45a1bfdc91bea1bb4a129bc96f699d45731d0d2a18edeb94b5918c9e01dc8e308105ae7307a774faeec63bac0658da1a249ebea6ef1d3e49f24e65af39174c2c24d7bd55dfe6161ca6b4411b44fdc55836cb34d231759719d4529bf3ff4c019fc1e7715142e4fdf3004be452d2bf5e1b8a773edf26d819f9035a0d09bead1aa556ab4db51970adb538c12d2ae6a192f054f49995b9b3d26e32387c6a1b4d8a77f45201047d29f75484deea839e6d5e8a701ef4129d505b4e06b1ebf722f53436382717f&amp;X-Goog-SignedHeaders=host" alt="Damage photo 1 for GGPS DHOK BAND"
+               onerror="this.closest('.shot').classList.add('broken')">
+          <span class="broken-msg">Image link expired or private — tap to try opening</span>
+        </a>
+        <a class="shot" href="https://storage.googleapis.com/replit-objstore-18635d12-6e5d-415b-a79d-09f3ba4f6c3f/.private/uploads/7c3de502-8bd8-40e9-94c7-e80bd99648a7.jpg?X-Goog-Algorithm=GOOG4-RSA-SHA256&amp;X-Goog-Credential=heimdall-production%40replit-user-deployments.iam.gserviceaccount.com%2F20260630%2Fauto%2Fstorage%2Fgoog4_request&amp;X-Goog-Date=20260630T071125Z&amp;X-Goog-Expires=431999&amp;X-Goog-Signature=ac667c7744e4284e55174ad14ba4f90af7e00f5087dff8015acdd07b077b59221d98cff923c257cadeb11b0b0be17e9ec30c27be309cc885b270393105f165e27eb47def392511b747904655e2fbef86faec342ddf41f9c98eddd0497bce55e0c8c729bc05e9594729b345c73bed09ebba86a0172ae6b4876da00e02fe351f8b2a2eb067e8e2c5c4fde53700483917721b93ed0abcfa6e57c912853cb50d77994745ae5bb995a88bf9718b401a24a2d290d39c70cd2984c54de503d42e68fde78a21e7adae8d624cfc8a905e67c1bc80b698f4f38a4caa9cc37be77db1400f6010a6e100a34bf76bbf4cd092dc89f68eea6e158448dd314d75bc44cf68aac7a0&amp;X-Goog-SignedHeaders=host" target="_blank" rel="noopener" title="Open full size in new tab">
+          <img loading="lazy" src="https://storage.googleapis.com/replit-objstore-18635d12-6e5d-415b-a79d-09f3ba4f6c3f/.private/uploads/7c3de502-8bd8-40e9-94c7-e80bd99648a7.jpg?X-Goog-Algorithm=GOOG4-RSA-SHA256&amp;X-Goog-Credential=heimdall-production%40replit-user-deployments.iam.gserviceaccount.com%2F20260630%2Fauto%2Fstorage%2Fgoog4_request&amp;X-Goog-Date=20260630T071125Z&amp;X-Goog-Expires=431999&amp;X-Goog-Signature=ac667c7744e4284e55174ad14ba4f90af7e00f5087dff8015acdd07b077b59221d98cff923c257cadeb11b0b0be17e9ec30c27be309cc885b270393105f165e27eb47def392511b747904655e2fbef86faec342ddf41f9c98eddd0497bce55e0c8c729bc05e9594729b345c73bed09ebba86a0172ae6b4876da00e02fe351f8b2a2eb067e8e2c5c4fde53700483917721b93ed0abcfa6e57c912853cb50d77994745ae5bb995a88bf9718b401a24a2d290d39c70cd2984c54de503d42e68fde78a21e7adae8d624cfc8a905e67c1bc80b698f4f38a4caa9cc37be77db1400f6010a6e100a34bf76bbf4cd092dc89f68eea6e158448dd314d75bc44cf68aac7a0&amp;X-Goog-SignedHeaders=host" alt="Damage photo 2 for GGPS DHOK BAND"
+               onerror="this.closest('.shot').classList.add('broken')">
+          <span class="broken-msg">Image link expired or private — tap to try opening</span>
+        </a>
+        <a class="shot" href="https://storage.googleapis.com/replit-objstore-18635d12-6e5d-415b-a79d-09f3ba4f6c3f/.private/uploads/5ece453c-c199-46ac-9ff6-0af0efbc20f9.jpg?X-Goog-Algorithm=GOOG4-RSA-SHA256&amp;X-Goog-Credential=heimdall-production%40replit-user-deployments.iam.gserviceaccount.com%2F20260630%2Fauto%2Fstorage%2Fgoog4_request&amp;X-Goog-Date=20260630T071125Z&amp;X-Goog-Expires=431999&amp;X-Goog-Signature=8449c45ba561ee6b770649c659b1dcb158471a7a4246f86f865f557414180928506a27395cc2f27731859ea8d2b1d806ac52bc32757478c39ec9c88e0f57823d2bac25420246c068b88d02c32e0e24657fa732b634d1c51cd54a8c7b854d280870b5320816800cfe3e16779845c614e9bf27a403fa0240ddd8b3626ad8d3dbc01cb50c78d0850a7af3a5f2c0371357477fcd03c46ec316344480161970606fdde0037df08b329b1449ddfbd97a5566338055e02d6eee8efca9ba02bba22db0ec1ed748e0d12e5763eabe024ef2d06ad70c245b45dcde2d573d514849894e1d72cceebbf31a28333eaa0baeb3737b2e86cd5337157c1ba725285d7f25b0fba854&amp;X-Goog-SignedHeaders=host" target="_blank" rel="noopener" title="Open full size in new tab">
+          <img loading="lazy" src="https://storage.googleapis.com/replit-objstore-18635d12-6e5d-415b-a79d-09f3ba4f6c3f/.private/uploads/5ece453c-c199-46ac-9ff6-0af0efbc20f9.jpg?X-Goog-Algorithm=GOOG4-RSA-SHA256&amp;X-Goog-Credential=heimdall-production%40replit-user-deployments.iam.gserviceaccount.com%2F20260630%2Fauto%2Fstorage%2Fgoog4_request&amp;X-Goog-Date=20260630T071125Z&amp;X-Goog-Expires=431999&amp;X-Goog-Signature=8449c45ba561ee6b770649c659b1dcb158471a7a4246f86f865f557414180928506a27395cc2f27731859ea8d2b1d806ac52bc32757478c39ec9c88e0f57823d2bac25420246c068b88d02c32e0e24657fa732b634d1c51cd54a8c7b854d280870b5320816800cfe3e16779845c614e9bf27a403fa0240ddd8b3626ad8d3dbc01cb50c78d0850a7af3a5f2c0371357477fcd03c46ec316344480161970606fdde0037df08b329b1449ddfbd97a5566338055e02d6eee8efca9ba02bba22db0ec1ed748e0d12e5763eabe024ef2d06ad70c245b45dcde2d573d514849894e1d72cceebbf31a28333eaa0baeb3737b2e86cd5337157c1ba725285d7f25b0fba854&amp;X-Goog-SignedHeaders=host" alt="Damage photo 3 for GGPS DHOK BAND"
+               onerror="this.closest('.shot').classList.add('broken')">
+          <span class="broken-msg">Image link expired or private — tap to try opening</span>
+        </a></div>
+    </article>
+    <article class="card">
+      <header>
+        <div class="idx">19</div>
+        <div class="head-text">
+          <h2>GMPS DHOK FATEH (JABBA)</h2>
+          <div class="meta">EMIS 37140230 · Phase 1 · Babar · 6/19/2026</div>
+        </div>
+        <div class="count">1 photo</div>
+      </header>
+      <div class="damage">
+        <p class="nature">Gate Board fell down
+Window Glass 6 PC</p>
+        <p class="cost">Est. cost: <b>Gate = 4500
+Glass = 9000
+Glass labour cost 3000
+Total 16,500</b></p>
+      </div>
+      <div class="gallery">
+        <a class="shot" href="https://storage.googleapis.com/replit-objstore-18635d12-6e5d-415b-a79d-09f3ba4f6c3f/.private/uploads/d6d3b17f-b71e-40c6-bc27-dcd6d4945b9d.jpg?X-Goog-Algorithm=GOOG4-RSA-SHA256&amp;X-Goog-Credential=heimdall-production%40replit-user-deployments.iam.gserviceaccount.com%2F20260630%2Fauto%2Fstorage%2Fgoog4_request&amp;X-Goog-Date=20260630T071124Z&amp;X-Goog-Expires=431999&amp;X-Goog-Signature=0b56de9f65a312a97a78a183adb23242d12e399082550f32a0c9ed906753c1c338ea281ca06713c86ecfc1f599a0e5a1430457e167566c9355ab7c886f1389f2c192498c70e7a4c1d4add5e27595098f1637e0478d0f1856f2c59c7f57fcf5c55c1bffe4664f67f80bd0306bb562b786e7644815d1c99ecda41f3b6ffa66952a05666c1caff2aeab7c2f0697f8515004e073026181abfafb0ff000aeaa3ca08d57ec922aca4a1ea62b7162dc0880a38513b53d4fa9fbc33bfed7140498eb89a528acf904197bc71bed28c1ca76ab1ab947c73032c92480c194145b7b52c166bb6c337508241d872035ecfd7eff34232b6ef3aeaf02ad861e889a8afd937ff4e3&amp;X-Goog-SignedHeaders=host" target="_blank" rel="noopener" title="Open full size in new tab">
+          <img loading="lazy" src="https://storage.googleapis.com/replit-objstore-18635d12-6e5d-415b-a79d-09f3ba4f6c3f/.private/uploads/d6d3b17f-b71e-40c6-bc27-dcd6d4945b9d.jpg?X-Goog-Algorithm=GOOG4-RSA-SHA256&amp;X-Goog-Credential=heimdall-production%40replit-user-deployments.iam.gserviceaccount.com%2F20260630%2Fauto%2Fstorage%2Fgoog4_request&amp;X-Goog-Date=20260630T071124Z&amp;X-Goog-Expires=431999&amp;X-Goog-Signature=0b56de9f65a312a97a78a183adb23242d12e399082550f32a0c9ed906753c1c338ea281ca06713c86ecfc1f599a0e5a1430457e167566c9355ab7c886f1389f2c192498c70e7a4c1d4add5e27595098f1637e0478d0f1856f2c59c7f57fcf5c55c1bffe4664f67f80bd0306bb562b786e7644815d1c99ecda41f3b6ffa66952a05666c1caff2aeab7c2f0697f8515004e073026181abfafb0ff000aeaa3ca08d57ec922aca4a1ea62b7162dc0880a38513b53d4fa9fbc33bfed7140498eb89a528acf904197bc71bed28c1ca76ab1ab947c73032c92480c194145b7b52c166bb6c337508241d872035ecfd7eff34232b6ef3aeaf02ad861e889a8afd937ff4e3&amp;X-Goog-SignedHeaders=host" alt="Damage photo 1 for GMPS DHOK FATEH (JABBA)"
+               onerror="this.closest('.shot').classList.add('broken')">
+          <span class="broken-msg">Image link expired or private — tap to try opening</span>
+        </a></div>
+    </article>
+    <article class="card">
+      <header>
+        <div class="idx">20</div>
+        <div class="head-text">
+          <h2>GGPS CHHOI (MAKHAD)</h2>
+          <div class="meta">EMIS 37140297 · Phase 1 · Babar · 6/23/2026</div>
+        </div>
+        <div class="count">1 photo</div>
+      </header>
+      <div class="damage">
+        <p class="nature">Glass mirror 4 PC</p>
+        <p class="cost">Est. cost: <b>6000 + 3000 labour cost
+Total 9000</b></p>
+      </div>
+      <div class="gallery">
+        <a class="shot" href="https://storage.googleapis.com/replit-objstore-18635d12-6e5d-415b-a79d-09f3ba4f6c3f/.private/uploads/f7fa7cb2-b796-450e-843c-7954fb6a189c.jpg?X-Goog-Algorithm=GOOG4-RSA-SHA256&amp;X-Goog-Credential=heimdall-production%40replit-user-deployments.iam.gserviceaccount.com%2F20260630%2Fauto%2Fstorage%2Fgoog4_request&amp;X-Goog-Date=20260630T071124Z&amp;X-Goog-Expires=431999&amp;X-Goog-Signature=543e7019a2b85824f3e908cb701f3834085f0157764312c5fcf9a9944ea4fdfa8ed56318740b96799f08460523995c16f1b749a1b01c0acee4f39b2cf34ed0d733caa66182d28e636f862b65b8a5772fdf03a8091f410a98b8ec196f6c43bd261bc015eacb2bb5c5c55e06db9dd2c253e6c9e0c0370a28e34f3bf794292ae56df4814ed4154eeb1164b8b05485f7c67a1c18fc8e574f2084586262c1bd79f0de6363426c66f211a002f699234ac82a557b322953d744016ed8973a3e8a914dce0e1ced4ad92f7b04405728bce3029c4b041038800b2e9f5e4f033296b3d369c737444cb2b351d3d5cc4f1eb8a04e77675a11ada977a2475deb48ec6b77be896a&amp;X-Goog-SignedHeaders=host" target="_blank" rel="noopener" title="Open full size in new tab">
+          <img loading="lazy" src="https://storage.googleapis.com/replit-objstore-18635d12-6e5d-415b-a79d-09f3ba4f6c3f/.private/uploads/f7fa7cb2-b796-450e-843c-7954fb6a189c.jpg?X-Goog-Algorithm=GOOG4-RSA-SHA256&amp;X-Goog-Credential=heimdall-production%40replit-user-deployments.iam.gserviceaccount.com%2F20260630%2Fauto%2Fstorage%2Fgoog4_request&amp;X-Goog-Date=20260630T071124Z&amp;X-Goog-Expires=431999&amp;X-Goog-Signature=543e7019a2b85824f3e908cb701f3834085f0157764312c5fcf9a9944ea4fdfa8ed56318740b96799f08460523995c16f1b749a1b01c0acee4f39b2cf34ed0d733caa66182d28e636f862b65b8a5772fdf03a8091f410a98b8ec196f6c43bd261bc015eacb2bb5c5c55e06db9dd2c253e6c9e0c0370a28e34f3bf794292ae56df4814ed4154eeb1164b8b05485f7c67a1c18fc8e574f2084586262c1bd79f0de6363426c66f211a002f699234ac82a557b322953d744016ed8973a3e8a914dce0e1ced4ad92f7b04405728bce3029c4b041038800b2e9f5e4f033296b3d369c737444cb2b351d3d5cc4f1eb8a04e77675a11ada977a2475deb48ec6b77be896a&amp;X-Goog-SignedHeaders=host" alt="Damage photo 1 for GGPS CHHOI (MAKHAD)"
+               onerror="this.closest('.shot').classList.add('broken')">
+          <span class="broken-msg">Image link expired or private — tap to try opening</span>
+        </a></div>
+    </article>
+    <article class="card">
+      <header>
+        <div class="idx">21</div>
+        <div class="head-text">
+          <h2>GGPS NAKKA KHURD</h2>
+          <div class="meta">EMIS 37140292 · Phase 1 · Babar · 6/23/2026</div>
+        </div>
+        <div class="count">1 photo</div>
+      </header>
+      <div class="damage">
+        <p class="nature">Door glass 4 PC</p>
+        <p class="cost">Est. cost: <b>6000 + 3000</b></p>
+      </div>
+      <div class="gallery">
+        <a class="shot" href="https://storage.googleapis.com/replit-objstore-18635d12-6e5d-415b-a79d-09f3ba4f6c3f/.private/uploads/8986283c-55de-4b25-9957-fe9d841732de.jpg?X-Goog-Algorithm=GOOG4-RSA-SHA256&amp;X-Goog-Credential=heimdall-production%40replit-user-deployments.iam.gserviceaccount.com%2F20260630%2Fauto%2Fstorage%2Fgoog4_request&amp;X-Goog-Date=20260630T071124Z&amp;X-Goog-Expires=431999&amp;X-Goog-Signature=1b51d90985fc74b5cd6621f8351f425bed3b12e12ab72c51e111a2d34908cfbd80e0dfb7b38c10a70247bc72ec80e541c44674f7b25bd42d068fc2554a71f94e8995379d81a78ced881d9f9863cc961829821b7013ff8c981644ac0e2b0c7c3c63beea5da617a046763f5351b0673c99cf62226fe7f0af902b727854ee0f9cd98c1ff1246780da962e00d84e3633add2552f5cfbbc030e53d16f04ea2324a7ca36f64d3d95fcddd8d08aa5df349e001b6d5d2cac1cfd55d494d55a2d8a03eaf620659640a93e9f3663d760e0d08f022330efef33b251a9cc3e0a9aa43253a3d1d2f2dd5e505a186add4645197d6588cfbfb289bb925ff0c5743d7bbeac19a636&amp;X-Goog-SignedHeaders=host" target="_blank" rel="noopener" title="Open full size in new tab">
+          <img loading="lazy" src="https://storage.googleapis.com/replit-objstore-18635d12-6e5d-415b-a79d-09f3ba4f6c3f/.private/uploads/8986283c-55de-4b25-9957-fe9d841732de.jpg?X-Goog-Algorithm=GOOG4-RSA-SHA256&amp;X-Goog-Credential=heimdall-production%40replit-user-deployments.iam.gserviceaccount.com%2F20260630%2Fauto%2Fstorage%2Fgoog4_request&amp;X-Goog-Date=20260630T071124Z&amp;X-Goog-Expires=431999&amp;X-Goog-Signature=1b51d90985fc74b5cd6621f8351f425bed3b12e12ab72c51e111a2d34908cfbd80e0dfb7b38c10a70247bc72ec80e541c44674f7b25bd42d068fc2554a71f94e8995379d81a78ced881d9f9863cc961829821b7013ff8c981644ac0e2b0c7c3c63beea5da617a046763f5351b0673c99cf62226fe7f0af902b727854ee0f9cd98c1ff1246780da962e00d84e3633add2552f5cfbbc030e53d16f04ea2324a7ca36f64d3d95fcddd8d08aa5df349e001b6d5d2cac1cfd55d494d55a2d8a03eaf620659640a93e9f3663d760e0d08f022330efef33b251a9cc3e0a9aa43253a3d1d2f2dd5e505a186add4645197d6588cfbfb289bb925ff0c5743d7bbeac19a636&amp;X-Goog-SignedHeaders=host" alt="Damage photo 1 for GGPS NAKKA KHURD"
+               onerror="this.closest('.shot').classList.add('broken')">
+          <span class="broken-msg">Image link expired or private — tap to try opening</span>
+        </a></div>
+    </article>
+    <article class="card">
+      <header>
+        <div class="idx">22</div>
+        <div class="head-text">
+          <h2>GGPS Haveli</h2>
+          <div class="meta">EMIS 37140254 · Phase 1 · Ali Hamza · 6/23/2026</div>
+        </div>
+        <div class="count">2 photos</div>
+      </header>
+      <div class="damage">
+        <p class="nature">Window glass broken</p>
+        <p class="cost">Est. cost: <b>5000</b></p>
+      </div>
+      <div class="gallery">
+        <a class="shot" href="https://storage.googleapis.com/replit-objstore-18635d12-6e5d-415b-a79d-09f3ba4f6c3f/.private/uploads/162e2290-ec3f-4573-81ae-c53965315790.jpg?X-Goog-Algorithm=GOOG4-RSA-SHA256&amp;X-Goog-Credential=heimdall-production%40replit-user-deployments.iam.gserviceaccount.com%2F20260630%2Fauto%2Fstorage%2Fgoog4_request&amp;X-Goog-Date=20260630T071124Z&amp;X-Goog-Expires=431999&amp;X-Goog-Signature=2998c788c641744f487dc24d98a44755a85f86b7694064a6bef178dea14ea1074826719b94976859d436ec6277ea5e1f32b9b7027b773ff038f268f1a03a0fcf56ccf956e4816abc2889db1a64a8e2b13d7fa138799625f68616b6e0cb7684cc0d906ab10b516797f9813ebed231aca883133ae9985adc99925b7c6a7736d1c663a5b2675de910e1ffb2d87e1e5a5fafb40c5ce0d31e85720ee1949b5f077168a26192b7481c3c01d3d388365c6fa6981816bd5cbc437c58d2fb6fb5739b6374fb91fb12bef329043a1b65112ef30a398c3af68615f7c37d1ddf8e73c5b711a7e94bfc5bf0cacd192a52771add6a6496d8437432b1eaaa70fad202afca96de7e&amp;X-Goog-SignedHeaders=host" target="_blank" rel="noopener" title="Open full size in new tab">
+          <img loading="lazy" src="https://storage.googleapis.com/replit-objstore-18635d12-6e5d-415b-a79d-09f3ba4f6c3f/.private/uploads/162e2290-ec3f-4573-81ae-c53965315790.jpg?X-Goog-Algorithm=GOOG4-RSA-SHA256&amp;X-Goog-Credential=heimdall-production%40replit-user-deployments.iam.gserviceaccount.com%2F20260630%2Fauto%2Fstorage%2Fgoog4_request&amp;X-Goog-Date=20260630T071124Z&amp;X-Goog-Expires=431999&amp;X-Goog-Signature=2998c788c641744f487dc24d98a44755a85f86b7694064a6bef178dea14ea1074826719b94976859d436ec6277ea5e1f32b9b7027b773ff038f268f1a03a0fcf56ccf956e4816abc2889db1a64a8e2b13d7fa138799625f68616b6e0cb7684cc0d906ab10b516797f9813ebed231aca883133ae9985adc99925b7c6a7736d1c663a5b2675de910e1ffb2d87e1e5a5fafb40c5ce0d31e85720ee1949b5f077168a26192b7481c3c01d3d388365c6fa6981816bd5cbc437c58d2fb6fb5739b6374fb91fb12bef329043a1b65112ef30a398c3af68615f7c37d1ddf8e73c5b711a7e94bfc5bf0cacd192a52771add6a6496d8437432b1eaaa70fad202afca96de7e&amp;X-Goog-SignedHeaders=host" alt="Damage photo 1 for GGPS Haveli"
+               onerror="this.closest('.shot').classList.add('broken')">
+          <span class="broken-msg">Image link expired or private — tap to try opening</span>
+        </a>
+        <a class="shot" href="https://storage.googleapis.com/replit-objstore-18635d12-6e5d-415b-a79d-09f3ba4f6c3f/.private/uploads/1d51ae09-5198-49b7-86b5-689a3be7d76c.jpg?X-Goog-Algorithm=GOOG4-RSA-SHA256&amp;X-Goog-Credential=heimdall-production%40replit-user-deployments.iam.gserviceaccount.com%2F20260630%2Fauto%2Fstorage%2Fgoog4_request&amp;X-Goog-Date=20260630T071125Z&amp;X-Goog-Expires=431999&amp;X-Goog-Signature=773ed6f6fafc3a83a1577abf6c3356b15f528e6653917d619616fea77af10d9e86cd56de60b3281e5bc1ab85187159ed0ecfff9460c57242b16c758ae7f0d325966420f4bbc2df4a4c4debca8e00336d7150c64f0e44a1494d4db6696fe734c489e6bc7fd3e6676c8e8bb86be5636e55130f7e314793818e230da97791dec3f43f7b8280cc60d4d2e92d8d7f9de2b235ff9c54862ab4c4cfcca898a9f693b0c3f38cadc8aadfd8b26aad537ac248d9d2a22133ba3f8994eb0a6e69b0f886d322300dfd41ac5ac195b617bd40e1f7f497bb17aa6d218e965498516143a9be6d84f5cb131781bc329abf11c54afc3395956191083627c2eae28e213f7a03ae9b8e&amp;X-Goog-SignedHeaders=host" target="_blank" rel="noopener" title="Open full size in new tab">
+          <img loading="lazy" src="https://storage.googleapis.com/replit-objstore-18635d12-6e5d-415b-a79d-09f3ba4f6c3f/.private/uploads/1d51ae09-5198-49b7-86b5-689a3be7d76c.jpg?X-Goog-Algorithm=GOOG4-RSA-SHA256&amp;X-Goog-Credential=heimdall-production%40replit-user-deployments.iam.gserviceaccount.com%2F20260630%2Fauto%2Fstorage%2Fgoog4_request&amp;X-Goog-Date=20260630T071125Z&amp;X-Goog-Expires=431999&amp;X-Goog-Signature=773ed6f6fafc3a83a1577abf6c3356b15f528e6653917d619616fea77af10d9e86cd56de60b3281e5bc1ab85187159ed0ecfff9460c57242b16c758ae7f0d325966420f4bbc2df4a4c4debca8e00336d7150c64f0e44a1494d4db6696fe734c489e6bc7fd3e6676c8e8bb86be5636e55130f7e314793818e230da97791dec3f43f7b8280cc60d4d2e92d8d7f9de2b235ff9c54862ab4c4cfcca898a9f693b0c3f38cadc8aadfd8b26aad537ac248d9d2a22133ba3f8994eb0a6e69b0f886d322300dfd41ac5ac195b617bd40e1f7f497bb17aa6d218e965498516143a9be6d84f5cb131781bc329abf11c54afc3395956191083627c2eae28e213f7a03ae9b8e&amp;X-Goog-SignedHeaders=host" alt="Damage photo 2 for GGPS Haveli"
+               onerror="this.closest('.shot').classList.add('broken')">
+          <span class="broken-msg">Image link expired or private — tap to try opening</span>
+        </a></div>
+    </article>
+    <article class="card">
+      <header>
+        <div class="idx">23</div>
+        <div class="head-text">
+          <h2>GPS SADKAL</h2>
+          <div class="meta">EMIS 37140271 · Phase 1 · Shabbir Ahmad · 6/23/2026</div>
+        </div>
+        <div class="count">3 photos</div>
+      </header>
+      <div class="damage">
+        <p class="nature">Window glass broken replacement</p>
+        <p class="cost">Est. cost: <b>10000</b></p>
+      </div>
+      <div class="gallery">
+        <a class="shot" href="https://storage.googleapis.com/replit-objstore-18635d12-6e5d-415b-a79d-09f3ba4f6c3f/.private/uploads/89caa9fd-e696-4042-ae79-790ce2d6a3ff.jpg?X-Goog-Algorithm=GOOG4-RSA-SHA256&amp;X-Goog-Credential=heimdall-production%40replit-user-deployments.iam.gserviceaccount.com%2F20260630%2Fauto%2Fstorage%2Fgoog4_request&amp;X-Goog-Date=20260630T071124Z&amp;X-Goog-Expires=431999&amp;X-Goog-Signature=32e6bc268c49a2e8d49bd306bf94da0bcb9b5c5f8665d4eabad151fe6af718d50b9976ac5f1df9f7b21858139022247f8c7159eab3da44835c6c4d1d021030ab9bcf5958d7dbf4d4ed4bb82a410f6d22afdf8384728003f238936be322a86745a9db107bc0be7a0bc357e89f4fe485ca0e3ae6843ddd170c06c07416067717bc5e7aca2a921e0d6a3144fb1f6f1dae6d90f113d111d999d95e9ea7ca6e7dce7386822c9accf90a202874d5fcbf338ee97af6f49770dccb4e5ae4327fe975599df8501c8ae481fa9ac2661c13f2a459483daa14d4a14f100f4adb47c42446018add09522cda2d38e318c565f496db266bb85ab0c238cca5911ab1a65fa451995c&amp;X-Goog-SignedHeaders=host" target="_blank" rel="noopener" title="Open full size in new tab">
+          <img loading="lazy" src="https://storage.googleapis.com/replit-objstore-18635d12-6e5d-415b-a79d-09f3ba4f6c3f/.private/uploads/89caa9fd-e696-4042-ae79-790ce2d6a3ff.jpg?X-Goog-Algorithm=GOOG4-RSA-SHA256&amp;X-Goog-Credential=heimdall-production%40replit-user-deployments.iam.gserviceaccount.com%2F20260630%2Fauto%2Fstorage%2Fgoog4_request&amp;X-Goog-Date=20260630T071124Z&amp;X-Goog-Expires=431999&amp;X-Goog-Signature=32e6bc268c49a2e8d49bd306bf94da0bcb9b5c5f8665d4eabad151fe6af718d50b9976ac5f1df9f7b21858139022247f8c7159eab3da44835c6c4d1d021030ab9bcf5958d7dbf4d4ed4bb82a410f6d22afdf8384728003f238936be322a86745a9db107bc0be7a0bc357e89f4fe485ca0e3ae6843ddd170c06c07416067717bc5e7aca2a921e0d6a3144fb1f6f1dae6d90f113d111d999d95e9ea7ca6e7dce7386822c9accf90a202874d5fcbf338ee97af6f49770dccb4e5ae4327fe975599df8501c8ae481fa9ac2661c13f2a459483daa14d4a14f100f4adb47c42446018add09522cda2d38e318c565f496db266bb85ab0c238cca5911ab1a65fa451995c&amp;X-Goog-SignedHeaders=host" alt="Damage photo 1 for GPS SADKAL"
+               onerror="this.closest('.shot').classList.add('broken')">
+          <span class="broken-msg">Image link expired or private — tap to try opening</span>
+        </a>
+        <a class="shot" href="https://storage.googleapis.com/replit-objstore-18635d12-6e5d-415b-a79d-09f3ba4f6c3f/.private/uploads/bfde1f84-bfb3-45b4-baa1-9ceb7cbb8fdc.jpg?X-Goog-Algorithm=GOOG4-RSA-SHA256&amp;X-Goog-Credential=heimdall-production%40replit-user-deployments.iam.gserviceaccount.com%2F20260630%2Fauto%2Fstorage%2Fgoog4_request&amp;X-Goog-Date=20260630T071125Z&amp;X-Goog-Expires=431999&amp;X-Goog-Signature=4f13f780f0e323704c90e95164984c72328923be7b3edb3d27a49a99ec17996c5898c1ee2a4a5421228f7ec45269d2bb06752f7e3dc3bd1207992a049cc07948cdbe7258b4740ca798d2215861fc65a8c839eb96bb8bf86f3b3d35e7022a8642f0074562ac76e325f89481715357147b07e1aafde3323d28224aa91616bfbf4407bce3152d554c6646fb3ce2711fbee5bda61bc961827faabe62ef79011ce1e3715267e0a93603c74eb1e41d3705d1ad376a157b2a7082d58a7efc6aac4b1bf820d6bba37700292b21fa4ca7c2925bf9c3f148877278cd7da93b451f36f22d6e0fa1dfdaee01e417bb0a6314fa68073ccf40d348658d48c3bb5a44c5f6277b1a&amp;X-Goog-SignedHeaders=host" target="_blank" rel="noopener" title="Open full size in new tab">
+          <img loading="lazy" src="https://storage.googleapis.com/replit-objstore-18635d12-6e5d-415b-a79d-09f3ba4f6c3f/.private/uploads/bfde1f84-bfb3-45b4-baa1-9ceb7cbb8fdc.jpg?X-Goog-Algorithm=GOOG4-RSA-SHA256&amp;X-Goog-Credential=heimdall-production%40replit-user-deployments.iam.gserviceaccount.com%2F20260630%2Fauto%2Fstorage%2Fgoog4_request&amp;X-Goog-Date=20260630T071125Z&amp;X-Goog-Expires=431999&amp;X-Goog-Signature=4f13f780f0e323704c90e95164984c72328923be7b3edb3d27a49a99ec17996c5898c1ee2a4a5421228f7ec45269d2bb06752f7e3dc3bd1207992a049cc07948cdbe7258b4740ca798d2215861fc65a8c839eb96bb8bf86f3b3d35e7022a8642f0074562ac76e325f89481715357147b07e1aafde3323d28224aa91616bfbf4407bce3152d554c6646fb3ce2711fbee5bda61bc961827faabe62ef79011ce1e3715267e0a93603c74eb1e41d3705d1ad376a157b2a7082d58a7efc6aac4b1bf820d6bba37700292b21fa4ca7c2925bf9c3f148877278cd7da93b451f36f22d6e0fa1dfdaee01e417bb0a6314fa68073ccf40d348658d48c3bb5a44c5f6277b1a&amp;X-Goog-SignedHeaders=host" alt="Damage photo 2 for GPS SADKAL"
+               onerror="this.closest('.shot').classList.add('broken')">
+          <span class="broken-msg">Image link expired or private — tap to try opening</span>
+        </a>
+        <a class="shot" href="https://storage.googleapis.com/replit-objstore-18635d12-6e5d-415b-a79d-09f3ba4f6c3f/.private/uploads/fd011c40-64bb-4ce2-b952-9eeb7386620a.jpg?X-Goog-Algorithm=GOOG4-RSA-SHA256&amp;X-Goog-Credential=heimdall-production%40replit-user-deployments.iam.gserviceaccount.com%2F20260630%2Fauto%2Fstorage%2Fgoog4_request&amp;X-Goog-Date=20260630T071125Z&amp;X-Goog-Expires=431999&amp;X-Goog-Signature=46f55bbceb79de0792849a71c7c79f53b9af224ccdf222ff61108a7210ebf2806463aa8572df022e7bee1b26916943f7d6ad5aaf9fcbf9fa5e22935b0cf8075e63d3398658ae9cee7d4aa9e6076dbc3da5d3d8857aaa224e5471256a4d8ec4330c907939459ca1e6c7851b1a37ba33721fd1b5e72166fc7d110832e49f18de2b1019dbfa8d7a00190b2ee01108495db146d23d6b566244f3f99c175fb669066161d9593351a72a7c1f785da6cd8df42f4685b73c7bab336dd4d1cdeadf909f9d3a0460f857836e112fcb9a7918e40007b9274ed91a0119d869c768565c3c9c38606161cd47b2e70af9be7cded7e2bf7d61d02251f505f287af328896b3254eb6&amp;X-Goog-SignedHeaders=host" target="_blank" rel="noopener" title="Open full size in new tab">
+          <img loading="lazy" src="https://storage.googleapis.com/replit-objstore-18635d12-6e5d-415b-a79d-09f3ba4f6c3f/.private/uploads/fd011c40-64bb-4ce2-b952-9eeb7386620a.jpg?X-Goog-Algorithm=GOOG4-RSA-SHA256&amp;X-Goog-Credential=heimdall-production%40replit-user-deployments.iam.gserviceaccount.com%2F20260630%2Fauto%2Fstorage%2Fgoog4_request&amp;X-Goog-Date=20260630T071125Z&amp;X-Goog-Expires=431999&amp;X-Goog-Signature=46f55bbceb79de0792849a71c7c79f53b9af224ccdf222ff61108a7210ebf2806463aa8572df022e7bee1b26916943f7d6ad5aaf9fcbf9fa5e22935b0cf8075e63d3398658ae9cee7d4aa9e6076dbc3da5d3d8857aaa224e5471256a4d8ec4330c907939459ca1e6c7851b1a37ba33721fd1b5e72166fc7d110832e49f18de2b1019dbfa8d7a00190b2ee01108495db146d23d6b566244f3f99c175fb669066161d9593351a72a7c1f785da6cd8df42f4685b73c7bab336dd4d1cdeadf909f9d3a0460f857836e112fcb9a7918e40007b9274ed91a0119d869c768565c3c9c38606161cd47b2e70af9be7cded7e2bf7d61d02251f505f287af328896b3254eb6&amp;X-Goog-SignedHeaders=host" alt="Damage photo 3 for GPS SADKAL"
+               onerror="this.closest('.shot').classList.add('broken')">
+          <span class="broken-msg">Image link expired or private — tap to try opening</span>
+        </a></div>
+    </article>
+    <article class="card">
+      <header>
+        <div class="idx">24</div>
+        <div class="head-text">
+          <h2>GPS DHOK KUCH</h2>
+          <div class="meta">EMIS 37140115 · Phase 1 · Shuail Ameer · 6/19/2026</div>
+        </div>
+        <div class="count">1 photo</div>
+      </header>
+      <div class="damage">
+        <p class="nature">1. 45 feet Boundary wall damaged 
+2. 18 window glasses are broken.</p>
+        <p class="cost">Est. cost: <b>1. 20,000 to 25,000 for boundary wall
+2. 30000 for window glasses</b></p>
+      </div>
+      <div class="gallery">
+        <a class="shot" href="https://storage.googleapis.com/replit-objstore-18635d12-6e5d-415b-a79d-09f3ba4f6c3f/.private/uploads/e319cb12-68d6-4177-9bf1-ba43cce23167.jpg?X-Goog-Algorithm=GOOG4-RSA-SHA256&amp;X-Goog-Credential=heimdall-production%40replit-user-deployments.iam.gserviceaccount.com%2F20260630%2Fauto%2Fstorage%2Fgoog4_request&amp;X-Goog-Date=20260630T071124Z&amp;X-Goog-Expires=431999&amp;X-Goog-Signature=3f1e9476dadfd4e65135aa0ea8d8da2be4d3bed0c6fdfcc74945d372f084c84ff0023c9b4b4ccc1d095b16510103cdc47752abac04001bd6374ebee626ed53a4218415869f695255f89ff2202633a8588557d005040cb39eb1bf122953bdf5ecffc0785631358edec162c47c45d152e4dc6cf6242ad46d1b8de91757fde17403be738115e5fa9d1a32f7e6c205987ed20cc2af3b7d16f3c0bdba071de4530b6e309ca0bfaa4bd7d85674423756649795656ed65b16651c73d2a78211ecc9ecccce9a376a160d01803b926ecb1b8631c5bde8d4ddc357001ef1ff7f27f2d6af16713d3ffd8a2b972fd3322f4a91b030981294ecc3866302726c5b45bacf318cde&amp;X-Goog-SignedHeaders=host" target="_blank" rel="noopener" title="Open full size in new tab">
+          <img loading="lazy" src="https://storage.googleapis.com/replit-objstore-18635d12-6e5d-415b-a79d-09f3ba4f6c3f/.private/uploads/e319cb12-68d6-4177-9bf1-ba43cce23167.jpg?X-Goog-Algorithm=GOOG4-RSA-SHA256&amp;X-Goog-Credential=heimdall-production%40replit-user-deployments.iam.gserviceaccount.com%2F20260630%2Fauto%2Fstorage%2Fgoog4_request&amp;X-Goog-Date=20260630T071124Z&amp;X-Goog-Expires=431999&amp;X-Goog-Signature=3f1e9476dadfd4e65135aa0ea8d8da2be4d3bed0c6fdfcc74945d372f084c84ff0023c9b4b4ccc1d095b16510103cdc47752abac04001bd6374ebee626ed53a4218415869f695255f89ff2202633a8588557d005040cb39eb1bf122953bdf5ecffc0785631358edec162c47c45d152e4dc6cf6242ad46d1b8de91757fde17403be738115e5fa9d1a32f7e6c205987ed20cc2af3b7d16f3c0bdba071de4530b6e309ca0bfaa4bd7d85674423756649795656ed65b16651c73d2a78211ecc9ecccce9a376a160d01803b926ecb1b8631c5bde8d4ddc357001ef1ff7f27f2d6af16713d3ffd8a2b972fd3322f4a91b030981294ecc3866302726c5b45bacf318cde&amp;X-Goog-SignedHeaders=host" alt="Damage photo 1 for GPS DHOK KUCH"
+               onerror="this.closest('.shot').classList.add('broken')">
+          <span class="broken-msg">Image link expired or private — tap to try opening</span>
+        </a></div>
+    </article>
+    <article class="card">
+      <header>
+        <div class="idx">25</div>
+        <div class="head-text">
+          <h2>GPS DHOK WARA</h2>
+          <div class="meta">EMIS 37140114 · Phase 1 · Shabbir Ahmad · 6/23/2026</div>
+        </div>
+        <div class="count">5 photos</div>
+      </header>
+      <div class="damage">
+        <p class="nature">10 window glass broken replacement</p>
+        <p class="cost">Est. cost: <b>20000</b></p>
+      </div>
+      <div class="gallery">
+        <a class="shot" href="https://storage.googleapis.com/replit-objstore-18635d12-6e5d-415b-a79d-09f3ba4f6c3f/.private/uploads/6b68168d-1ae0-4d66-9e96-4bdbafa8fa0c.jpg?X-Goog-Algorithm=GOOG4-RSA-SHA256&amp;X-Goog-Credential=heimdall-production%40replit-user-deployments.iam.gserviceaccount.com%2F20260630%2Fauto%2Fstorage%2Fgoog4_request&amp;X-Goog-Date=20260630T071124Z&amp;X-Goog-Expires=431999&amp;X-Goog-Signature=6cdcf5d65a4157f14780eca8b8755d37d4d162dfcd4242444d68d65aad5ef6529a7269554d6db7e25891ea3c9352128c0834de199e358ded3cc12722f01a951c41422c2ec7adb9147aa349e58e13da9fd377695925f1dc4073c465c141df2c770feff461ab294f6d5c3b91d5c1cdb925e98743f9feb4813c61a00003347bc5490fa58aedb440c4a2f7e8198f2e3c439b53ca205435681ec442e83202e408b0de29f5faa6a033292a73f3e15f8ea0cf55e0c142d7c29b3ba423b4e728ea2030ee872aed7ebe5dd9c8cd237dd29a68708d3a51804aee1cb0a731a5c4451ff7960c03a17eff5202e1c03f75b8f807fa3a9073d70e78ebebad108b99062052c6221c&amp;X-Goog-SignedHeaders=host" target="_blank" rel="noopener" title="Open full size in new tab">
+          <img loading="lazy" src="https://storage.googleapis.com/replit-objstore-18635d12-6e5d-415b-a79d-09f3ba4f6c3f/.private/uploads/6b68168d-1ae0-4d66-9e96-4bdbafa8fa0c.jpg?X-Goog-Algorithm=GOOG4-RSA-SHA256&amp;X-Goog-Credential=heimdall-production%40replit-user-deployments.iam.gserviceaccount.com%2F20260630%2Fauto%2Fstorage%2Fgoog4_request&amp;X-Goog-Date=20260630T071124Z&amp;X-Goog-Expires=431999&amp;X-Goog-Signature=6cdcf5d65a4157f14780eca8b8755d37d4d162dfcd4242444d68d65aad5ef6529a7269554d6db7e25891ea3c9352128c0834de199e358ded3cc12722f01a951c41422c2ec7adb9147aa349e58e13da9fd377695925f1dc4073c465c141df2c770feff461ab294f6d5c3b91d5c1cdb925e98743f9feb4813c61a00003347bc5490fa58aedb440c4a2f7e8198f2e3c439b53ca205435681ec442e83202e408b0de29f5faa6a033292a73f3e15f8ea0cf55e0c142d7c29b3ba423b4e728ea2030ee872aed7ebe5dd9c8cd237dd29a68708d3a51804aee1cb0a731a5c4451ff7960c03a17eff5202e1c03f75b8f807fa3a9073d70e78ebebad108b99062052c6221c&amp;X-Goog-SignedHeaders=host" alt="Damage photo 1 for GPS DHOK WARA"
+               onerror="this.closest('.shot').classList.add('broken')">
+          <span class="broken-msg">Image link expired or private — tap to try opening</span>
+        </a>
+        <a class="shot" href="https://storage.googleapis.com/replit-objstore-18635d12-6e5d-415b-a79d-09f3ba4f6c3f/.private/uploads/a2447d86-87fa-45a8-b452-ee9a092b3805.jpg?X-Goog-Algorithm=GOOG4-RSA-SHA256&amp;X-Goog-Credential=heimdall-production%40replit-user-deployments.iam.gserviceaccount.com%2F20260630%2Fauto%2Fstorage%2Fgoog4_request&amp;X-Goog-Date=20260630T071125Z&amp;X-Goog-Expires=431999&amp;X-Goog-Signature=470a3545cbcfe3a06a4c70dd7cdde8c3feabceb44c1eaefdb1077b2d75ee5020a1dab240088b036521698d8c7cf1a1ac8eee03b81b8a8c2d632f366d57ffeefbec4c8723653afb526d51cd0b252f16db5f195e344c187562a3672859516c05d92a6f2797c40c0bd1919d033cfd8342d6fc8a3102c04cd342568567ad5d52702fd902cebdc09afddd832ff23383aea1deb2a46bea4e9d0845a19bc02e3be23b3e65edcb72948053d2b5dcbfbd4da195c3e6b2c9a41f3f86905e1cbdf36db9b1ce28bfe0060c28f71501d28d94c6873fe23e5069a091b6f0d77e29da3e9743b6ce400152402f8779e03b8f09aa808ded75f313ec0a050c8d6b6c7f08f467f085fd&amp;X-Goog-SignedHeaders=host" target="_blank" rel="noopener" title="Open full size in new tab">
+          <img loading="lazy" src="https://storage.googleapis.com/replit-objstore-18635d12-6e5d-415b-a79d-09f3ba4f6c3f/.private/uploads/a2447d86-87fa-45a8-b452-ee9a092b3805.jpg?X-Goog-Algorithm=GOOG4-RSA-SHA256&amp;X-Goog-Credential=heimdall-production%40replit-user-deployments.iam.gserviceaccount.com%2F20260630%2Fauto%2Fstorage%2Fgoog4_request&amp;X-Goog-Date=20260630T071125Z&amp;X-Goog-Expires=431999&amp;X-Goog-Signature=470a3545cbcfe3a06a4c70dd7cdde8c3feabceb44c1eaefdb1077b2d75ee5020a1dab240088b036521698d8c7cf1a1ac8eee03b81b8a8c2d632f366d57ffeefbec4c8723653afb526d51cd0b252f16db5f195e344c187562a3672859516c05d92a6f2797c40c0bd1919d033cfd8342d6fc8a3102c04cd342568567ad5d52702fd902cebdc09afddd832ff23383aea1deb2a46bea4e9d0845a19bc02e3be23b3e65edcb72948053d2b5dcbfbd4da195c3e6b2c9a41f3f86905e1cbdf36db9b1ce28bfe0060c28f71501d28d94c6873fe23e5069a091b6f0d77e29da3e9743b6ce400152402f8779e03b8f09aa808ded75f313ec0a050c8d6b6c7f08f467f085fd&amp;X-Goog-SignedHeaders=host" alt="Damage photo 2 for GPS DHOK WARA"
+               onerror="this.closest('.shot').classList.add('broken')">
+          <span class="broken-msg">Image link expired or private — tap to try opening</span>
+        </a>
+        <a class="shot" href="https://storage.googleapis.com/replit-objstore-18635d12-6e5d-415b-a79d-09f3ba4f6c3f/.private/uploads/18112107-6481-4ae9-adbe-c6d8f63b6eb4.jpg?X-Goog-Algorithm=GOOG4-RSA-SHA256&amp;X-Goog-Credential=heimdall-production%40replit-user-deployments.iam.gserviceaccount.com%2F20260630%2Fauto%2Fstorage%2Fgoog4_request&amp;X-Goog-Date=20260630T071126Z&amp;X-Goog-Expires=431999&amp;X-Goog-Signature=0f1386c0712f3270bd104550f2e25ccbb99cbeaf2c21414522f2881c5f8324a5302fdc30c5b1359995bb8696cbed068a34e3b4060c5a69d700aa6c4fdacc27c66a7d2483b6e2d74f445e00fb9bea1104d04461e98dd50c14e06f9736437aec36aafbddad12990c83a07c9d7d2222c89cb5d8cce1d33a56e626d139a5f96dd662f54c540eb268ce5949e2fad8c05fef6e59f408aed3c0d4dac9f6c3f437df35b70a1ea279029e98e978e0f9314af14304913fde215a0376882ec2067114d9135bbea9ec0b35939f65542f18eafb294530a5f75db602ee3d7b203dbc1095cd0f78a7d9b2147833c2130adbcc8385628f31e1d1b0da2537b0c18095a0da52e4f4e6&amp;X-Goog-SignedHeaders=host" target="_blank" rel="noopener" title="Open full size in new tab">
+          <img loading="lazy" src="https://storage.googleapis.com/replit-objstore-18635d12-6e5d-415b-a79d-09f3ba4f6c3f/.private/uploads/18112107-6481-4ae9-adbe-c6d8f63b6eb4.jpg?X-Goog-Algorithm=GOOG4-RSA-SHA256&amp;X-Goog-Credential=heimdall-production%40replit-user-deployments.iam.gserviceaccount.com%2F20260630%2Fauto%2Fstorage%2Fgoog4_request&amp;X-Goog-Date=20260630T071126Z&amp;X-Goog-Expires=431999&amp;X-Goog-Signature=0f1386c0712f3270bd104550f2e25ccbb99cbeaf2c21414522f2881c5f8324a5302fdc30c5b1359995bb8696cbed068a34e3b4060c5a69d700aa6c4fdacc27c66a7d2483b6e2d74f445e00fb9bea1104d04461e98dd50c14e06f9736437aec36aafbddad12990c83a07c9d7d2222c89cb5d8cce1d33a56e626d139a5f96dd662f54c540eb268ce5949e2fad8c05fef6e59f408aed3c0d4dac9f6c3f437df35b70a1ea279029e98e978e0f9314af14304913fde215a0376882ec2067114d9135bbea9ec0b35939f65542f18eafb294530a5f75db602ee3d7b203dbc1095cd0f78a7d9b2147833c2130adbcc8385628f31e1d1b0da2537b0c18095a0da52e4f4e6&amp;X-Goog-SignedHeaders=host" alt="Damage photo 3 for GPS DHOK WARA"
+               onerror="this.closest('.shot').classList.add('broken')">
+          <span class="broken-msg">Image link expired or private — tap to try opening</span>
+        </a>
+        <a class="shot" href="https://storage.googleapis.com/replit-objstore-18635d12-6e5d-415b-a79d-09f3ba4f6c3f/.private/uploads/a862c055-eb34-45b7-b26c-7fdda46b805b.jpg?X-Goog-Algorithm=GOOG4-RSA-SHA256&amp;X-Goog-Credential=heimdall-production%40replit-user-deployments.iam.gserviceaccount.com%2F20260630%2Fauto%2Fstorage%2Fgoog4_request&amp;X-Goog-Date=20260630T071126Z&amp;X-Goog-Expires=431999&amp;X-Goog-Signature=9893d30f14fb7a8a5581dc048f7571cd067a2c55f3e88c34f683f2a32f76c0cdcb6ae2c97ff64ee022183a2d49482e96a0e1d23c001283c5b1126d60339cb3f6054a439bc195f0c9efcf51b6d68cae3169c9bb53b0d0d0ee8023b28cb8bef37a0971909801a36b52ca2f7a8928a6e2c4a132cb725428aff61d173bd7e8d066b57f9c3e1c44408de6fcef16165e86bebb7c7eabc2bb6cd3385a9907fdb402e1110399db5e18123cd5304c4d9a674fdce6f526209cf666d4e64f7b971486845e4502670fe0ce538fd9f7cb55178592332ef3ceb1e015dc1b56a50718acf5f0a97df6b04b6085d2367e7eb85adda770740e2d94b23a0ab84cdbbe530badc1ca22dd&amp;X-Goog-SignedHeaders=host" target="_blank" rel="noopener" title="Open full size in new tab">
+          <img loading="lazy" src="https://storage.googleapis.com/replit-objstore-18635d12-6e5d-415b-a79d-09f3ba4f6c3f/.private/uploads/a862c055-eb34-45b7-b26c-7fdda46b805b.jpg?X-Goog-Algorithm=GOOG4-RSA-SHA256&amp;X-Goog-Credential=heimdall-production%40replit-user-deployments.iam.gserviceaccount.com%2F20260630%2Fauto%2Fstorage%2Fgoog4_request&amp;X-Goog-Date=20260630T071126Z&amp;X-Goog-Expires=431999&amp;X-Goog-Signature=9893d30f14fb7a8a5581dc048f7571cd067a2c55f3e88c34f683f2a32f76c0cdcb6ae2c97ff64ee022183a2d49482e96a0e1d23c001283c5b1126d60339cb3f6054a439bc195f0c9efcf51b6d68cae3169c9bb53b0d0d0ee8023b28cb8bef37a0971909801a36b52ca2f7a8928a6e2c4a132cb725428aff61d173bd7e8d066b57f9c3e1c44408de6fcef16165e86bebb7c7eabc2bb6cd3385a9907fdb402e1110399db5e18123cd5304c4d9a674fdce6f526209cf666d4e64f7b971486845e4502670fe0ce538fd9f7cb55178592332ef3ceb1e015dc1b56a50718acf5f0a97df6b04b6085d2367e7eb85adda770740e2d94b23a0ab84cdbbe530badc1ca22dd&amp;X-Goog-SignedHeaders=host" alt="Damage photo 4 for GPS DHOK WARA"
+               onerror="this.closest('.shot').classList.add('broken')">
+          <span class="broken-msg">Image link expired or private — tap to try opening</span>
+        </a>
+        <a class="shot" href="https://storage.googleapis.com/replit-objstore-18635d12-6e5d-415b-a79d-09f3ba4f6c3f/.private/uploads/4abc1fea-bbcd-4d4f-b0b4-8170a4ca3b1d.jpg?X-Goog-Algorithm=GOOG4-RSA-SHA256&amp;X-Goog-Credential=heimdall-production%40replit-user-deployments.iam.gserviceaccount.com%2F20260630%2Fauto%2Fstorage%2Fgoog4_request&amp;X-Goog-Date=20260630T071127Z&amp;X-Goog-Expires=431999&amp;X-Goog-Signature=98b4538029377ee4f60f4800e5ca13cb3c4c30919d8f04d6a2ea6ca84839dcc407fc43eec9a04c78a8a63ace5244e76c9f0316c42ba1ed5bcd3fc1d3b602820f88e9c75e0fe4542953b0ddef4c1a299a1af4d9d181d3784ca00127133dcb590a2f2300002b5213441d68211e2c93917cd5b0f7ca103c2aa52579987a787a68dd996589f1bb842e0c903aaae008fbb22e2322b562fbc37895d88abefe7f352b69c8f8ee50f27e91fc35f54a847e230970bd824b9a80a89036f83df2b673177ad6b099a3bd79ff85b519915f6c1e915220ae9bdf01dd07eb44c2c820be191b10705eeef5c2e5fc63fe68979728709358c8fd38a903257f3f38f54ae5dbe3c70492&amp;X-Goog-SignedHeaders=host" target="_blank" rel="noopener" title="Open full size in new tab">
+          <img loading="lazy" src="https://storage.googleapis.com/replit-objstore-18635d12-6e5d-415b-a79d-09f3ba4f6c3f/.private/uploads/4abc1fea-bbcd-4d4f-b0b4-8170a4ca3b1d.jpg?X-Goog-Algorithm=GOOG4-RSA-SHA256&amp;X-Goog-Credential=heimdall-production%40replit-user-deployments.iam.gserviceaccount.com%2F20260630%2Fauto%2Fstorage%2Fgoog4_request&amp;X-Goog-Date=20260630T071127Z&amp;X-Goog-Expires=431999&amp;X-Goog-Signature=98b4538029377ee4f60f4800e5ca13cb3c4c30919d8f04d6a2ea6ca84839dcc407fc43eec9a04c78a8a63ace5244e76c9f0316c42ba1ed5bcd3fc1d3b602820f88e9c75e0fe4542953b0ddef4c1a299a1af4d9d181d3784ca00127133dcb590a2f2300002b5213441d68211e2c93917cd5b0f7ca103c2aa52579987a787a68dd996589f1bb842e0c903aaae008fbb22e2322b562fbc37895d88abefe7f352b69c8f8ee50f27e91fc35f54a847e230970bd824b9a80a89036f83df2b673177ad6b099a3bd79ff85b519915f6c1e915220ae9bdf01dd07eb44c2c820be191b10705eeef5c2e5fc63fe68979728709358c8fd38a903257f3f38f54ae5dbe3c70492&amp;X-Goog-SignedHeaders=host" alt="Damage photo 5 for GPS DHOK WARA"
+               onerror="this.closest('.shot').classList.add('broken')">
+          <span class="broken-msg">Image link expired or private — tap to try opening</span>
+        </a></div>
+    </article>
+    <article class="card">
+      <header>
+        <div class="idx">26</div>
+        <div class="head-text">
+          <h2>GPS CHAB BHATIOT</h2>
+          <div class="meta">EMIS 37140338 · Phase 1 · Shabbir Ahmad · 6/23/2026</div>
+        </div>
+        <div class="count">2 photos</div>
+      </header>
+      <div class="damage">
+        <p class="nature">Window glass broken replacement</p>
+        <p class="cost">Est. cost: <b>5000</b></p>
+      </div>
+      <div class="gallery">
+        <a class="shot" href="https://storage.googleapis.com/replit-objstore-18635d12-6e5d-415b-a79d-09f3ba4f6c3f/.private/uploads/3dedda9c-b913-44e5-b409-738bc07a16d6.jpg?X-Goog-Algorithm=GOOG4-RSA-SHA256&amp;X-Goog-Credential=heimdall-production%40replit-user-deployments.iam.gserviceaccount.com%2F20260630%2Fauto%2Fstorage%2Fgoog4_request&amp;X-Goog-Date=20260630T071124Z&amp;X-Goog-Expires=431999&amp;X-Goog-Signature=a3b7066dc123c6814e87bde63d4cecce33ae95e7ae70cbfc6ee7cf75af77231f84dab4dae020464e6d82d86cc05fe6e8a63676a732188a814b9bf232546017e0f6bf14f262e4a4aad9d09024b503e7d45a6e001aaaaf685511dd27af728077493265fd7ba677ae8b0ac95bbcb858ca6a46ff75766f4662aaad0ea185fc4709e3191dccfebfa29c6388911603ed8e6b01cf7ce59d2a80b27a0b1fc3e6424d1d77821bd1e2e6b06cafe7d2a6003d6ff5286ee82a496d0d5b908babbd5a06878e3874ccbc2205f2152cacda3e9ddabdeee26d3c510f169040d0a2622ad2df352012e61042037ca395fffef023859e4fc7b9eeb43f567dbfa593f2a7a8157fe70654&amp;X-Goog-SignedHeaders=host" target="_blank" rel="noopener" title="Open full size in new tab">
+          <img loading="lazy" src="https://storage.googleapis.com/replit-objstore-18635d12-6e5d-415b-a79d-09f3ba4f6c3f/.private/uploads/3dedda9c-b913-44e5-b409-738bc07a16d6.jpg?X-Goog-Algorithm=GOOG4-RSA-SHA256&amp;X-Goog-Credential=heimdall-production%40replit-user-deployments.iam.gserviceaccount.com%2F20260630%2Fauto%2Fstorage%2Fgoog4_request&amp;X-Goog-Date=20260630T071124Z&amp;X-Goog-Expires=431999&amp;X-Goog-Signature=a3b7066dc123c6814e87bde63d4cecce33ae95e7ae70cbfc6ee7cf75af77231f84dab4dae020464e6d82d86cc05fe6e8a63676a732188a814b9bf232546017e0f6bf14f262e4a4aad9d09024b503e7d45a6e001aaaaf685511dd27af728077493265fd7ba677ae8b0ac95bbcb858ca6a46ff75766f4662aaad0ea185fc4709e3191dccfebfa29c6388911603ed8e6b01cf7ce59d2a80b27a0b1fc3e6424d1d77821bd1e2e6b06cafe7d2a6003d6ff5286ee82a496d0d5b908babbd5a06878e3874ccbc2205f2152cacda3e9ddabdeee26d3c510f169040d0a2622ad2df352012e61042037ca395fffef023859e4fc7b9eeb43f567dbfa593f2a7a8157fe70654&amp;X-Goog-SignedHeaders=host" alt="Damage photo 1 for GPS CHAB BHATIOT"
+               onerror="this.closest('.shot').classList.add('broken')">
+          <span class="broken-msg">Image link expired or private — tap to try opening</span>
+        </a>
+        <a class="shot" href="https://storage.googleapis.com/replit-objstore-18635d12-6e5d-415b-a79d-09f3ba4f6c3f/.private/uploads/67e1a837-aabb-44a6-a127-0ade221d9bd3.jpg?X-Goog-Algorithm=GOOG4-RSA-SHA256&amp;X-Goog-Credential=heimdall-production%40replit-user-deployments.iam.gserviceaccount.com%2F20260630%2Fauto%2Fstorage%2Fgoog4_request&amp;X-Goog-Date=20260630T071125Z&amp;X-Goog-Expires=431999&amp;X-Goog-Signature=04253cb5eb104849c507e7f3d4ebbf0c72cddc594c4ee24aded032ca5385d2cc05f4a7f762f9b70c6ec5d8879f55e0c8b120697d8070211e878af7b61562e2fee04461ababf13e2089cc4ea8099fb78b745cee822639913e4ccf1a15526eea39b1f0bf57e3bd026fbb90bae05a68f988f23c5c948e85f152b5fc6dece8e6dd4f614cee5102775e68e0c7c6e2237eeec4c6c17f0cfabf7e06f83134a841da977df2100d5530de70a8ede09a432a57cf9318954bc833d3981a2a80054ceb20d16acddb90a3149c006e803cfda3ca8d18f3a97d3c5be079fbc474e1fbe141cd0a3a5491de0ffa799b9582ffddfeeb6b0b2432bb1be172fbec94d13918630fcb111e&amp;X-Goog-SignedHeaders=host" target="_blank" rel="noopener" title="Open full size in new tab">
+          <img loading="lazy" src="https://storage.googleapis.com/replit-objstore-18635d12-6e5d-415b-a79d-09f3ba4f6c3f/.private/uploads/67e1a837-aabb-44a6-a127-0ade221d9bd3.jpg?X-Goog-Algorithm=GOOG4-RSA-SHA256&amp;X-Goog-Credential=heimdall-production%40replit-user-deployments.iam.gserviceaccount.com%2F20260630%2Fauto%2Fstorage%2Fgoog4_request&amp;X-Goog-Date=20260630T071125Z&amp;X-Goog-Expires=431999&amp;X-Goog-Signature=04253cb5eb104849c507e7f3d4ebbf0c72cddc594c4ee24aded032ca5385d2cc05f4a7f762f9b70c6ec5d8879f55e0c8b120697d8070211e878af7b61562e2fee04461ababf13e2089cc4ea8099fb78b745cee822639913e4ccf1a15526eea39b1f0bf57e3bd026fbb90bae05a68f988f23c5c948e85f152b5fc6dece8e6dd4f614cee5102775e68e0c7c6e2237eeec4c6c17f0cfabf7e06f83134a841da977df2100d5530de70a8ede09a432a57cf9318954bc833d3981a2a80054ceb20d16acddb90a3149c006e803cfda3ca8d18f3a97d3c5be079fbc474e1fbe141cd0a3a5491de0ffa799b9582ffddfeeb6b0b2432bb1be172fbec94d13918630fcb111e&amp;X-Goog-SignedHeaders=host" alt="Damage photo 2 for GPS CHAB BHATIOT"
+               onerror="this.closest('.shot').classList.add('broken')">
+          <span class="broken-msg">Image link expired or private — tap to try opening</span>
+        </a></div>
+    </article>
+    <article class="card">
+      <header>
+        <div class="idx">27</div>
+        <div class="head-text">
+          <h2>GPS SANGLA THATTA</h2>
+          <div class="meta">EMIS 37140138 · Phase 2 · Shuail Ameer · 6/19/2026</div>
+        </div>
+        <div class="count">1 photo</div>
+      </header>
+      <div class="damage">
+        <p class="nature">1.School sign board damaged 
+2. 3 window glasses are broken.</p>
+        <p class="cost">Est. cost: <b>1. 7000 for school sign board 
+2. 7500 for window glasses</b></p>
+      </div>
+      <div class="gallery">
+        <a class="shot" href="https://storage.googleapis.com/replit-objstore-18635d12-6e5d-415b-a79d-09f3ba4f6c3f/.private/uploads/26a98c91-082c-4fb0-a434-a711663c81ff.jpg?X-Goog-Algorithm=GOOG4-RSA-SHA256&amp;X-Goog-Credential=heimdall-production%40replit-user-deployments.iam.gserviceaccount.com%2F20260630%2Fauto%2Fstorage%2Fgoog4_request&amp;X-Goog-Date=20260630T071124Z&amp;X-Goog-Expires=431999&amp;X-Goog-Signature=471e497e5b77999e504764c50cc8b9b144ac7bb6c5c0fab734e894a07d6c8592e5e97843d23d8f8dff05d3e9587522726c6a6eac40f898b2964e535182c00c5957bb1ceb150f272df2664987a4b12ba8fcd06b7e6f18c87d37840b0a432e367b68b718c92f519c602da70d47062a0fc061673a65db742aeb78825084fc9eb28f230cc67546502cde7d25dfb4da10ddf600bd8b03484364595fde5e61c1fa390f8782022afbbe947b89b3fd27a0c4cd9076cf9bca64f899e1481c41fe6ffe9480e578b189388b7ab31951392365bee4331248b9b74ee8c44127bd8eb39f2939d44668063e57e32aedd13671ccc17cdb7e32a1299ea1d7873edecbeea3c30d5826&amp;X-Goog-SignedHeaders=host" target="_blank" rel="noopener" title="Open full size in new tab">
+          <img loading="lazy" src="https://storage.googleapis.com/replit-objstore-18635d12-6e5d-415b-a79d-09f3ba4f6c3f/.private/uploads/26a98c91-082c-4fb0-a434-a711663c81ff.jpg?X-Goog-Algorithm=GOOG4-RSA-SHA256&amp;X-Goog-Credential=heimdall-production%40replit-user-deployments.iam.gserviceaccount.com%2F20260630%2Fauto%2Fstorage%2Fgoog4_request&amp;X-Goog-Date=20260630T071124Z&amp;X-Goog-Expires=431999&amp;X-Goog-Signature=471e497e5b77999e504764c50cc8b9b144ac7bb6c5c0fab734e894a07d6c8592e5e97843d23d8f8dff05d3e9587522726c6a6eac40f898b2964e535182c00c5957bb1ceb150f272df2664987a4b12ba8fcd06b7e6f18c87d37840b0a432e367b68b718c92f519c602da70d47062a0fc061673a65db742aeb78825084fc9eb28f230cc67546502cde7d25dfb4da10ddf600bd8b03484364595fde5e61c1fa390f8782022afbbe947b89b3fd27a0c4cd9076cf9bca64f899e1481c41fe6ffe9480e578b189388b7ab31951392365bee4331248b9b74ee8c44127bd8eb39f2939d44668063e57e32aedd13671ccc17cdb7e32a1299ea1d7873edecbeea3c30d5826&amp;X-Goog-SignedHeaders=host" alt="Damage photo 1 for GPS SANGLA THATTA"
+               onerror="this.closest('.shot').classList.add('broken')">
+          <span class="broken-msg">Image link expired or private — tap to try opening</span>
+        </a></div>
+    </article>
+    <article class="card">
+      <header>
+        <div class="idx">28</div>
+        <div class="head-text">
+          <h2>GPS DHOK MANJOKHA</h2>
+          <div class="meta">EMIS 37140064 · Phase 2 · Suhail Abbas · 6/23/2026</div>
+        </div>
+        <div class="count">1 photo</div>
+      </header>
+      <div class="damage">
+        <p class="nature">Not damag</p>
+        <p class="cost">Est. cost: <b>No need</b></p>
+      </div>
+      <div class="gallery">
+        <a class="shot" href="https://storage.googleapis.com/replit-objstore-18635d12-6e5d-415b-a79d-09f3ba4f6c3f/.private/uploads/ced77812-a50d-41ec-a833-d48133682c45.jpg?X-Goog-Algorithm=GOOG4-RSA-SHA256&amp;X-Goog-Credential=heimdall-production%40replit-user-deployments.iam.gserviceaccount.com%2F20260630%2Fauto%2Fstorage%2Fgoog4_request&amp;X-Goog-Date=20260630T071124Z&amp;X-Goog-Expires=431999&amp;X-Goog-Signature=5afffe1a13a7f6ed45d84d8468777e60d067072d14f016b4da192eb138debaabd642eda1aee648cfe35ea22377df0671b57bc3cacd03517488094306ba02a2f0b7f8ad97b592b1b2256ce4b96f7815f6b2bf9cce6f7711c50f1c0e9101c29cf9f8f1ebf7b1b04aa6393f440c57ea2efde673ef22d83b0a167559bffefea130ce7c1df20a8844c2c4e3ea2e0dc60746af68dbec391ef97f86202b6acc36316d312cb7372bedac6d686c3e5f54922911f286017a2b276ae09226faa0db05dc22f5d595f59dcc0e4f59b12b882f0289aa70b6ad06600050d0d20c2a8b0dc3e6947c0dae2ad6c861c9f25ae9191a34bb64fed9adc091c15dac4108b66aa1d2e4b688&amp;X-Goog-SignedHeaders=host" target="_blank" rel="noopener" title="Open full size in new tab">
+          <img loading="lazy" src="https://storage.googleapis.com/replit-objstore-18635d12-6e5d-415b-a79d-09f3ba4f6c3f/.private/uploads/ced77812-a50d-41ec-a833-d48133682c45.jpg?X-Goog-Algorithm=GOOG4-RSA-SHA256&amp;X-Goog-Credential=heimdall-production%40replit-user-deployments.iam.gserviceaccount.com%2F20260630%2Fauto%2Fstorage%2Fgoog4_request&amp;X-Goog-Date=20260630T071124Z&amp;X-Goog-Expires=431999&amp;X-Goog-Signature=5afffe1a13a7f6ed45d84d8468777e60d067072d14f016b4da192eb138debaabd642eda1aee648cfe35ea22377df0671b57bc3cacd03517488094306ba02a2f0b7f8ad97b592b1b2256ce4b96f7815f6b2bf9cce6f7711c50f1c0e9101c29cf9f8f1ebf7b1b04aa6393f440c57ea2efde673ef22d83b0a167559bffefea130ce7c1df20a8844c2c4e3ea2e0dc60746af68dbec391ef97f86202b6acc36316d312cb7372bedac6d686c3e5f54922911f286017a2b276ae09226faa0db05dc22f5d595f59dcc0e4f59b12b882f0289aa70b6ad06600050d0d20c2a8b0dc3e6947c0dae2ad6c861c9f25ae9191a34bb64fed9adc091c15dac4108b66aa1d2e4b688&amp;X-Goog-SignedHeaders=host" alt="Damage photo 1 for GPS DHOK MANJOKHA"
+               onerror="this.closest('.shot').classList.add('broken')">
+          <span class="broken-msg">Image link expired or private — tap to try opening</span>
+        </a></div>
+    </article>
+    <article class="card">
+      <header>
+        <div class="idx">29</div>
+        <div class="head-text">
+          <h2>GGPS DHOK HAFIZABAD</h2>
+          <div class="meta">EMIS 37140195 · Phase 1 · Zahoor Abbas · 6/23/2026</div>
+        </div>
+        <div class="count">1 photo</div>
+      </header>
+      <div class="damage">
+        <p class="nature">Broken</p>
+        <p class="cost">Est. cost: <b>10000</b></p>
+      </div>
+      <div class="gallery">
+        <a class="shot" href="https://storage.googleapis.com/replit-objstore-18635d12-6e5d-415b-a79d-09f3ba4f6c3f/.private/uploads/41102d05-670e-43a4-81f2-f7db1ea75c4b.jpg?X-Goog-Algorithm=GOOG4-RSA-SHA256&amp;X-Goog-Credential=heimdall-production%40replit-user-deployments.iam.gserviceaccount.com%2F20260630%2Fauto%2Fstorage%2Fgoog4_request&amp;X-Goog-Date=20260630T071124Z&amp;X-Goog-Expires=431999&amp;X-Goog-Signature=93c3dfb25925fc227ff07215b1518e38aaa9b3babc073571ff2bb7de8cbf81749caf0b72daa836f8a63d4e57f007cbd18c2239aeb0f56993e3cd26c9d1ca5633ab7188fea10f74017f235ae3662447c5e6bf4d231ed1baabfb322020f421ec1e5613bf8264b8e1a57728ea85d5aba7c49ab0a93c4343c76db5cac0a03a5325221ec61652cd5bd5e993ebd0445e7378a1655a6f870794308054cd55fbdcf6b2c1be5e8874fb16f5c9bd3e7da8aad153ab3cc7331a9fe992b97622c458ded4b4e8dc5f9d75b53a12b6a5556b475abf84b352de6a7f95742022da5afc0d3e4160899d7cc3187e2fa9ad9b3dd876a27b2a89731d5d42c837752e2486e3b5f5a82771&amp;X-Goog-SignedHeaders=host" target="_blank" rel="noopener" title="Open full size in new tab">
+          <img loading="lazy" src="https://storage.googleapis.com/replit-objstore-18635d12-6e5d-415b-a79d-09f3ba4f6c3f/.private/uploads/41102d05-670e-43a4-81f2-f7db1ea75c4b.jpg?X-Goog-Algorithm=GOOG4-RSA-SHA256&amp;X-Goog-Credential=heimdall-production%40replit-user-deployments.iam.gserviceaccount.com%2F20260630%2Fauto%2Fstorage%2Fgoog4_request&amp;X-Goog-Date=20260630T071124Z&amp;X-Goog-Expires=431999&amp;X-Goog-Signature=93c3dfb25925fc227ff07215b1518e38aaa9b3babc073571ff2bb7de8cbf81749caf0b72daa836f8a63d4e57f007cbd18c2239aeb0f56993e3cd26c9d1ca5633ab7188fea10f74017f235ae3662447c5e6bf4d231ed1baabfb322020f421ec1e5613bf8264b8e1a57728ea85d5aba7c49ab0a93c4343c76db5cac0a03a5325221ec61652cd5bd5e993ebd0445e7378a1655a6f870794308054cd55fbdcf6b2c1be5e8874fb16f5c9bd3e7da8aad153ab3cc7331a9fe992b97622c458ded4b4e8dc5f9d75b53a12b6a5556b475abf84b352de6a7f95742022da5afc0d3e4160899d7cc3187e2fa9ad9b3dd876a27b2a89731d5d42c837752e2486e3b5f5a82771&amp;X-Goog-SignedHeaders=host" alt="Damage photo 1 for GGPS DHOK HAFIZABAD"
+               onerror="this.closest('.shot').classList.add('broken')">
+          <span class="broken-msg">Image link expired or private — tap to try opening</span>
+        </a></div>
+    </article>
+    <article class="card">
+      <header>
+        <div class="idx">30</div>
+        <div class="head-text">
+          <h2>GPS DHOK KUND</h2>
+          <div class="meta">EMIS 37140122 · Phase 1 · Shabbir Ahmad · 6/23/2026</div>
+        </div>
+        <div class="count">1 photo</div>
+      </header>
+      <div class="damage">
+        <p class="nature">5 Window glass broken replacement</p>
+        <p class="cost">Est. cost: <b>8000</b></p>
+      </div>
+      <div class="gallery">
+        <a class="shot" href="https://storage.googleapis.com/replit-objstore-18635d12-6e5d-415b-a79d-09f3ba4f6c3f/.private/uploads/0cd1bc49-4513-463e-8629-c1ee907bd6d2.jpg?X-Goog-Algorithm=GOOG4-RSA-SHA256&amp;X-Goog-Credential=heimdall-production%40replit-user-deployments.iam.gserviceaccount.com%2F20260630%2Fauto%2Fstorage%2Fgoog4_request&amp;X-Goog-Date=20260630T071124Z&amp;X-Goog-Expires=431999&amp;X-Goog-Signature=355f294756527b0b293f53b479022e633646fa8c6a803bf53504323bf08425e16a3bad2d888cd7c0a1bcf8d3919443fce7f850680db7c3d127e9be3c0988f991909bb8590394f5e28f8ba0b56cee99854befbf98fb81c5c788f241c203a1097632b2d4e9b1b1b232000140f93dd75b3fb4d4278d844009e1e4c3b6130d7b261ea6b78c7c0234dd3f09280080e6c762674eb028db95387d8d802df607dd2906c5ce41cadc24e5789e25ee370d1a47b11ca04cf72e5a840cd6d315fc19df41a3b0c83ca160d6aa3c38fc3062e6739a296c4b02ece00d58dd2b904c9842799cc0e6225e1a68fd2def3a2731ea29b2b221904ea00c267e1c22e639f692ae1b8a0d07&amp;X-Goog-SignedHeaders=host" target="_blank" rel="noopener" title="Open full size in new tab">
+          <img loading="lazy" src="https://storage.googleapis.com/replit-objstore-18635d12-6e5d-415b-a79d-09f3ba4f6c3f/.private/uploads/0cd1bc49-4513-463e-8629-c1ee907bd6d2.jpg?X-Goog-Algorithm=GOOG4-RSA-SHA256&amp;X-Goog-Credential=heimdall-production%40replit-user-deployments.iam.gserviceaccount.com%2F20260630%2Fauto%2Fstorage%2Fgoog4_request&amp;X-Goog-Date=20260630T071124Z&amp;X-Goog-Expires=431999&amp;X-Goog-Signature=355f294756527b0b293f53b479022e633646fa8c6a803bf53504323bf08425e16a3bad2d888cd7c0a1bcf8d3919443fce7f850680db7c3d127e9be3c0988f991909bb8590394f5e28f8ba0b56cee99854befbf98fb81c5c788f241c203a1097632b2d4e9b1b1b232000140f93dd75b3fb4d4278d844009e1e4c3b6130d7b261ea6b78c7c0234dd3f09280080e6c762674eb028db95387d8d802df607dd2906c5ce41cadc24e5789e25ee370d1a47b11ca04cf72e5a840cd6d315fc19df41a3b0c83ca160d6aa3c38fc3062e6739a296c4b02ece00d58dd2b904c9842799cc0e6225e1a68fd2def3a2731ea29b2b221904ea00c267e1c22e639f692ae1b8a0d07&amp;X-Goog-SignedHeaders=host" alt="Damage photo 1 for GPS DHOK KUND"
+               onerror="this.closest('.shot').classList.add('broken')">
+          <span class="broken-msg">Image link expired or private — tap to try opening</span>
+        </a></div>
+    </article>
+    <article class="card">
+      <header>
+        <div class="idx">31</div>
+        <div class="head-text">
+          <h2>GPS JABBI (JHAMAT)</h2>
+          <div class="meta">EMIS 37140167 · Phase 1 · Mehtab · 6/23/2026</div>
+        </div>
+        <div class="count">1 photo</div>
+      </header>
+      <div class="damage">
+        <p class="nature">The glass above the door and one window glass pane are broken.</p>
+        <p class="cost">Est. cost: <b>3000</b></p>
+      </div>
+      <div class="gallery">
+        <a class="shot" href="https://storage.googleapis.com/replit-objstore-18635d12-6e5d-415b-a79d-09f3ba4f6c3f/.private/uploads/a2de467d-0028-46ef-8d3c-37ef4ce90f88.jpg?X-Goog-Algorithm=GOOG4-RSA-SHA256&amp;X-Goog-Credential=heimdall-production%40replit-user-deployments.iam.gserviceaccount.com%2F20260630%2Fauto%2Fstorage%2Fgoog4_request&amp;X-Goog-Date=20260630T071124Z&amp;X-Goog-Expires=431999&amp;X-Goog-Signature=594c22b26448659bede2abb11db8de17e96a1243db0ff3591cba5e99b949aa14747ee63691397d078db9c5a0991e7ab48b03b7cb7cbd0dfa130d009ca5d16a834b4d9a1815d95a7647a0f8f5168a40bfcececd9b6f1d946dacb9960f14cd248d9d44d1314eb885bf44ea82061d44cc7426ad1f378116720ab362cc5de7f55f75345ad636382212a8c37464ff2c1c5a3e3f24aff6d069b6dd1e185e845679c69aed4e35b0d9187666b9e2c8a248a59d4c8c768d6965f0eca2dc7be949772f00295f7ce3c5b6c70c225e3df218fa9cc42c93e84a468600ec63cb4abc36208f94c83a16a8470f0273f43d86d315e676e5243a2d05ab54082daf0808df2f517b5455&amp;X-Goog-SignedHeaders=host" target="_blank" rel="noopener" title="Open full size in new tab">
+          <img loading="lazy" src="https://storage.googleapis.com/replit-objstore-18635d12-6e5d-415b-a79d-09f3ba4f6c3f/.private/uploads/a2de467d-0028-46ef-8d3c-37ef4ce90f88.jpg?X-Goog-Algorithm=GOOG4-RSA-SHA256&amp;X-Goog-Credential=heimdall-production%40replit-user-deployments.iam.gserviceaccount.com%2F20260630%2Fauto%2Fstorage%2Fgoog4_request&amp;X-Goog-Date=20260630T071124Z&amp;X-Goog-Expires=431999&amp;X-Goog-Signature=594c22b26448659bede2abb11db8de17e96a1243db0ff3591cba5e99b949aa14747ee63691397d078db9c5a0991e7ab48b03b7cb7cbd0dfa130d009ca5d16a834b4d9a1815d95a7647a0f8f5168a40bfcececd9b6f1d946dacb9960f14cd248d9d44d1314eb885bf44ea82061d44cc7426ad1f378116720ab362cc5de7f55f75345ad636382212a8c37464ff2c1c5a3e3f24aff6d069b6dd1e185e845679c69aed4e35b0d9187666b9e2c8a248a59d4c8c768d6965f0eca2dc7be949772f00295f7ce3c5b6c70c225e3df218fa9cc42c93e84a468600ec63cb4abc36208f94c83a16a8470f0273f43d86d315e676e5243a2d05ab54082daf0808df2f517b5455&amp;X-Goog-SignedHeaders=host" alt="Damage photo 1 for GPS JABBI (JHAMAT)"
+               onerror="this.closest('.shot').classList.add('broken')">
+          <span class="broken-msg">Image link expired or private — tap to try opening</span>
+        </a></div>
+    </article>
+    <article class="card">
+      <header>
+        <div class="idx">32</div>
+        <div class="head-text">
+          <h2>GPS DHOK MAIDA</h2>
+          <div class="meta">EMIS 37140133 · Phase 1 · Shuail Ameer · 6/23/2026</div>
+        </div>
+        <div class="count">1 photo</div>
+      </header>
+      <div class="damage">
+        <p class="nature">28 window glasses are broken.</p>
+        <p class="cost">Est. cost: <b>45000</b></p>
+      </div>
+      <div class="gallery">
+        <a class="shot" href="https://storage.googleapis.com/replit-objstore-18635d12-6e5d-415b-a79d-09f3ba4f6c3f/.private/uploads/4e3d99e0-eb6e-4c25-b14b-22c88806d55d.jpg?X-Goog-Algorithm=GOOG4-RSA-SHA256&amp;X-Goog-Credential=heimdall-production%40replit-user-deployments.iam.gserviceaccount.com%2F20260630%2Fauto%2Fstorage%2Fgoog4_request&amp;X-Goog-Date=20260630T071124Z&amp;X-Goog-Expires=431999&amp;X-Goog-Signature=47dc7f112f4ad1731a1a3628a29b18065d8561e9b3a1d785256407e25e15853803c40bf74937be9798a7e45f569e1d7948600e3c5d3703f0ad6cbd135db0c04d6c8a2259b7764eb3215ec12f266616a35800949ad9faa89a45a19e662e96fa07bc1d71207780938a5975bd44b091764fbcaff85f94d7808efb8822a2b6721e42abb882cabac904d8ec5b0c44cbde32f675a0491ca41c18e6b9ce8a018588b8a3303b727d1755998d1a934c5faa2866a1ff394fc58d785aac8a8b0a500c63d05ddba3c5df524144485263c601940d674073355a166eda508439b5389b50459f4d59b89f9a59b3bd3dc873f5389f875b9c45ae17666018478d65b11c67e3f8bb09&amp;X-Goog-SignedHeaders=host" target="_blank" rel="noopener" title="Open full size in new tab">
+          <img loading="lazy" src="https://storage.googleapis.com/replit-objstore-18635d12-6e5d-415b-a79d-09f3ba4f6c3f/.private/uploads/4e3d99e0-eb6e-4c25-b14b-22c88806d55d.jpg?X-Goog-Algorithm=GOOG4-RSA-SHA256&amp;X-Goog-Credential=heimdall-production%40replit-user-deployments.iam.gserviceaccount.com%2F20260630%2Fauto%2Fstorage%2Fgoog4_request&amp;X-Goog-Date=20260630T071124Z&amp;X-Goog-Expires=431999&amp;X-Goog-Signature=47dc7f112f4ad1731a1a3628a29b18065d8561e9b3a1d785256407e25e15853803c40bf74937be9798a7e45f569e1d7948600e3c5d3703f0ad6cbd135db0c04d6c8a2259b7764eb3215ec12f266616a35800949ad9faa89a45a19e662e96fa07bc1d71207780938a5975bd44b091764fbcaff85f94d7808efb8822a2b6721e42abb882cabac904d8ec5b0c44cbde32f675a0491ca41c18e6b9ce8a018588b8a3303b727d1755998d1a934c5faa2866a1ff394fc58d785aac8a8b0a500c63d05ddba3c5df524144485263c601940d674073355a166eda508439b5389b50459f4d59b89f9a59b3bd3dc873f5389f875b9c45ae17666018478d65b11c67e3f8bb09&amp;X-Goog-SignedHeaders=host" alt="Damage photo 1 for GPS DHOK MAIDA"
+               onerror="this.closest('.shot').classList.add('broken')">
+          <span class="broken-msg">Image link expired or private — tap to try opening</span>
+        </a></div>
+    </article>
+
+  <h3 class="sec">15 schools with no photo link in the file</h3>
+  <table>
+    <thead><tr><th>School</th><th>EMIS</th><th>Reported damage</th></tr></thead>
+    <tbody><tr><td>GPS RATTI KIRRI</td><td>37140170</td><td>Tree damage</td></tr><tr><td>GGPS PANA KHAILI</td><td>37140261</td><td>Nil</td></tr><tr><td>GGPS DAMAL</td><td>37140268</td><td>Yes</td></tr><tr><td>GPS DHOK JIMADARI</td><td>37140207</td><td>No</td></tr><tr><td>GPS DHOK DARSAKI</td><td>37140109</td><td>School building damage</td></tr><tr><td>GPS MALLANGI</td><td>37140159</td><td>All ok</td></tr><tr><td>GGPS NANDRAK ABAD</td><td>37140289</td><td>No damage</td></tr><tr><td>GPS MINHALI</td><td>37140139</td><td>30 window glasses are broken.</td></tr><tr><td>GPS ZIYARAT SEIKH JALAL</td><td>37140082</td><td>6 window glasses are broken.</td></tr><tr><td>GPS DHOK HINDU</td><td>37140172</td><td>Tree damage</td></tr><tr><td>GPS DHOK CHAB</td><td>37140085</td><td>28 window glasses are broken.</td></tr><tr><td>GGPS KUNDRALA</td><td>37140231</td><td>The solar panels just fell from the roof, but they were not damaged. The solar system was already non-functional.&quot;</td></tr><tr><td>GGPS GANDAKAS</td><td>37140226</td><td>29 window glasses are broken.</td></tr><tr><td>GPS BAJUWALA</td><td>37140126</td><td>18 window glass broken replacement</td></tr><tr><td>GPS MOHRI (THATTA)</td><td>37140140</td><td>38 window glasses are broken.</td></tr></tbody>
+  </table>
+</div>
+</body>
+</html>
